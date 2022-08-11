@@ -1,0 +1,175 @@
+.woostify-countdown-urgency {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.woostify-countdown-urgency:not(.active) {
+  visibility: hidden;
+}
+
+.woostify-countdown-urgency + .cart {
+  margin-top: 30px;
+}
+
+#woostify-quick-view-panel .woostify-countdown-urgency.default {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 30px 15px 15px 15px;
+}
+
+.woostify-size-guide-table + .woostify-countdown-urgency {
+  margin-top: 20px;
+}
+
+.woostify-countdown-urgency.default {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 40px 15px 30px 15px;
+  text-align: center;
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-message {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-message .woostify-countdown-urgency-message-text {
+  padding: 0 15px;
+  font-weight: 700;
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+#woostify-quick-view-panel .woostify-countdown-urgency.default .woostify-countdown-urgency-message .woostify-countdown-urgency-message-text {
+  background-color: #fff;
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-timer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer-item {
+  flex-basis: 25%;
+  position: relative;
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer-item:first-of-type .woostify-cc-timer:before {
+  content: none;
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer {
+  font-size: 36px;
+  position: relative;
+}
+
+#woostify-quick-view-panel .woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer {
+  font-size: 1.5em;
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer:before {
+  content: ':';
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 600px) {
+  .woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer {
+    font-size: 2em;
+  }
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer-label {
+  font-size: 12px;
+}
+
+.woostify-countdown-urgency.default .woostify-countdown-urgency-timer .woostify-cc-timer-separator {
+  font-size: 36px;
+}
+
+.woostify-countdown-urgency.style-1 .woostify-countdown-urgency-timer {
+  display: flex;
+}
+
+.woostify-countdown-urgency.style-1 .woostify-countdown-urgency-message {
+  margin-bottom: 15px;
+}
+
+.woostify-countdown-urgency.style-1 .woostify-cc-timer-item {
+  text-align: center;
+}
+
+.woostify-countdown-urgency.style-1 .woostify-cc-timer-item + .woostify-cc-timer-item {
+  margin-left: 15px;
+}
+
+.woostify-countdown-urgency.style-1 .woostify-cc-timer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  min-width: 50px;
+}
+
+.woostify-countdown-urgency.style-1 .woostify-cc-timer-label {
+  font-size: 0.8em;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 45px;
+  text-align: center;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  pointer-events: none;
+  padding: 0 10px;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-countdown-urgency-message-text {
+  background-color: transparent;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-countdown-urgency-timer {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-countdown-urgency-timer .woostify-cc-timer {
+  font-size: 30px;
+  background-color: transparent;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-countdown-urgency-timer .woostify-cc-timer:before {
+  content: none;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-cc-timer-item {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-cc-timer-item + .woostify-cc-timer-item {
+  margin-left: 5px;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-cc-timer {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  min-width: 30px;
+}
+
+.product-loop-image-wrapper .woostify-countdown-urgency .woostify-cc-timer-label {
+  font-size: 0.7em;
+  color: #fff;
+}

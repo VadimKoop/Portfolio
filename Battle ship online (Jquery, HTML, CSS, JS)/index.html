@@ -1,0 +1,288 @@
+
+<html>
+<head>
+ <script src="jquery-2.1.4.min.js"></script>
+
+    
+  <style>
+  body{
+  color:white;
+  font-family: Arial;
+  background-color: #282828  ; 
+  height: 100%;
+  }
+  a{
+   color: black;
+   text-decoration:none;  
+  }
+  a:hover{
+   color: white;
+   text-decoration:none;  
+  }
+  #tableBtn {
+  background: #c5f2fa;
+  background-image: -webkit-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: -moz-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: -ms-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: -o-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: linear-gradient(to bottom, #c5f2fa, #c5c6c7);
+  margin-bottom: 9px;
+  
+  position: fixed;
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#tableBtn:hover {
+  color:white;
+  background: #9c789c;
+  background-image: -webkit-linear-gradient(top, #9c789c, #171717);
+  background-image: -moz-linear-gradient(top, #9c789c, #171717);
+  background-image: -ms-linear-gradient(top, #9c789c, #171717);
+  background-image: -o-linear-gradient(top, #9c789c, #171717);
+  background-image: linear-gradient(to bottom, #9c789c, #171717);
+  text-decoration: none;
+}
+  #tableform{
+   visibility: hidden;
+  }
+  #playerName{
+    margin-left: 40%;
+    margin-top: 299px;
+    width: 210px;
+    height: 50px;
+    font-size: 25px;
+    border: 3px solid aquamarine; //цвет рамки
+    border-radius: 3px;
+  }
+  #playerName:hover{
+      border: 3px solid violet; //цвет рамки
+      border-radius: 3px;
+  }
+  #playerButton{
+    margin-left: 40%;
+    background: white;
+    font-family: Arial;
+    font-weight: bold;
+    width: 105px;
+    height: 30px;
+    font-size: 15px;
+    border: 3px solid aquamarine; //цвет рамки
+    border-radius: 3px;
+  }
+  #playerButton:hover{
+    border: 3px solid violet;
+    border-radius: 3px;
+  
+  }
+  
+  .preview{
+     width:100%;
+     height:100%;
+    
+     background-color: rgba(10,19,19,0.7);
+     position:fixed; 
+       
+   }
+    #timer {
+        
+     box-shadow:inset 0 -10px 15px  -10px #383838;
+     padding: 10px;
+     background-color:rgba(168,82,168,1)
+        
+    }
+      .fullpage{
+          width: 400px;
+          
+          background-color:#383838 ;
+          box-shadow: -9px 11px 26px 0px rgba(168,82,168,1);
+          
+      }
+      .center{margin-left: auto;margin-right: auto; text-align: center;
+      }
+      .g{ background-image: url(water.jpg); cursor: pointer; width: 50px;
+          height: 50px;
+      }
+      #computerTable{
+        float:right;
+        
+        background-color: grey;  
+box-shadow: -7px 11px 26px 0px rgba(168,82,168,1);
+      }
+      #playerTable{
+        background-color: grey;
+        float:left;
+        
+        
+box-shadow: -7px 11px 26px 0px rgba(168,82,168,1);
+      }
+      .game{
+       margin-top: 17px;
+       max-width: 990px;
+       height:100%;
+           
+       margin-left: auto;margin-right: auto; text-align: center;  
+   
+      }
+       .header{
+             
+       }
+    
+#start {
+  background: #c5f2fa;
+  background-image: -webkit-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: -moz-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: -ms-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: -o-linear-gradient(top, #c5f2fa, #c5c6c7);
+  background-image: linear-gradient(to bottom, #c5f2fa, #c5c6c7);
+  margin-bottom: 9px;
+  
+  
+  font-family: Arial;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#start:hover {
+  color:white;
+  background: #9c789c;
+  background-image: -webkit-linear-gradient(top, #9c789c, #171717);
+  background-image: -moz-linear-gradient(top, #9c789c, #171717);
+  background-image: -ms-linear-gradient(top, #9c789c, #171717);
+  background-image: -o-linear-gradient(top, #9c789c, #171717);
+  background-image: linear-gradient(to bottom, #9c789c, #171717);
+  text-decoration: none;
+}
+   #scoreboard{
+   margin-top:20px;
+   text-shadow: 1px 1px 2px black;
+    color:red; 
+    
+    margin:auto;
+    padding: 2px;  
+   }
+   p{
+   margin-top:25px;   
+   }
+   @media only screen and (max-device-width: 480px){
+   
+   body{
+   zoom: 2;
+   -ms-zoom: 2;
+   -webkit-zoom: 2;
+   -moz-transform:  scale(2,2);
+   -moz-transform-origin: left center;
+    background-color: white;   
+   }
+   .game{
+   width: 100%;
+   
+   }
+   #playerTable{
+  
+   float: none;
+    margin-left: auto;margin-right: auto; text-align: center; 
+   
+   }
+   #computerTable{
+ 
+    margin-top:50px;
+    float: none;
+    margin-left: auto;margin-right: auto; text-align: center; 
+   
+   
+   }
+   
+   
+   }
+      
+      
+    
+   </style> 
+</head>
+<meta charset="utf-8" />
+<title>BattleShips</title>
+<body>
+ <script src="delete3.js"></script>
+ 
+  <div class="preview" id="preview2">
+  <form  >
+  <input name="nameText" id="playerName" type="text" placeholder="Write your name..."> 
+  </form>
+  <button id="playerButton" onclick="setName()" >NEXT</button>
+ </div>
+
+   <button id="tableBtn" ><a href="http://dijkstra.cs.ttu.ee/~Valentin.Popov/cgi-bin/prax3/form.py?sortbyy=date" target="_blank">GET TABLE</a></button>
+  
+
+
+ 
+
+ <div class="fullpage center">
+    <div class="header">
+    <h1 class="mybox"> Laevade Pommitamine</h1>
+   </div>
+
+   <button id="start" onclick="createBoard()">Start Game</button>
+    
+   <div id="timer"></div>
+
+    <p>Board Size</p>
+    <select id="boardSize" name="Board Size">
+      <option value="3">3x3</option>
+      <option value="4">4x4</option>
+      <option value="5">5x5</option>
+      <option value="6">6x6</option>
+      <option value="7">7x7</option>
+      <option value="8">8x8</option>
+      <option value="9">9x9</option>
+      <option value="10">10x10</option>
+   </select>
+     <select id="boatNumber" name="Boat number">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+       <option value="9">9</option>
+        <option value="10">10</option>
+   </select>
+   <p>&nbsp</p>
+    </div>
+ 
+    <div class="game">
+   
+    <table id="playerTable">
+   
+    </table>
+    <table id="computerTable"></table>
+  
+  
+  <div id="scoreboard">
+      
+      </div>
+  
+  
+    </div>
+     <form  name="writeInFile" id="tableform">
+  <input name="playerNameText" id="playerNameId" value="Anonym">
+  <input name="player2NameText" id="player2NameId" value="Computer">
+  <input name="playerScoreText" id="playerScoreId" value="pl1score">
+  <input name="player2ScoreText" id="player2ScoreId" value="pl2score">
+  <input name="timeText" id="timeId" value="time">
+  <input name="dataText" id="dataId" value="data">
+  
+ </form>
+    
+   
+    
+</body>
+</html>

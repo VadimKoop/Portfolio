@@ -1,0 +1,4 @@
+C:/Users/Vadim/CLionProjects/HW01/HW01/cmake-build-debug/CMakeFiles/RunTests.dir
+C:/Users/Vadim/CLionProjects/HW01/HW01/cmake-build-debug/CMakeFiles/HW01.dir
+C:/Users/Vadim/CLionProjects/HW01/HW01/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Vadim/CLionProjects/HW01/HW01/cmake-build-debug/CMakeFiles/rebuild_cache.dir

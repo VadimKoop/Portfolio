@@ -1,0 +1,107 @@
+.woostify-sale-notification-box {
+  position: fixed;
+  bottom: 30px;
+  background-color: #fff;
+  z-index: 200;
+  border: 1px solid #edebeb;
+  transform: translateY(calc( 100% + 30px));
+  transition-duration: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.woostify-sale-notification-box.need-more-space {
+  bottom: 100px;
+  transform: translateY(calc( 100% + 100px));
+}
+
+@media (max-width: 600px) {
+  .woostify-sale-notification-box:not(.display-on-mobile) {
+    display: none;
+  }
+}
+
+.woostify-sale-notification-box.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.woostify-sale-notification-box:hover .sale-notification-close-button {
+  background-color: #a4a0a0;
+}
+
+.woostify-sale-notification-box.bottom-left {
+  left: 30px;
+}
+
+@media (max-width: 600px) {
+  .woostify-sale-notification-box.bottom-left {
+    right: 15px;
+    left: 15px;
+  }
+}
+
+.woostify-sale-notification-box.bottom-right {
+  right: 30px;
+}
+
+@media (max-width: 600px) {
+  .woostify-sale-notification-box.bottom-right {
+    left: 15px;
+    right: 15px;
+  }
+}
+
+.woostify-sale-notification-box .sale-notification-close-button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 10;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  background-color: rgba(164, 160, 160, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+.woostify-sale-notification-box .sale-notification-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.woostify-sale-notification-box .sale-notification-image {
+  min-height: 100px;
+  min-width: 100px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.woostify-sale-notification-box .sale-notification-image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.woostify-sale-notification-box .sale-notification-message {
+  flex-grow: 2;
+  padding: 10px 15px;
+  max-width: 400px;
+  min-width: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}

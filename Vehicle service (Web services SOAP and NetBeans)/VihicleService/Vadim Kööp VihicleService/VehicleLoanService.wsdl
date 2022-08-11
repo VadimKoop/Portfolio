@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" 
+	xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" 
+	xmlns:tns="http://www.ttu.ee/idu0075/2016/ws/142676/vadim" 
+	targetNamespace="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">
+	<wsdl:types>
+		<xs:schema  targetNamespace="http://www.ttu.ee/idu0075/2016/ws/142676/vadim" elementFormDefault="qualified">
+		
+		<!-- Types of Fields -->
+		
+			<xs:simpleType name="NameType">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		
+			<xs:simpleType name="QuantityType">
+				<xs:restriction base="xs:integer">
+					<xs:minExclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+			
+			<xs:simpleType name="PriceType">
+				<xs:restriction base="xs:decimal">
+					<xs:minInclusive value="0"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+			
+			<xs:simpleType name="TransportType">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Bicycle"/>
+					<xs:enumeration value="Moped"/>
+					<xs:enumeration value="Motorcycle"/>
+					<xs:enumeration value="Car"/>
+				</xs:restriction>
+			</xs:simpleType>
+		
+		<!-- Types of Fields -->
+		
+			<xs:complexType name="VehicleType">
+				<xs:sequence>
+					<xs:element name="id" type="xs:integer"/>
+					<xs:element name="name" type="tns:NameType"/>
+					<xs:element name="type" type="tns:TransportType"/>
+					<xs:element name="color" type="xs:string"/>
+					<xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+			<xs:complexType name="LoanVehicleType">
+				<xs:sequence>
+					<xs:element name="vehicle" type="tns:VehicleType"/>
+					<xs:element name="quantity" type="tns:QuantityType"/>
+					<xs:element name="unitPrice" type="tns:PriceType"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+			<xs:complexType name="LoanType">
+				<xs:sequence>
+					<xs:element name="id" type="xs:integer"/>
+					<xs:element name="customerName" type="tns:NameType"/>
+					<xs:element name="orderDate" type="xs:date"/>
+					<xs:element name="returnDate" type="xs:date"/>
+					<xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+					<xs:element name="vehicles" type="tns:LoanVehicleListType"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+		<!-- Lists of Objects -->
+		
+			<xs:complexType name="VehicleListType">
+				<xs:sequence>
+					<xs:element name="vehicle" type="tns:VehicleType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+			<xs:complexType name="LoanVehicleListType">
+				<xs:sequence>
+					<xs:element name="vehicle" type="tns:LoanVehicleType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+			<xs:complexType name="LoanListType">
+				<xs:sequence>
+					<xs:element name="loan" type="tns:LoanType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+		<!-- Operations -->
+		
+		<!-- getVehicle -->
+			<xs:element name="getVehicleRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="id" type="xs:integer"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="getVehicleResponse" type="tns:VehicleType"/>
+			
+		<!-- addVehicle -->
+			<xs:element name="addVehicleRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="operationId" type="xs:string"/>
+						<!-- Copy all fields VehicleType except ID -->
+						<xs:element name="name" type="tns:NameType"/>
+						<xs:element name="type" type="tns:TransportType"/>
+						<xs:element name="color" type="xs:string"/>
+						<xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="addVehicleResponse" type="tns:VehicleType"/>
+			
+		<!-- getVehicleList -->
+			<xs:element name="getVehicleListRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="type" type="tns:TransportType" minOccurs="0" maxOccurs="1"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="getVehicleListResponse" type="tns:VehicleListType"/>
+			
+		<!-- getLoan -->
+			<xs:element name="getLoanRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="id" type="xs:integer"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="getLoanResponse" type="tns:LoanType"/>
+			
+		<!-- addLoan -->
+			<xs:element name="addLoanRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="operationId" type="xs:string"/>
+						<!-- Copy all fields LoanType except ID and vehicles -->
+						<xs:element name="customerName" type="tns:NameType"/>
+						<xs:element name="orderDate" type="xs:date"/>
+						<xs:element name="returnDate" type="xs:date"/>
+						<xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="addLoanResponse" type="tns:LoanType"/>
+			
+		<!-- getLoanList -->
+			<xs:element name="getLoanListRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="startOrderDate" type="xs:date"/>
+						<xs:element name="endOrderDate" type="xs:date"/>
+						<xs:element minOccurs="0" name="hasRelatedVehicles">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xs:pattern value="Yes|No"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="getLoanListResponse" type="tns:LoanListType"/>
+			
+		<!-- getLoanVehicleList -->
+			<xs:element name="getLoanVehicleListRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="id" type="xs:integer"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="getLoanVehicleListResponse" type="tns:LoanVehicleListType"/>
+			
+		<!-- addVehicleToLoan -->
+			<xs:element name="addVehicleToLoanRequest">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="token" type="xs:string"/>
+						<xs:element name="operationId" type="xs:string"/>
+						<xs:element name="loanId" type="xs:integer"/>
+						<xs:element name="vehicleId" type="xs:integer"/>
+						<xs:element name="quantity" type="tns:QuantityType"/>
+						<xs:element name="unitPrice" type="tns:PriceType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="addVehicleToLoanResponse" type="tns:LoanVehicleType"/>
+			
+		</xs:schema>
+	</wsdl:types>
+	
+	<wsdl:message name="getVehicleMessageRequest">
+		<wsdl:part name="parameter" element="tns:getVehicleRequest"/>
+	</wsdl:message>
+	<wsdl:message name="getVehicleMessageResponse">
+		<wsdl:part name="parameter" element="tns:getVehicleResponse"/>
+	</wsdl:message>
+	<wsdl:message name="addVehicleMessageRequest">
+		<wsdl:part name="parameter" element="tns:addVehicleRequest"/>
+	</wsdl:message>
+	<wsdl:message name="addVehicleMessageResponse">
+		<wsdl:part name="parameter" element="tns:addVehicleResponse"/>
+	</wsdl:message>
+	<wsdl:message name="getVehicleListMessageRequest">
+		<wsdl:part name="parameter" element="tns:getVehicleListRequest"/>
+	</wsdl:message>
+	<wsdl:message name="getVehicleListMessageResponse">
+		<wsdl:part name="parameter" element="tns:getVehicleListResponse"/>
+	</wsdl:message>
+	<wsdl:message name="getLoanMessageRequest">
+		<wsdl:part name="parameter" element="tns:getLoanRequest"/>
+	</wsdl:message>
+	<wsdl:message name="getLoanMessageResponse">
+		<wsdl:part name="parameter" element="tns:getLoanResponse"/>
+	</wsdl:message>
+	<wsdl:message name="addLoanMessageRequest">
+		<wsdl:part name="parameter" element="tns:addLoanRequest"/>
+	</wsdl:message>
+	<wsdl:message name="addLoanMessageResponse">
+		<wsdl:part name="parameter" element="tns:addLoanResponse"/>
+	</wsdl:message>
+	<wsdl:message name="getLoanListMessageRequest">
+		<wsdl:part name="parameter" element="tns:getLoanListRequest"/>
+	</wsdl:message>
+	<wsdl:message name="getLoanListMessageResponse">
+		<wsdl:part name="parameter" element="tns:getLoanListResponse"/>
+	</wsdl:message>
+	<wsdl:message name="getLoanVehicleListMessageRequest">
+		<wsdl:part name="parameter" element="tns:getLoanVehicleListRequest"/>
+	</wsdl:message>
+	<wsdl:message name="getLoanVehicleListMessageResponse">
+		<wsdl:part name="parameter" element="tns:getLoanVehicleListResponse"/>
+	</wsdl:message>
+	<wsdl:message name="addVehicleToLoanMessageRequest">
+		<wsdl:part name="parameter" element="tns:addVehicleToLoanRequest"/>
+	</wsdl:message>
+	<wsdl:message name="addVehicleToLoanMessageResponse">
+		<wsdl:part name="parameter" element="tns:addVehicleToLoanResponse"/>
+	</wsdl:message>
+	
+	<wsdl:portType name="LoanPortType">
+		<wsdl:operation name="getVehicle">
+			<wsdl:input message="tns:getVehicleMessageRequest"/>
+			<wsdl:output message="tns:getVehicleMessageResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="addVehicle">
+			<wsdl:input message="tns:addVehicleMessageRequest"/>
+			<wsdl:output message="tns:addVehicleMessageResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="getVehicleList">
+			<wsdl:input message="tns:getVehicleListMessageRequest"/>
+			<wsdl:output message="tns:getVehicleListMessageResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="getLoan">
+			<wsdl:input message="tns:getLoanMessageRequest"/>
+			<wsdl:output message="tns:getLoanMessageResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="addLoan">
+			<wsdl:input message="tns:addLoanMessageRequest"/>
+			<wsdl:output message="tns:addLoanMessageResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="getLoanList">
+			<wsdl:input message="tns:getLoanListMessageRequest"/>
+			<wsdl:output message="tns:getLoanListMessageResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="getLoanVehicleList">
+			<wsdl:input message="tns:getLoanVehicleListMessageRequest"/>
+			<wsdl:output message="tns:getLoanVehicleListMessageResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="addVehicleToLoan">
+			<wsdl:input message="tns:addVehicleToLoanMessageRequest"/>
+			<wsdl:output message="tns:addVehicleToLoanMessageResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	
+	<wsdl:binding name="LoanBinding" type="tns:LoanPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getVehicle">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="addVehicle">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getVehicleList">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>	
+		<wsdl:operation name="getLoan">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="addLoan">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getLoanList">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>	
+		<wsdl:operation name="getLoanVehicleList">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="addVehicleToLoan">
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	
+	<wsdl:service name="VehicleLoanService">
+		<wsdl:port name="LoanPort" binding="tns:LoanBinding">
+			<soap:address location="Empty"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

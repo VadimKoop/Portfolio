@@ -1,0 +1,227 @@
+# Copyright (C) 2018 WooCommerce Payment Gateway - Paysera
+# This file is distributed under the same license as the WooCommerce Payment Gateway - Paysera package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Payment Gateway - Paysera 2.4.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-payment-"
+"gateway-paysera\n"
+"POT-Creation-Date: 2018-03-09 11:20+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-03-09 11:26+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? "
+"1 : 2);\n"
+"Language: lv_LV\n"
+
+#: includes/class-wc-paysera-settings.php:64
+msgid "Enable Paysera"
+msgstr "Iespējot Paysera"
+
+#: includes/class-wc-paysera-settings.php:65
+msgid "Enable Paysera payment"
+msgstr "Iespējot Paysera maksājumus"
+
+#: includes/class-wc-paysera-settings.php:71
+msgid "Project ID"
+msgstr "Projekta ID"
+
+#: includes/class-wc-paysera-settings.php:73
+msgid "Project id"
+msgstr "Projekta ID"
+
+#: includes/class-wc-paysera-settings.php:77
+msgid "Sign"
+msgstr "Projekta parole"
+
+#: includes/class-wc-paysera-settings.php:79
+msgid "Paysera sign password"
+msgstr "Paysera projekta parole"
+
+#: includes/class-wc-paysera-settings.php:83
+msgid "Test"
+msgstr "Testēšana"
+
+#: includes/class-wc-paysera-settings.php:85
+msgid "Enable test mode"
+msgstr "Iespējot testa režīmu"
+
+#: includes/class-wc-paysera-settings.php:87
+msgid "Enable this to accept test payments"
+msgstr "Iespējojiet šo, lai veiktu testa maksājumus"
+
+#: includes/class-wc-paysera-settings.php:90
+msgid "Title"
+msgstr "Nosaukums"
+
+#: includes/class-wc-paysera-settings.php:92
+msgid "Payment method title that the customer will see on your website."
+msgstr "Apmaksas veida nosaukums, kuru pircēji redzēs jūsu mājas lapā"
+
+#. Author of the plugin/theme
+#: includes/class-wc-paysera-settings.php:96 paysera.php:136
+msgid "All popular payment methods"
+msgstr "Visi populārie apmaksas veidi"
+
+#: includes/class-wc-paysera-settings.php:99
+msgid "Description"
+msgstr "Apraksts"
+
+#: includes/class-wc-paysera-settings.php:101
+msgid "This controls the description which the user sees during checkout."
+msgstr "Maksāt caur Paysera sistēmu"
+
+#: includes/class-wc-paysera-settings.php:105
+msgid "Choose a payment method on the Paysera page"
+msgstr "Maksāt caur Paysera sistēmu"
+
+#: includes/class-wc-paysera-settings.php:108
+msgid "List of payments"
+msgstr "Apmaksas veidu sarakts"
+
+#: includes/class-wc-paysera-settings.php:110
+msgid "Display payment methods list"
+msgstr "Rādīt apmaksas veidu sarakstu"
+
+#: includes/class-wc-paysera-settings.php:112
+msgid "Enable this to display payment methods list at checkout page"
+msgstr ""
+"Iespējojiet šo, lai pasūtījuma noformēšanas lapā būtu redzami pieejamie "
+"apmaksas veidi"
+
+#: includes/class-wc-paysera-settings.php:118
+msgid "Specific countries"
+msgstr "Valstis"
+
+#: includes/class-wc-paysera-settings.php:123
+msgid "Select which country payment methods to display (empty means all)"
+msgstr ""
+"Izvēlieties, kuru valstu apmaksas veidi tiks rādīti (tukš nozīmē visas)"
+
+#: includes/class-wc-paysera-settings.php:126
+msgid "All countries"
+msgstr "Visas valstis"
+
+#: includes/class-wc-paysera-settings.php:130
+msgid "Grid view"
+msgstr "Izskats"
+
+#: includes/class-wc-paysera-settings.php:132
+msgid "Enable grid view"
+msgstr "Iespējot CSS izmantošanu"
+
+#: includes/class-wc-paysera-settings.php:134
+msgid "Enable this to use payment methods grid view"
+msgstr "Iespējojiet šo, lai mainītu spraudņa izskatu ar CSS"
+
+#: includes/class-wc-paysera-settings.php:137
+msgid "New Order Status"
+msgstr "Jauna pasūtījuma statuss"
+
+#: includes/class-wc-paysera-settings.php:141
+msgid "New order creation status"
+msgstr "Pasūtījuma statuss pēc tā izveidošanas"
+
+#: includes/class-wc-paysera-settings.php:145
+msgid "Paid Order Status"
+msgstr "Apmaksāta pasūtījuma statuss"
+
+#: includes/class-wc-paysera-settings.php:149
+msgid "Order status after completing payment"
+msgstr "Pasūtījuma statuss pēc maksājuma veikšanas"
+
+#: includes/class-wc-paysera-settings.php:153
+msgid "Pending checkout"
+msgstr "Gaida apmaksu"
+
+#: includes/class-wc-paysera-settings.php:157
+msgid "Order status with not finished checkout"
+msgstr "Pasūtījuma statuss ar nepabeigtu apmaksu"
+
+#: includes/class-wc-paysera-settings.php:138
+msgid "Buyer consent"
+msgstr "Pircēja piekrišana"
+
+#: includes/class-wc-paysera-settings.php:139
+msgid "Enable buyer consent"
+msgstr "Iespējot pircēja piekrišana"
+
+#: includes/class-wc-paysera-settings.php:140
+msgid "Enable this to skip additional step when using Pis payment methods"
+msgstr ""
+"Iespējojiet, lai izlaistu papildu darbību, izmantojot MIP apmaksas veidu"
+
+#: includes/class-wc-paysera-payment-methods.php:173
+msgid ""
+"Please be informed that the account information and payment initiation "
+"services will be provided to you by Paysera in accordance with these %s. By "
+"proceeding with this payment, you agree to receive this service and the "
+"service terms and conditions."
+msgstr ""
+"Informējam, ka kontu informācijas un maksājumu iniciēšanas pakalpojumus jums "
+"sniegs Paysera saskaņā ar %s. Veicot šo maksājumu, jūs piekrītat pakalpojuma "
+"sniegšanas noteikumiem."
+
+#: includes/class-wc-paysera-payment-methods.php:174
+msgid "https://www.paysera.lt/v2/en-LT/legal/pis-rules-2020"
+msgstr "https://www.paysera.lt/v2/lv-LT/ligums/mip-noteikumi-2020"
+
+#: includes/class-wc-paysera-payment-methods.php:175
+msgid "rules"
+msgstr "Noteikumiem"
+
+#: paysera.php:185
+msgid "Main Settings"
+msgstr "Pamata iestatījumi"
+
+#: paysera.php:189
+msgid "Extra Settings"
+msgstr "Papildus iestatījumi "
+
+#: paysera.php:193
+msgid "Order Status"
+msgstr "Pasūtījumu statusi"
+
+#: paysera.php:209
+msgid "Project ID must be Not Empty"
+msgstr ""
+
+#: paysera.php:220
+msgid "Password (sign) must be Not Empty"
+msgstr ""
+
+#: paysera.php:281
+msgid "Paysera: Order checkout process is started"
+msgstr "Paysera: Pasūtījuma statuss ar nepabeigtu apmaksu"
+
+#: paysera.php:325
+msgid "Paysera: Customer came back to page"
+msgstr "Paysera: Pasūtījuma statuss pēc tā izveidošanas"
+
+#: paysera.php:358
+msgid "Paysera: Callback order payment completed"
+msgstr "Paysera: Pasūtījuma statuss pēc maksājuma veikšanas"
+
+#: paysera.php:417
+msgid "Paysera: Status changed to "
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Payment Gateway - Paysera"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://www.paysera.com"
+msgstr "https://www.paysera.com/v2/lv/index"
+
+#. Description of the plugin/theme
+msgid "Accepts Paysera"
+msgstr ""
+
+#. Plugin Woocommerce is not active
+msgid "WooCommerce is not active"
+msgstr ""

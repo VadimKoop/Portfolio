@@ -1,0 +1,16 @@
+.board-square {
+	-fx-pref-height: 50px;
+	-fx-pref-width: 50px;
+	/*-fx-padding: 10px;*/
+	-fx-border-color: black;
+	-fx-border-width: 1px;
+	-fx-valignment: center ;
+}
+
+.board-square .circle {
+	-fx-alignment: center ;
+}
+
+label {
+
+}

@@ -1,0 +1,402 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.helpie-faq.dashboard p:not(:last-child) {
+  margin: 0 0 20px; }
+
+.helpie-faq.dashboard main {
+  max-width: none;
+  padding: 40px;
+  background: #fff; }
+
+.helpie-faq.dashboard section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #abc; }
+
+.helpie-faq.dashboard input[type=radio] {
+  display: none; }
+
+.helpie-faq.dashboard label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #abc;
+  border: 1px solid transparent; }
+
+.helpie-faq.dashboard label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px; }
+
+.helpie-faq.dashboard label[for*='1']:before {
+  content: '\F1CB'; }
+
+.helpie-faq.dashboard label[for*='2']:before {
+  content: '\F17D'; }
+
+.helpie-faq.dashboard label[for*='3']:before {
+  content: '\F16C'; }
+
+.helpie-faq.dashboard label[for*='4']:before {
+  content: '\F171'; }
+
+.helpie-faq.dashboard label:hover {
+  color: #789;
+  cursor: pointer; }
+
+.helpie-faq.dashboard input:checked + label {
+  color: #0af;
+  border: 1px solid #abc;
+  border-top: 2px solid #0af;
+  border-bottom: 1px solid #fff; }
+
+.helpie-faq.dashboard #tab1:checked ~ #content1,
+.helpie-faq.dashboard #tab2:checked ~ #content2,
+.helpie-faq.dashboard #tab3:checked ~ #content3,
+.helpie-faq.dashboard #tab4:checked ~ #content4 {
+  display: block; }
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 0; }
+  label:before {
+    margin: 0;
+    font-size: 18px; } }
+
+@media screen and (max-width: 500px) {
+  label {
+    padding: 15px; } }
+
+.helpie-faq.dashboard {
+  background: #F4F7FC; }
+  .helpie-faq.dashboard h2 {
+    text-align: center; }
+  .helpie-faq.dashboard .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+  .helpie-faq.dashboard .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    width: 50%; }
+  .helpie-faq.dashboard .card-list {
+    width: 100%; }
+    .helpie-faq.dashboard .card-list:before, .helpie-faq.dashboard .card-list:after {
+      content: " ";
+      display: table; }
+    .helpie-faq.dashboard .card-list:after {
+      clear: both; }
+  .helpie-faq.dashboard .card {
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    position: relative;
+    min-width: auto;
+    max-width: initial;
+    margin: 15px;
+    flex: 1; }
+    .helpie-faq.dashboard .card .zmdi {
+      color: white;
+      font-size: 28px;
+      opacity: 0.3;
+      position: absolute;
+      right: 13px;
+      top: 13px; }
+    .helpie-faq.dashboard .card .stat {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 14px;
+      margin-top: 25px;
+      padding: 10px 10px 0;
+      text-transform: uppercase; }
+      .helpie-faq.dashboard .card .stat.increase {
+        color: #59AE31; }
+      .helpie-faq.dashboard .card .stat.decrease {
+        color: #C2332C; }
+    .helpie-faq.dashboard .card .title {
+      display: inline-block;
+      font-size: 12px;
+      padding: 10px 10px 0;
+      text-transform: uppercase; }
+    .helpie-faq.dashboard .card.blue {
+      background-color: #2298F1; }
+    .helpie-faq.dashboard .card.green {
+      background-color: #66B92E; }
+    .helpie-faq.dashboard .card.orange {
+      background-color: #DA932C; }
+    .helpie-faq.dashboard .card.red {
+      background-color: #D65B4A; }
+  .helpie-faq.dashboard .stat-card {
+    text-align: center;
+    color: #888; }
+    .helpie-faq.dashboard .stat-card .value {
+      color: #333; }
+  .helpie-faq.dashboard .stat-icon {
+    border-radius: 25px;
+    background: #E5F3FE;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px; }
+    .helpie-faq.dashboard .stat-icon i {
+      color: #1584FB;
+      font-size: 18px;
+      margin-top: 3px;
+      margin-left: 3px; }
+
+.helpie-faq.dashboard .stat-card .value {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0 10px; }
+
+.helpie-faq.dashboard .stat-card.click .title {
+  color: #D0459A; }
+
+.helpie-faq.dashboard .stat-card.click .stat-icon {
+  background: #f9e8f2; }
+
+.helpie-faq.dashboard .stat-card.click .stat-icon i {
+  color: #D0459A; }
+
+.helpie-faq.dashboard .stat-card.search .title {
+  color: #F5B437; }
+
+.helpie-faq.dashboard .stat-card.search .stat-icon {
+  background: #fcebc9; }
+
+.helpie-faq.dashboard .stat-card.search .stat-icon i {
+  color: #F5B437; }
+
+/* Frequent List Card */
+.helpie-faq.dashboard .most-frequent .card {
+  font-size: 14px;
+  color: #666; }
+  .helpie-faq.dashboard .most-frequent .card .label, .helpie-faq.dashboard .most-frequent .card .value {
+    margin: 10px; }
+  .helpie-faq.dashboard .most-frequent .card .label {
+    flex-grow: 1;
+    text-transform: capitalize; }
+  .helpie-faq.dashboard .most-frequent .card .card-title {
+    text-align: center;
+    color: #666;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    text-transform: capitalize; }
+  .helpie-faq.dashboard .most-frequent .card.click .card-title {
+    color: #D0459A; }
+  .helpie-faq.dashboard .most-frequent .card.search .card-title {
+    color: #F5B437; }
+
+.helpie-faq.dashboard p.submit {
+  text-align: right;
+  padding: 20px; }
+  .helpie-faq.dashboard p.submit .delete {
+    background: #FB4A46;
+    color: white;
+    border-color: #FB4A46; }
+
+.helpie-faq.dashboard section#content-tease {
+  display: block !important;
+  padding: 20px;
+  border-top: 3px solid #abc; }
+  .helpie-faq.dashboard section#content-tease .helpie-notice.notice-success {
+    margin: 8px 0px !important; }
+  .helpie-faq.dashboard section#content-tease img {
+    width: 100%; }
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+  stroke: #D0459A; }
+
+.ct-series-a .ct-area {
+  fill: #D0459A; }
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+  stroke: #F5B437; }
+
+.ct-series-b .ct-area {
+  fill: #F5B437; }
+
+.mfp-bg {
+  background: #23282d !important; }
+
+.mfp-hide {
+  display: none !important; }
+
+.hfaq-popup-modal {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto; }
+  .hfaq-popup-modal .popup-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #f1f1f1; }
+  .hfaq-popup-modal .popup-content {
+    display: flex;
+    padding: 5px 10px; }
+    .hfaq-popup-modal .popup-content a .popup-image {
+      width: 64px;
+      height: 64px; }
+    .hfaq-popup-modal .popup-content .popup-content-wrapper {
+      padding: 0 10px; }
+      .hfaq-popup-modal .popup-content .popup-content-wrapper p {
+        margin: 0px 0px 5px 0; }
+
+.helpie-faq-groups {
+  width: 100% !important; }
+
+.hfaq-full-width {
+  width: 100% !important; }
+
+.helpie-faq-group {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background: #ebebeb; }
+  .helpie-faq-group .shorcode-content {
+    font-size: 12px; }
+  .helpie-faq-group .clipboard {
+    margin-left: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    color: #364656; }
+
+body.taxonomy-helpie_faq_group #wpcontent {
+  padding: 0px; }
+  body.taxonomy-helpie_faq_group #wpcontent .wrap {
+    margin: 0px; }
+    body.taxonomy-helpie_faq_group #wpcontent .wrap h1 {
+      display: block;
+      background: #364656;
+      color: #fff;
+      padding: 15px;
+      margin: 0px; }
+      body.taxonomy-helpie_faq_group #wpcontent .wrap h1::after {
+        content: ' ';
+        display: block;
+        width: 5%;
+        margin-top: 2px;
+        background: #00AEDA;
+        border: 1px solid #00AEDA;
+        border-radius: 50px; }
+    body.taxonomy-helpie_faq_group #wpcontent .wrap .hfaq-group__add--link {
+      color: #364656;
+      border: 1px solid #364656;
+      margin-left: 10px; }
+      body.taxonomy-helpie_faq_group #wpcontent .wrap .hfaq-group__add--link:hover {
+        color: #364656; }
+    body.taxonomy-helpie_faq_group #wpcontent .wrap form {
+      padding: 0px; }
+      body.taxonomy-helpie_faq_group #wpcontent .wrap form table.form-table {
+        margin: 0px;
+        background: #F4F8FA;
+        border-collapse: separate;
+        padding: 5px 15px; }
+        body.taxonomy-helpie_faq_group #wpcontent .wrap form table.form-table tr.form-field td {
+          padding: 10px 5px; }
+      body.taxonomy-helpie_faq_group #wpcontent .wrap form .edit-tag-actions {
+        padding-left: 15px; }
+
+.helpie-faq-groups-table .term-shortcode-wrap .shortcode-clipboard-field {
+  position: relative; }
+  .helpie-faq-groups-table .term-shortcode-wrap .shortcode-clipboard-field input[id="faq-group-shortcode"] {
+    width: 100%;
+    border: none; }
+  .helpie-faq-groups-table .term-shortcode-wrap .shortcode-clipboard-field #faq-group-shortcode:read-only {
+    background: #E2EEF3;
+    margin: 0px;
+    border-radius: 0px; }
+  .helpie-faq-groups-table .term-shortcode-wrap .shortcode-clipboard-field .clipboard-text {
+    position: absolute;
+    cursor: pointer;
+    padding: 0 8px;
+    line-height: 2;
+    min-height: 30px;
+    color: #fff;
+    background: #007cba;
+    border-color: #007cba;
+    right: 0px;
+    top: 0px; }
+
+.hfaq-groups-container {
+  max-width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 15px; }
+  .hfaq-groups-container .hfaq-groups__repeaters .csf-repeater-wrapper .csf-repeater-item {
+    border: 1px solid #F2F2F2; }
+    .hfaq-groups-container .hfaq-groups__repeaters .csf-repeater-wrapper .csf-repeater-item .csf-repeater-helper {
+      background: #fff;
+      border-left: 0px; }
+  .hfaq-groups-container .hfaq-groups__repeaters .hfaq-groups__accordion .csf-accordion-title {
+    background: #fff;
+    border: 0px;
+    box-shadow: none; }
+  .hfaq-groups-container .hfaq-groups__repeaters .hfaq-groups__accordion .csf-accordion-open {
+    background: #fcfcfc;
+    border: 0px; }
+    .hfaq-groups-container .hfaq-groups__repeaters .hfaq-groups__accordion .csf-accordion-open .csf-field {
+      border: 0px; }
+
+.hfaq-group-page.hfaq-full-width#col-left .col-wrap {
+  padding: 0px; }
+
+.hfaq-group-page.hfaq-full-width#col-left .form-wrap h2 {
+  display: none; }
+
+.hfaq-group-page.hfaq-full-width#col-left .form-wrap .form-field {
+  margin: 0px;
+  background: #F4F8FA;
+  border-collapse: separate;
+  padding: 5px 15px; }
+
+.hfaq-group-page.hfaq-full-width#col-left .form-wrap p.submit {
+  padding-left: 15px; }
+
+.helpie_woo_metabox .form-table th,
+.helpie_woo_metabox .form-table td {
+  float: left;
+  width: 100%; }
+
+.helpie_woo_metabox .form-table th {
+  display: none; }
+
+.helpie-notice .success-button {
+  background: #5cb85c;
+  border-color: #5cb85c;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 0 #5cb85c;
+  color: #fff;
+  text-shadow: 0 -1px 1px #5cb85c, 1px 0 1px #5cb85c, 0 1px 1px #5cb85c, -1px 0 1px #5cb85c;
+  display: inline-block;
+  text-decoration: none !important;
+  padding: 5px 20px; }
+
+.wp-pointer-content img {
+  width: 100%; }
+
+.helpie-disabled {
+  cursor: pointer; }
+  .helpie-disabled .csf-fieldset .csf--switcher {
+    opacity: 0.3; }
+
+.hfaq-csf-mock-data-wrapper .csf-fieldset .csf--image-group .csf--image img {
+  width: 100%; }
+
+.csf-field.helpie-display-none {
+  display: none; }
+
+
+/*# sourceMappingURL=admin.bundle.css.map*/

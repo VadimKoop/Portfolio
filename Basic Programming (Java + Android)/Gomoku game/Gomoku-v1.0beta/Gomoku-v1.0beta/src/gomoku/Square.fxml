@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.Pane?>
+
+<fx:root fx:id="root" onMouseClicked="#makeMove" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<styleClass>
+		<String fx:value="board-square" />
+	</styleClass>
+   <children>
+      <Circle fx:id="circle" layoutX="25.0" layoutY="25.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</fx:root>

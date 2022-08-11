@@ -1,0 +1,59 @@
+2021-04-04T12:01:22+00:00 CRITICAL Uncaught Error: Call to a member function set_customer_session_cookie() on null in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php:51
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-settings.php(528): include()
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-config.php(79): require_once('/data01/virt101...')
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-load.php(37): require_once('/data01/virt101...')
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-cron.php(44): require_once('/data01/virt101...')
+#4 {main}
+  thrown failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php real 51
+
+2021-04-04T12:01:42+00:00 CRITICAL Uncaught Error: Call to a member function set_customer_session_cookie() on null in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php:51
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-settings.php(528): include()
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-config.php(79): require_once('/data01/virt101...')
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-load.php(37): require_once('/data01/virt101...')
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-blog-header.php(13): require_once('/data01/virt101...')
+#4 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/index.php(17): require('/data01/virt101...')
+#5 {main}
+  thrown в /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php на строке 51
+
+2021-04-04T12:01:42+00:00 CRITICAL Uncaught Error: Call to a member function set_customer_session_cookie() on null in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php:51
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-settings.php(528): include()
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-config.php(79): require_once('/data01/virt101...')
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-load.php(37): require_once('/data01/virt101...')
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-blog-header.php(13): require_once('/data01/virt101...')
+#4 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/index.php(17): require('/data01/virt101...')
+#5 {main}
+  thrown failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php real 51
+
+2021-04-04T12:01:45+00:00 CRITICAL Uncaught Error: Call to a member function set_customer_session_cookie() on null in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php:51
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-settings.php(528): include()
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-config.php(79): require_once('/data01/virt101...')
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-load.php(37): require_once('/data01/virt101...')
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-blog-header.php(13): require_once('/data01/virt101...')
+#4 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/index.php(17): require('/data01/virt101...')
+#5 {main}
+  thrown в /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php на строке 51
+
+2021-04-04T12:01:49+00:00 CRITICAL Uncaught Error: Call to a member function set_customer_session_cookie() on null in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php:51
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-settings.php(528): include()
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-config.php(79): require_once('/data01/virt101...')
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-load.php(37): require_once('/data01/virt101...')
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-blog-header.php(13): require_once('/data01/virt101...')
+#4 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/index.php(17): require('/data01/virt101...')
+#5 {main}
+  thrown failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php real 51
+
+2021-04-04T12:01:51+00:00 CRITICAL Uncaught Error: Call to a member function set_customer_session_cookie() on null in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php:51
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-settings.php(528): include()
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-config.php(79): require_once('/data01/virt101...')
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-load.php(37): require_once('/data01/virt101...')
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-blog-header.php(13): require_once('/data01/virt101...')
+#4 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/index.php(17): require('/data01/virt101...')
+#5 {main}
+  thrown failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/themes/woostify/functions.php real 51
+

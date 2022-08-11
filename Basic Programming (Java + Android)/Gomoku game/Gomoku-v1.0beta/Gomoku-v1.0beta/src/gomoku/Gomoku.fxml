@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox>
+         <children>
+            <HBox prefHeight="30.0" spacing="10.0">
+               <children>
+                  <ChoiceBox fx:id="playerWChoiceBox" prefWidth="150.0" />
+                  <ChoiceBox fx:id="playerBChoiceBox" prefWidth="150.0" />
+                  <Button onAction="#newGame" text="New Game" />
+                  <Button onAction="#newGame20" text="New Game (20x20)" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <HBox fx:id="replayHBox" prefHeight="30.0" prefWidth="250.0" visible="false">
+                     <children>
+                        <Label minWidth="100.0" text="Replay">
+                        </Label>
+                        <Button minWidth="40.0" mnemonicParsing="false" onAction="#firstMove" text="&lt;&lt;" />
+                        <Button minWidth="30.0" mnemonicParsing="false" onAction="#previousMove" text="&lt;" />
+                        <Button minWidth="50.0" mnemonicParsing="false" onAction="#play" text="Play" />
+                        <Button minWidth="30.0" mnemonicParsing="false" onAction="#nextMove" text="&gt;" />
+                        <Button minWidth="40.0" mnemonicParsing="false" onAction="#lastMove" text="&gt;&gt;" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#loadReplay" text="Load replay" />
+                  <Button mnemonicParsing="false" onAction="#saveReplay" text="Save replay" visible="false" fx:id="saveReplay"/>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <GridPane fx:id="board">
+      </GridPane>
+   </center>
+   <bottom>
+      <AnchorPane>
+         <children>
+            <Label fx:id="statusLabel" AnchorPane.leftAnchor="0.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding></Label>
+            <Label fx:id="playerLabel" AnchorPane.rightAnchor="0.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding></Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

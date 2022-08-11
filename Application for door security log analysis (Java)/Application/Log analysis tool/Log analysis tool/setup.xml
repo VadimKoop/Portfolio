@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+
+    <timestampformats>
+        <timestampformat>M/d/yyyy h:mm:ss a</timestampformat>
+    </timestampformats>
+
+    <rulesets>
+        <ruleset name="ALERT" color="#ff6060">
+            <rule><![CDATA[^.+?\t(?<ts>.+?)\t\d+(\s)+(?<door>D\d+) (?<doorinfo>.+?) DOTL timer \(.+?\) Off by Aux Timer$]]></rule>
+            <rule><![CDATA[^(?<ts>.+?(A|P)M).+?\s+Nr\.(?<doorinfo>.+?)\s+\((?<door>D\d+)\)\s+v.+?s kaart\!+\s+(?<cardinfo>.+?)\s+kaart nr\:\s+(?<card>\d+)\s+$]]></rule>
+        </ruleset>
+        
+        <ruleset name="BUTTON" color="#a0d0d0">
+            <rule><![CDATA[^(?<ts>.+?(A|P)M).+?\s+Nr\.(?<doorinfo>.+?)\s+\((?<door>D\d+)\)\s+Uks avati nupust.+?$]]></rule>
+        </ruleset>
+
+        <ruleset name="DENIED" color="#ffc0c0">
+            <rule><![CDATA[^.+?\t(?<ts>.+?)\t\d+\t(?<cardinfo>.+?) \((?<card>U\d+)\) Card Denied in (?<doorinfo>.+?) \((?<door>D\d+)\) \-.+?$]]></rule>
+            <rule><![CDATA[^(?<ts>.+?(A|P)M).+?\s+Isik id\: (?<card>\d+) (?<cardinfo>.+?) Sisse\s+(?<doorinfo>.+?) \((?<door>D\d+)\) Pole ukse .+? luba\s+$]]></rule>
+        </ruleset>
+        
+        <ruleset name="ACCESS" color="#a0ffa0">
+            <rule><![CDATA[^.+?\t(?<ts>.+?)\t\d+\t(?<cardinfo>.+?) \((?<card>U\d+)\) Card Access in (?<doorinfo>.+?) \((?<door>D\d+)\)$]]></rule>
+            <rule><![CDATA[^(?<ts>.+?(A|P)M).+?\sIsik id\: (?<card>\d+) (?<cardinfo>.+?) Sisse\s+(?<doorinfo>.+?) \((?<door>D\d+)\) Lubatud\s+$]]></rule>
+        </ruleset>
+    </rulesets>
+</config>

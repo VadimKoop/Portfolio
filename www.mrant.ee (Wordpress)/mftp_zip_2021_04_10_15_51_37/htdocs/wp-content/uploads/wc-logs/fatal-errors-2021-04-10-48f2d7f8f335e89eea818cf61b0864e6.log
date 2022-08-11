@@ -1,0 +1,49 @@
+2021-04-10T06:03:59+00:00 CRITICAL Uncaught Error: Call to private method WPML_Query_Parser::is_permalink_part_of_request() from context 'WPML\ST\DisplayAsTranslated\CheckRedirect' in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php:35
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(15): WPML\ST\DisplayAsTranslated\CheckRedirect::checkForSlugTranslation('https://mr-ant....', 2612, Object(WP_Query))
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(165): WPML\FP\{closure}(Array)
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(205): WPML\FP\Right->map(Object(Closure))
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\ failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php real 35
+
+2021-04-10T06:08:59+00:00 CRITICAL Uncaught Error: Call to private method WPML_Query_Parser::is_permalink_part_of_request() from context 'WPML\ST\DisplayAsTranslated\CheckRedirect' in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php:35
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(15): WPML\ST\DisplayAsTranslated\CheckRedirect::checkForSlugTranslation('https://mr-ant....', 2644, Object(WP_Query))
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(165): WPML\FP\{closure}(Array)
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(205): WPML\FP\Right->map(Object(Closure))
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\ failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php real 35
+
+2021-04-10T06:27:37+00:00 CRITICAL Uncaught Error: Call to private method WPML_Query_Parser::is_permalink_part_of_request() from context 'WPML\ST\DisplayAsTranslated\CheckRedirect' in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php:35
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(15): WPML\ST\DisplayAsTranslated\CheckRedirect::checkForSlugTranslation('https://mr-ant....', 2626, Object(WP_Query))
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(165): WPML\FP\{closure}(Array)
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(205): WPML\FP\Right->map(Object(Closure))
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\ failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php real 35
+
+2021-04-10T06:43:52+00:00 CRITICAL Uncaught Error: Call to private method WPML_Query_Parser::is_permalink_part_of_request() from context 'WPML\ST\DisplayAsTranslated\CheckRedirect' in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php:35
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(15): WPML\ST\DisplayAsTranslated\CheckRedirect::checkForSlugTranslation('https://mr-ant....', 2619, Object(WP_Query))
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(165): WPML\FP\{closure}(Array)
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(205): WPML\FP\Right->map(Object(Closure))
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\ failis /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php real 35
+
+2021-04-10T07:55:47+00:00 CRITICAL Uncaught Error: Call to private method WPML_Query_Parser::is_permalink_part_of_request() from context 'WPML\ST\DisplayAsTranslated\CheckRedirect' in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php:35
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(15): WPML\ST\DisplayAsTranslated\CheckRedirect::checkForSlugTranslation('https://mr-ant....', 3584, Object(WP_Query))
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(165): WPML\FP\{closure}(Array)
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(205): WPML\FP\Right->map(Object(Closure))
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\ в /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php на строке 35
+
+2021-04-10T08:06:32+00:00 CRITICAL Uncaught Error: Call to private method WPML_Query_Parser::is_permalink_part_of_request() from context 'WPML\ST\DisplayAsTranslated\CheckRedirect' in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php:35
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(15): WPML\ST\DisplayAsTranslated\CheckRedirect::checkForSlugTranslation('https://mr-ant....', 3577, Object(WP_Query))
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(165): WPML\FP\{closure}(Array)
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(205): WPML\FP\Right->map(Object(Closure))
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\ в /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php на строке 35
+
+2021-04-10T08:10:11+00:00 CRITICAL Uncaught Error: Call to private method WPML_Query_Parser::is_permalink_part_of_request() from context 'WPML\ST\DisplayAsTranslated\CheckRedirect' in /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php:35
+Stack trace:
+#0 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(15): WPML\ST\DisplayAsTranslated\CheckRedirect::checkForSlugTranslation('https://mr-ant....', 3591, Object(WP_Query))
+#1 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(165): WPML\FP\{closure}(Array)
+#2 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(205): WPML\FP\Right->map(Object(Closure))
+#3 /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\ в /data01/virt101227/domeenid/www.mr-ant.ee/htdocs/wp-content/plugins/wpml-string-translation/classes/slug-translation/CheckRedirect.php на строке 35
+

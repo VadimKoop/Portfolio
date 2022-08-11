@@ -1,0 +1,116 @@
+.sticky-add-to-cart-section {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transition-duration: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.sticky-add-to-cart-section.from-top {
+  border-bottom: 1px solid #efeaea;
+  top: 0;
+  transform: translateY(-100%);
+}
+
+@media (min-width: 601px) {
+  .logged-in.admin-bar .sticky-add-to-cart-section.from-top {
+    top: 46px;
+  }
+}
+
+@media (min-width: 783px) {
+  .logged-in.admin-bar .sticky-add-to-cart-section.from-top {
+    top: 32px;
+  }
+}
+
+.sticky-add-to-cart-section.from-bottom {
+  border-top: 1px solid #efeaea;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.sticky-add-to-cart-section.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.sticky-add-to-cart-section .woostify-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.sticky-add-to-cart-section .woostify-container:after {
+  content: none;
+}
+
+@media (max-width: 767px) {
+  .sticky-add-to-cart-section .woostify-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.sticky-add-to-cart-section .sticky-atc-left,
+.sticky-add-to-cart-section .sticky-atc-right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.sticky-add-to-cart-section .sticky-atc-right {
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.sticky-add-to-cart-section .sticky-atc-right {
+  justify-content: flex-end;
+}
+
+.sticky-add-to-cart-section .sticky-atc-image {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .sticky-add-to-cart-section .sticky-atc-image {
+    display: none;
+  }
+}
+
+.sticky-add-to-cart-section .sticky-atc-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  display: inline-flex;
+}
+
+.sticky-add-to-cart-section .sticky-atc-price {
+  margin: 0 15px;
+}
+
+.sticky-add-to-cart-section .sticky-atc-price del + ins {
+  margin-left: 7px;
+}
+
+.sticky-add-to-cart-section .sticky-atc-button.disabled {
+  pointer-events: auto;
+}
+
+.sticky-add-to-cart-section.outofstock .sticky-atc-button {
+  pointer-events: none;
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.sticky-add-to-cart-section img {
+  max-height: 65px;
+  width: auto;
+  object-fit: cover;
+}

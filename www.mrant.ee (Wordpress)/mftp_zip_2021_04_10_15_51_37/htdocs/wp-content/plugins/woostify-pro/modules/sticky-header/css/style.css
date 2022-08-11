@@ -1,0 +1,70 @@
+.has-sticky-header .site-header-inner {
+  transition: background-color 0.3s ease;
+}
+
+.has-sticky-header .site-header-inner.fixed {
+  position: static;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .has-sticky-header.sticky-header-for-desktop .site-header-inner.fixed {
+    position: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  .has-sticky-header.sticky-header-for-mobile .site-header-inner.fixed {
+    position: fixed;
+  }
+}
+
+.has-sticky-header.sticky-header-for-all-devices .site-header-inner.fixed {
+  position: fixed;
+}
+
+@media (min-width: 992px) {
+  .has-sticky-header .site-header.has-navigation-box .navigation-box-inner {
+    transition-duration: 0.15s;
+    position: static;
+    border-bottom: 1px solid transparent;
+  }
+  .has-sticky-header .site-header.has-navigation-box .navigation-box-inner.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 992px) and (min-width: 783px) {
+  .has-sticky-header.logged-in.admin-bar .site-header.has-navigation-box .navigation-box-inner.fixed {
+    top: 32px;
+  }
+}
+
+@media (min-width: 992px) and (min-width: 601px) and (max-width: 782px) {
+  .has-sticky-header.logged-in.admin-bar .site-header.has-navigation-box .navigation-box-inner.fixed {
+    top: 46px;
+  }
+}
+
+@media (min-width: 783px) {
+  .has-sticky-header.logged-in.admin-bar .site-header-inner.fixed {
+    top: 32px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 782px) {
+  .has-sticky-header.logged-in.admin-bar .site-header-inner.fixed {
+    top: 46px;
+  }
+}
+
+.cart-sidebar-open .has-sticky-header.logged-in.admin-bar .site-header-inner.fixed {
+  position: static !important;
+}

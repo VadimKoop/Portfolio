@@ -1,0 +1,138 @@
+.size-guide-open {
+  overflow-y: hidden;
+}
+
+.size-guide-open .woostify-size-guide-close-button.active,
+.size-guide-open .woostify-size-guide-table.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.size-guide-open .woostify-size-guide-table.active .woostify-size-guide-table-inner {
+  transform: translateY(0);
+}
+
+.woostify-size-guide-table {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  opacity: 0;
+  overflow-y: auto;
+  visibility: hidden;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logged-in.admin-bar .woostify-size-guide-table {
+  top: 46px;
+}
+
+@media (min-width: 601px) {
+  .logged-in.admin-bar .woostify-size-guide-table {
+    top: 46px;
+  }
+}
+
+@media (min-width: 783px) {
+  .logged-in.admin-bar .woostify-size-guide-table {
+    top: 32px;
+  }
+}
+
+.woostify-size-guide-table-inner {
+  width: 100%;
+  max-width: 800px;
+  max-height: 80%;
+  overflow-y: auto;
+  background-color: #fff;
+  margin-left: 15px;
+  margin-right: 15px;
+  transform: translateY(30px);
+  transition-duration: 0.3s;
+}
+
+.woostify-size-guide-button {
+  transition-duration: 0.3s;
+  padding: 0;
+  line-height: 2em;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.15em;
+}
+
+.woostify-size-guide-button:before {
+  margin-right: 7px;
+}
+
+.woostify-size-guide-button:hover {
+  opacity: 0.8;
+}
+
+.woostify-size-guide-close-button {
+  position: fixed;
+  border-radius: 50%;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  top: 30px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100px);
+  transition-duration: 0.3s;
+  color: #000;
+  border-color: #000;
+  background-color: #fff;
+}
+
+.logged-in.admin-bar .woostify-size-guide-close-button {
+  top: 76px;
+}
+
+@media (min-width: 601px) {
+  .logged-in.admin-bar .woostify-size-guide-close-button {
+    top: 76px;
+  }
+}
+
+@media (min-width: 783px) {
+  .logged-in.admin-bar .woostify-size-guide-close-button {
+    top: 62px;
+  }
+}
+
+.woostify-size-guide-close-button:hover {
+  border-color: #f00;
+  color: #f00;
+}
+
+.woostify-size-guide-table table,
+.single-size_guide table {
+  width: 100%;
+  border: 0;
+}
+
+.woostify-size-guide-table table td,
+.single-size_guide table td {
+  border: 0;
+  padding: 10px 15px;
+}
+
+.woostify-size-guide-table table tr,
+.single-size_guide table tr {
+  border: 0;
+}
+
+.woostify-size-guide-table table tr:nth-child(odd),
+.single-size_guide table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

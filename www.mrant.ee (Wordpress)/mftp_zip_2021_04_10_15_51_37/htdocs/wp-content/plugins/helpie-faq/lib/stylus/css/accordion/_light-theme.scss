@@ -1,0 +1,20 @@
+.accordion {
+    border-color: #F2F2F2;
+}
+
+// Panel
+.accordion__body {
+    background: #FCFCFC; // border-left: solid 2px $third-color;
+}
+
+// Control
+.accordion__header {
+    background: #FFFFFF;
+    border-color: #F2F2F2;
+}
+
+// Icon
+.accordion__header:before,
+.accordion__header:after {
+    background: #44596B;
+}

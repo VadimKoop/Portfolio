@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="934ba5dd-f2e1-4ef2-ba55-6964cbd5ea86" activeEnvironment="Default" name="VehicleLoanService" resourceRoot="" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="b350496d-11e9-4c85-8bd7-c84037169f20" wsaVersion="NONE" name="LoanBinding" type="wsdl" bindingName="{http://www.ttu.ee/idu0075/2016/ws/142676/vadim}LoanBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/VADIM/Desktop/Vadim%20Zlobin(142676)%20VihicleService/VehicleLoanService.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\VADIM\Desktop\Vadim%20Zlobin(142676)%20VihicleService\VehicleLoanService.wsdl"><con:part><con:url>file:\C:\Users\VADIM\Desktop\Vadim%20Zlobin(142676)%20VihicleService\VehicleLoanService.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.ttu.ee/idu0075/2016/ws/142676/vadim" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://www.ttu.ee/idu0075/2016/ws/142676/vadim" elementFormDefault="qualified">
+      <!--Types of Fields-->
+      <xs:simpleType name="NameType">
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="QuantityType">
+        <xs:restriction base="xs:integer">
+          <xs:minExclusive value="0"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="PriceType">
+        <xs:restriction base="xs:decimal">
+          <xs:minInclusive value="0"/>
+          <xs:fractionDigits value="2"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:simpleType name="TransportType">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Bicycle"/>
+          <xs:enumeration value="Moped"/>
+          <xs:enumeration value="Motorcycle"/>
+          <xs:enumeration value="Car"/>
+        </xs:restriction>
+      </xs:simpleType>
+      <!--Types of Fields-->
+      <xs:complexType name="VehicleType">
+        <xs:sequence>
+          <xs:element name="id" type="xs:integer"/>
+          <xs:element name="name" type="tns:NameType"/>
+          <xs:element name="type" type="tns:TransportType"/>
+          <xs:element name="color" type="xs:string"/>
+          <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="LoanVehicleType">
+        <xs:sequence>
+          <xs:element name="vehicle" type="tns:VehicleType"/>
+          <xs:element name="quantity" type="tns:QuantityType"/>
+          <xs:element name="unitPrice" type="tns:PriceType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="LoanType">
+        <xs:sequence>
+          <xs:element name="id" type="xs:integer"/>
+          <xs:element name="customerName" type="tns:NameType"/>
+          <xs:element name="orderDate" type="xs:date"/>
+          <xs:element name="returnDate" type="xs:date"/>
+          <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+          <xs:element name="vehicles" type="tns:LoanVehicleListType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <!--Lists of Objects-->
+      <xs:complexType name="VehicleListType">
+        <xs:sequence>
+          <xs:element name="vehicle" type="tns:VehicleType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="LoanVehicleListType">
+        <xs:sequence>
+          <xs:element name="vehicle" type="tns:LoanVehicleType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="LoanListType">
+        <xs:sequence>
+          <xs:element name="loan" type="tns:LoanType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <!--Operations-->
+      <!--getVehicle-->
+      <xs:element name="getVehicleRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="id" type="xs:integer"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getVehicleResponse" type="tns:VehicleType"/>
+      <!--addVehicle-->
+      <xs:element name="addVehicleRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="operationId" type="xs:string"/>
+            <!--Copy all fields VehicleType except ID-->
+            <xs:element name="name" type="tns:NameType"/>
+            <xs:element name="type" type="tns:TransportType"/>
+            <xs:element name="color" type="xs:string"/>
+            <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addVehicleResponse" type="tns:VehicleType"/>
+      <!--getVehicleList-->
+      <xs:element name="getVehicleListRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="type" type="tns:TransportType" minOccurs="0" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getVehicleListResponse" type="tns:VehicleListType"/>
+      <!--getLoan-->
+      <xs:element name="getLoanRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="id" type="xs:integer"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getLoanResponse" type="tns:LoanType"/>
+      <!--addLoan-->
+      <xs:element name="addLoanRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="operationId" type="xs:string"/>
+            <!--Copy all fields LoanType except ID and vehicles-->
+            <xs:element name="customerName" type="tns:NameType"/>
+            <xs:element name="orderDate" type="xs:date"/>
+            <xs:element name="returnDate" type="xs:date"/>
+            <xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addLoanResponse" type="tns:LoanType"/>
+      <!--getLoanList-->
+      <xs:element name="getLoanListRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="startOrderDate" type="xs:date"/>
+            <xs:element name="endOrderDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="hasRelatedVehicles">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="Yes|No"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getLoanListResponse" type="tns:LoanListType"/>
+      <!--getLoanVehicleList-->
+      <xs:element name="getLoanVehicleListRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="id" type="xs:integer"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getLoanVehicleListResponse" type="tns:LoanVehicleListType"/>
+      <!--addVehicleToLoan-->
+      <xs:element name="addVehicleToLoanRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+            <xs:element name="operationId" type="xs:string"/>
+            <xs:element name="loanId" type="xs:integer"/>
+            <xs:element name="vehicleId" type="xs:integer"/>
+            <xs:element name="quantity" type="tns:QuantityType"/>
+            <xs:element name="unitPrice" type="tns:PriceType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addVehicleToLoanResponse" type="tns:LoanVehicleType"/>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getVehicleMessageRequest">
+    <wsdl:part name="parameter" element="tns:getVehicleRequest"/>
+  </wsdl:message>
+  <wsdl:message name="getVehicleMessageResponse">
+    <wsdl:part name="parameter" element="tns:getVehicleResponse"/>
+  </wsdl:message>
+  <wsdl:message name="addVehicleMessageRequest">
+    <wsdl:part name="parameter" element="tns:addVehicleRequest"/>
+  </wsdl:message>
+  <wsdl:message name="addVehicleMessageResponse">
+    <wsdl:part name="parameter" element="tns:addVehicleResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getVehicleListMessageRequest">
+    <wsdl:part name="parameter" element="tns:getVehicleListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="getVehicleListMessageResponse">
+    <wsdl:part name="parameter" element="tns:getVehicleListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getLoanMessageRequest">
+    <wsdl:part name="parameter" element="tns:getLoanRequest"/>
+  </wsdl:message>
+  <wsdl:message name="getLoanMessageResponse">
+    <wsdl:part name="parameter" element="tns:getLoanResponse"/>
+  </wsdl:message>
+  <wsdl:message name="addLoanMessageRequest">
+    <wsdl:part name="parameter" element="tns:addLoanRequest"/>
+  </wsdl:message>
+  <wsdl:message name="addLoanMessageResponse">
+    <wsdl:part name="parameter" element="tns:addLoanResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getLoanListMessageRequest">
+    <wsdl:part name="parameter" element="tns:getLoanListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="getLoanListMessageResponse">
+    <wsdl:part name="parameter" element="tns:getLoanListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getLoanVehicleListMessageRequest">
+    <wsdl:part name="parameter" element="tns:getLoanVehicleListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="getLoanVehicleListMessageResponse">
+    <wsdl:part name="parameter" element="tns:getLoanVehicleListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="addVehicleToLoanMessageRequest">
+    <wsdl:part name="parameter" element="tns:addVehicleToLoanRequest"/>
+  </wsdl:message>
+  <wsdl:message name="addVehicleToLoanMessageResponse">
+    <wsdl:part name="parameter" element="tns:addVehicleToLoanResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="LoanPortType">
+    <wsdl:operation name="getVehicle">
+      <wsdl:input message="tns:getVehicleMessageRequest"/>
+      <wsdl:output message="tns:getVehicleMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="addVehicle">
+      <wsdl:input message="tns:addVehicleMessageRequest"/>
+      <wsdl:output message="tns:addVehicleMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getVehicleList">
+      <wsdl:input message="tns:getVehicleListMessageRequest"/>
+      <wsdl:output message="tns:getVehicleListMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getLoan">
+      <wsdl:input message="tns:getLoanMessageRequest"/>
+      <wsdl:output message="tns:getLoanMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="addLoan">
+      <wsdl:input message="tns:addLoanMessageRequest"/>
+      <wsdl:output message="tns:addLoanMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getLoanList">
+      <wsdl:input message="tns:getLoanListMessageRequest"/>
+      <wsdl:output message="tns:getLoanListMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getLoanVehicleList">
+      <wsdl:input message="tns:getLoanVehicleListMessageRequest"/>
+      <wsdl:output message="tns:getLoanVehicleListMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="addVehicleToLoan">
+      <wsdl:input message="tns:addVehicleToLoanMessageRequest"/>
+      <wsdl:output message="tns:addVehicleToLoanMessageResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoanBinding" type="tns:LoanPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getVehicle">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addVehicle">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVehicleList">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLoan">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addLoan">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLoanList">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLoanVehicleList">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addVehicleToLoan">
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VehicleLoanService">
+    <wsdl:port name="LoanPort" binding="tns:LoanBinding">
+      <soap:address location="Empty"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>Empty</con:endpoint></con:endpoints><con:operation id="1d209997-8371-46c4-b1d8-6cdd24aa4d5a" isOneWay="false" action="" name="addLoan" bindingOperationName="addLoan" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="18b735e3-70ad-45fa-99c1-b50cf58547eb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:addLoanRequest>\r
+         <vad:token>?</vad:token>\r
+         <vad:operationId>?</vad:operationId>\r
+         <vad:customerName>?</vad:customerName>\r
+         <vad:orderDate>?</vad:orderDate>\r
+         <vad:returnDate>?</vad:returnDate>\r
+         <!--Optional:-->\r
+         <vad:comment>?</vad:comment>\r
+      </vad:addLoanRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/addLoanRequest"/></con:call></con:operation><con:operation id="4b337716-d826-46c8-b590-cf2dbf3c04c1" isOneWay="false" action="" name="addVehicle" bindingOperationName="addVehicle" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8aec6387-bd78-4938-9438-3bcab470a9b5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:addVehicleRequest>\r
+         <vad:token>?</vad:token>\r
+         <vad:operationId>?</vad:operationId>\r
+         <vad:name>?</vad:name>\r
+         <vad:type>?</vad:type>\r
+         <vad:color>?</vad:color>\r
+         <!--Optional:-->\r
+         <vad:comment>?</vad:comment>\r
+      </vad:addVehicleRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/addVehicleRequest"/></con:call></con:operation><con:operation id="fb86fec0-7d4a-4a83-9d0c-0b5513e42770" isOneWay="false" action="" name="addVehicleToLoan" bindingOperationName="addVehicleToLoan" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="65e705ab-b3ab-49dd-a9cc-ae8cffde2239" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:addVehicleToLoanRequest>\r
+         <vad:token>?</vad:token>\r
+         <vad:operationId>?</vad:operationId>\r
+         <vad:loanId>?</vad:loanId>\r
+         <vad:vehicleId>?</vad:vehicleId>\r
+         <vad:quantity>?</vad:quantity>\r
+         <vad:unitPrice>?</vad:unitPrice>\r
+      </vad:addVehicleToLoanRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/addVehicleToLoanRequest"/></con:call></con:operation><con:operation id="6b03a811-99f3-49fd-b577-def44d4dd7c2" isOneWay="false" action="" name="getLoan" bindingOperationName="getLoan" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f42b4b24-2c25-41b2-b1db-56345231c700" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:getLoanRequest>\r
+         <vad:token>?</vad:token>\r
+         <vad:id>?</vad:id>\r
+      </vad:getLoanRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/getLoanRequest"/></con:call></con:operation><con:operation id="13f2394c-ace3-4f1b-9d88-64d088eb4c05" isOneWay="false" action="" name="getLoanList" bindingOperationName="getLoanList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e945fa83-9183-4430-9cfc-4b57e67392e8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:getLoanListRequest>\r
+         <vad:token>?</vad:token>\r
+         <vad:startOrderDate>?</vad:startOrderDate>\r
+         <vad:endOrderDate>?</vad:endOrderDate>\r
+         <!--Optional:-->\r
+         <vad:hasRelatedVehicles>?</vad:hasRelatedVehicles>\r
+      </vad:getLoanListRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/getLoanListRequest"/></con:call></con:operation><con:operation id="2462bd6b-e65f-434b-b281-eb09030c814e" isOneWay="false" action="" name="getLoanVehicleList" bindingOperationName="getLoanVehicleList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="af88694a-5d66-4e84-b0e5-e3099363adb6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:getLoanVehicleListRequest>\r
+         <vad:token>?</vad:token>\r
+         <vad:id>?</vad:id>\r
+      </vad:getLoanVehicleListRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/getLoanVehicleListRequest"/></con:call></con:operation><con:operation id="d152fdaf-899e-4322-98f7-27905c88109a" isOneWay="false" action="" name="getVehicle" bindingOperationName="getVehicle" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1d178a05-e500-405e-9107-4ab4083e9b3b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:getVehicleRequest>\r
+         <vad:token>?</vad:token>\r
+         <vad:id>?</vad:id>\r
+      </vad:getVehicleRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/getVehicleRequest"/></con:call></con:operation><con:operation id="db11db96-a379-4e4e-a53d-0eb9472e5216" isOneWay="false" action="" name="getVehicleList" bindingOperationName="getVehicleList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0d229e40-3e8a-4183-856a-760d1944e584" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>Empty</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vad="http://www.ttu.ee/idu0075/2016/ws/142676/vadim">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vad:getVehicleListRequest>\r
+         <vad:token>?</vad:token>\r
+         <!--Optional:-->\r
+         <vad:type>?</vad:type>\r
+      </vad:getVehicleListRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.ttu.ee/idu0075/2016/ws/142676/vadim/LoanPortType/getVehicleListRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>

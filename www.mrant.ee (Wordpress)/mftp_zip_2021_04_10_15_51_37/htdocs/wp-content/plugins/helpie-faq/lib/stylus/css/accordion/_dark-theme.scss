@@ -1,0 +1,25 @@
+    // Panel
+    .accordion__body {
+        background: #272727;
+        color: #FCFCFC;
+    }
+
+    // Control
+    .accordion__header {
+        background: #171717;
+        border-color: #444;
+        color: #FCFCFC;
+    }
+
+    .accordion__header:before,
+    .accordion__header:after {
+        background: #FCFCFC;
+    }
+
+    .form__section.dark {
+        background: #272727;
+
+        & label {
+            color: #FCFCFC;
+        }
+    }

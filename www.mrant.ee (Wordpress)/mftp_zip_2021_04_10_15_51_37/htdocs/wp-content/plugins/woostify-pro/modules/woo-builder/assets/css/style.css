@@ -1,0 +1,366 @@
+.elementor-editor-active .elementor-element .shop_table,
+.elementor-editor-preview .elementor-element .shop_table {
+  width: 100%;
+  margin: 0;
+}
+
+.elementor-widget-woostify-product-title .product_title {
+  margin-bottom: 0;
+}
+
+.elementor-widget-woostify-product-rating .woocommerce-product-rating {
+  margin-bottom: 0;
+}
+
+.elementor-widget-woostify-product-price .price {
+  margin-bottom: 0;
+}
+
+.elementor-widget-woostify-product-description .woocommerce-product-details__short-description {
+  padding: 0;
+}
+
+.elementor-widget-woostify-product-add-to-cart .variations-label-block .variations .label,
+.elementor-widget-woostify-product-add-to-cart .variations-label-block .variations label {
+  display: block;
+}
+
+.elementor-widget-woostify-product-add-to-cart .quantity {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  min-width: 170px;
+  min-height: 50px;
+}
+
+.elementor-widget-woostify-product-add-to-cart .quantity .qty {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.elementor-widget-woostify-product-add-to-cart .single_add_to_cart_button.button {
+  min-height: 50px;
+  height: auto;
+  max-width: 100%;
+}
+
+.elementor-widget-woostify-product-meta .product_meta {
+  margin-top: 0;
+}
+
+.elementor-widget-woostify-product-data-tabs .woocommerce-tabs {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.elementor-widget-woostify-product-data-tabs .woocommerce-tabs .woocommerce-Tabs-panel {
+  max-width: 100%;
+}
+
+.elementor-widget-woostify-product-data-tabs .woocommerce-tabs #commentform input[type="submit"] {
+  height: auto;
+  min-height: 50px;
+}
+
+@media (max-width: 719px) {
+  .elementor-widget-woostify-product-data-tabs .woocommerce-tabs .tabs li {
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .elementor-widget-woostify-product-data-tabs .woostify-product-data-tabs.with-heading-block .woocommerce-tabs .tabs li {
+    display: block;
+  }
+}
+
+.elementor-widget-container .related,
+.elementor-widget-container .up-sells {
+  border-top: 0;
+}
+
+.elementor-widget-woostify-product-related .related.products > h2 {
+  display: none;
+}
+
+.elementor-widget-woostify-product-upsell .up-sells.products > h2 {
+  display: none;
+}
+
+.elementor-widget-woostify-product-additional-information > .elementor-widget-container > h2 {
+  display: none;
+}
+
+.elementor-widget-woostify-product-additional-information .shop_attributes {
+  margin: 0;
+}
+
+.elementor-widget-woostify-my-account {
+  min-height: 1px;
+}
+
+.elementor-widget-woostify-my-account fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.elementor-widget-woostify-my-account .woocommerce-address-fields__field-wrapper select {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.elementor-widget-woostify-my-account .woostify-my-account-widget.head-inline .account-menu-item {
+  display: inline-flex;
+}
+
+.elementor-widget-woostify-my-account .position-left .woostify-my-account-tab-head,
+.elementor-widget-woostify-my-account .position-right .woostify-my-account-tab-head {
+  min-width: 200px;
+}
+
+.elementor-widget-woostify-my-account .position-left .woostify-my-account-tab-content,
+.elementor-widget-woostify-my-account .position-right .woostify-my-account-tab-content {
+  flex-grow: 1;
+}
+
+.elementor-widget-woostify-my-account .position-bottom {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.elementor-widget-woostify-my-account .position-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.elementor-widget-woostify-my-account .position-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.elementor-widget-woostify-my-account .woostify-my-account-tab-head {
+  margin-bottom: 15px;
+}
+
+.elementor-widget-woostify-my-account .account-menu-item {
+  margin: 0 10px;
+}
+
+.elementor-widget-woostify-my-account .account-menu-item-icon {
+  margin-right: 5px;
+}
+
+.elementor-widget-woostify-my-account .has-icon-right .account-menu-item-icon {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.elementor-widget-woostify-my-account .my-account-tab-content-item:not(.active) {
+  display: none;
+}
+
+.elementor-widget-woostify-cart-form .woocommerce-cart-form {
+  margin-bottom: 0;
+}
+
+@media (min-width: 767px) {
+  .elementor-widget-woostify-cart-form .woocommerce-cart-form .woocommerce-cart-form__contents .product-subtotal,
+  .elementor-widget-woostify-cart-form .woocommerce-cart-form .woocommerce-cart-form__contents .product-price {
+    min-width: auto;
+    white-space: nowrap;
+  }
+  .elementor-widget-woostify-cart-form .woocommerce-cart-form .woocommerce-cart-form__contents .product-name {
+    min-width: 100px;
+  }
+}
+
+.elementor-widget-woostify-cart-form .product-quantity .quantity {
+  background-color: transparent;
+}
+
+.elementor-widget-woostify-cart-form .woocommerce-cart-form__contents.show-heading thead {
+  display: table-header-group;
+}
+
+.elementor-widget-woostify-cart-form .woocommerce-cart-form__contents .cart_item td {
+  border-bottom: 0;
+}
+
+.elementor-widget-woostify-cart-form .woocommerce-cart-form__contents .coupon.no-backround-image {
+  background-image: none;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.elementor-widget-woostify-cart-form .woocommerce-cart-form__contents [name="update_cart"]:disabled {
+  opacity: 1;
+}
+
+.elementor-widget-woostify-cart-form [name="update_cart"]:disabled {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.elementor-widget-woostify-cart-overview .shop_table {
+  width: 100%;
+}
+
+.elementor-widget-woostify-cart-overview .cart_totals > h2 {
+  display: none;
+}
+
+.elementor-widget-woostify-cart-overview .cart_totals th,
+.elementor-widget-woostify-cart-overview .cart_totals td {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.woostify-checkout-form.woocommerce-checkout {
+  margin-top: 0;
+}
+
+.elementor-editor-active .elementor-widget-woostify-checkout-form .shipping_address,
+.elementor-editor-preview .elementor-widget-woostify-checkout-form .shipping_address {
+  display: none;
+}
+
+.elementor-editor-active .elementor-widget-woostify-checkout-form .select2-container--default,
+.elementor-editor-preview .elementor-widget-woostify-checkout-form .select2-container--default {
+  min-width: 100%;
+}
+
+.elementor-editor-active .elementor-widget-woostify-checkout-form .select2-container--default .select2-selection--single .select2-selection__rendered,
+.elementor-editor-preview .elementor-widget-woostify-checkout-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 1;
+  height: auto;
+}
+
+.elementor-editor-active .elementor-widget-woostify-checkout-form .select2-container--default .select2-selection--single .select2-selection__arrow,
+.elementor-editor-preview .elementor-widget-woostify-checkout-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: auto;
+  min-height: 50px;
+  top: 50%;
+}
+
+.elementor-editor-active .elementor-widget-woostify-checkout-form .select2-container .select2-selection--single,
+.elementor-editor-preview .elementor-widget-woostify-checkout-form .select2-container .select2-selection--single {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  height: auto;
+}
+
+.elementor-widget-woostify-checkout-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 1;
+  height: auto;
+}
+
+.elementor-widget-woostify-checkout-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: auto;
+  min-height: 50px;
+}
+
+.elementor-widget-woostify-checkout-form .select2-container .select2-selection--single {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  height: auto;
+}
+
+.elementor-widget-woostify-checkout-form .woocommerce-billing-fields > h3 {
+  display: none;
+}
+
+.elementor-widget-woostify-checkout-form .form-row .input-text {
+  transition-duration: 0.2s;
+  height: auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+@media (min-width: 992px) {
+  .has-multi-step-checkout .elementor-widget-woostify-checkout-form .multi-step-checkout-wrapper {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .elementor-widget-woostify-checkout-form #customer_details {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.elementor-widget-woostify-checkout-overview .woocommerce-checkout-review-order-table thead .product-total {
+  text-align: right;
+}
+
+.elementor-widget-woostify-checkout-overview .woocommerce-checkout-review-order-table tr td:last-child {
+  text-align: right;
+}
+
+.has-multi-step-checkout .elementor-widget-woostify-checkout-overview .shop_table.woocommerce-checkout-review-order-table .order-total {
+  border-bottom: 0;
+}
+
+.has-multi-step-checkout .elementor-widget-woostify-checkout-overview .shop_table.woocommerce-checkout-review-order-table .order-total th,
+.has-multi-step-checkout .elementor-widget-woostify-checkout-overview .shop_table.woocommerce-checkout-review-order-table .order-total td {
+  padding: 15px 0;
+}
+
+.elementor-widget-woostify-checkout-payment ul {
+  list-style: none;
+}
+
+.elementor-widget-woostify-checkout-payment #place_order {
+  height: auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+@media (min-width: 992px) {
+  .elementor-widget-woostify-checkout-payment #order_review {
+    float: none;
+    width: 100%;
+  }
+}
+
+.elementor-widget-woostify-thankyou-order-details .woocommerce-table--order-details {
+  width: 100%;
+  margin: 0;
+}
+
+.elementor-widget-woostify-thankyou-order-details .woocommerce-table--order-details th,
+.elementor-widget-woostify-thankyou-order-details .woocommerce-table--order-details td {
+  border: 0;
+}
+
+.elementor-widget-woostify-thankyou-order-details .woocommerce-table--order-details tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.elementor-widget-woostify-thankyou-order-overview .woocommerce-order-overview {
+  margin: 0;
+}
+
+.elementor-widget-woostify-thankyou-order-overview .flex-direction-column {
+  flex-direction: column;
+}
+
+.elementor-widget-woostify-thankyou-order-overview .flex-direction-column.woocommerce-thankyou-order-details li + li {
+  border-top: 1px dashed #e8e8e8;
+  border-left: 0;
+}
+
+.elementor-widget-woostify-thankyou-order-overview .flex-direction-row {
+  flex-direction: row;
+}
+
+.checkout-with-order-failed {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

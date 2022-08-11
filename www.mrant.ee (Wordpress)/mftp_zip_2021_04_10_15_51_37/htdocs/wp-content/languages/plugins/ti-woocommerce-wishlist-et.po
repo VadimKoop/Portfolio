@@ -1,0 +1,1035 @@
+# Translation of Plugins - TI WooCommerce Wishlist - Stable (latest release) in Estonian
+# This file is distributed under the same license as the Plugins - TI WooCommerce Wishlist - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-12-15 07:50:03+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: et_EE\n"
+"Project-Id-Version: Plugins - TI WooCommerce Wishlist - Stable (latest release)\n"
+
+#: public/addtowishlist.class.php:192
+msgid "Login"
+msgstr "Logi sisse"
+
+#: public/addtowishlist.class.php:190
+msgid "Please, login to add products to Wishlist"
+msgstr "Toote soovinimekirja lisamiseks logi palun sisse"
+
+#: admin/settings/general.class.php:144
+msgid "Redirect to Login Page"
+msgstr "Suuna sisselogimise leheküljele"
+
+#: admin/settings/general.class.php:134
+msgid "Require Login"
+msgstr "Nõua sisselogimist"
+
+#: admin/settings/general.class.php:709 views/wizard/step-social.php:44
+msgid "Show \"Pinterest\" Button"
+msgstr "Näita \"Pinterest\" nuppu"
+
+#: admin/settings/general.class.php:703 views/wizard/step-social.php:35
+msgid "Show \"Twitter\" Button"
+msgstr "Näita \"Twitter\" nuppu"
+
+#: admin/settings/general.class.php:697 views/wizard/step-social.php:26
+msgid "Show \"Facebook\" Button"
+msgstr "Näita \"Facebook\" nuppu"
+
+#: admin/settings/general.class.php:891 admin/basestyle.helper.php:121
+msgid "Reset"
+msgstr "Lähtesta"
+
+#: admin/settings/general.class.php:468
+msgid "Above Thumbnail"
+msgstr "Tunnuspildi kohal"
+
+#: admin/tinvwl.class.php:201
+msgid "Are you sure you want to reset the settings?"
+msgstr "Kas oled kindel, et soovid sätted lähtestada algväärtustele?"
+
+#: public/widget/wishlistcounter.class.php:26
+msgid "TI Wishlist Products Counter"
+msgstr "TI Soovinimekirja tooteloendur"
+
+#: public/wishlist/buttons.class.php:331 public/wishlist/buttons.class.php:465
+msgctxt "Item name in quotes"
+msgid "&ldquo;%s&rdquo;"
+msgstr "&ldquo;%s&rdquo;"
+
+#: integrations/yith-woocommerce-product-bundles.php:74
+msgid "Out of stock"
+msgstr "Laost otsas"
+
+#: integrations/gift-cards-for-woocommerce.php:101
+msgid "Address"
+msgstr "Aadress"
+
+#: integrations/gift-cards-for-woocommerce.php:92
+msgid "Note"
+msgstr "Märge"
+
+#: includes/api/yoasti18n/i18n-module.php:236
+msgid "Register now &raquo;"
+msgstr "Registreeri kohe &raquo;"
+
+#: includes/api/yoasti18n/i18n-module.php:234
+msgid "Translation of %s"
+msgstr "%s tõlge"
+
+#: integrations/gift-cards-for-woocommerce.php:104
+msgid "Reload existing Gift Card"
+msgstr "Lae uuesti eksisteeriv kinkekaart"
+
+#: integrations/gift-cards-for-woocommerce.php:98
+msgid "To Email"
+msgstr "Saaja e-mail"
+
+#: integrations/gift-cards-for-woocommerce.php:95
+msgid "To"
+msgstr "Saaja"
+
+#: includes/api/yoasti18n/i18n-module.php:204
+msgid "You're using WordPress in a language we don't support yet. We'd love for %2$s to be translated in that language too, but unfortunately, it isn't right now. You can change that! Register at %4$s to help translate it!"
+msgstr "Kasutad WordPressi keeles, mida me veel ei toeta. Meile meeldiks väga, et %2$s oleks ka sellesse keelde tõlgitud, kuid praegu see nii ei ole. Sa saad seda muuta! Registreeri lehel %4$s, et aidata tõlkida!"
+
+#: includes/api/yoasti18n/i18n-module.php:202
+msgid "You're using WordPress in <strong>%1$s</strong>. While %2$s has been translated to %1$s for <strong>%3$d%%</strong>, it's not been shipped with the plugin yet.<br> You can help! Register at %4$s to help complete the translation to %1$s!"
+msgstr "Kasutad WordPressi <strong>%1$s keeles</strong>. %2$s on küll <strong>%3$d%%</strong> ulatuses %1$s keelde tõlgitud, kuid see tõlge ei ole veel avaldatud.<br> Sa saad seda aidata! Registreeri lehel %4$s, et aidata tõlge %1$s keelde lõpuni viia!"
+
+#: includes/api/yoasti18n/i18n-module.php:200
+msgid "As you can see, there is a translation of this plugin in %1$s. This translation is currently %3$d%% complete. We need your help to make it complete and to fix any errors. Please register at %4$s to help complete the translation to %1$s!"
+msgstr "Nagu näed, on sellele pluginale %1$s keelne tõlge. See tõlge on hetkel %3$d%% valmis. Meil on vaja sinu abi, et see tõlge lõpuni viia ning võimalikud vead parandada. Palun registreeri lehel %4$s, et aidata tõlge %1$s keelde lõpuni viia!"
+
+#: admin/settings/general.class.php:178
+msgid "Remove product from Wishlist on second click"
+msgstr "Eemalda toode teisel klikil soovinimekirjast"
+
+#: views/wizard/step-button.php:57
+msgid "Show in Product listing"
+msgstr "Näita toodete nimekirjas"
+
+#: views/wizard/step-button.php:66
+msgid "\"Add to Wishlist\" Text in Product listing"
+msgstr "\"Lisa soovinimekirja\" tekst toote lehel"
+
+#: views/wizard/step-button.php:52
+msgid "You can also show “Add to Wishlist” button in Product listing. More options in %s."
+msgstr "\"Lisa soovinimekirja\" nuppu on võimalik näidata ka toote lehel. Rohkem sätteid lehel %s."
+
+#: public/widget/wishlistcounter.class.php:31
+msgid "Show counter icon"
+msgstr "Näita loenduri ikooni"
+
+#: public/widget/wishlistcounter.class.php:24
+msgid "Displays the number of products in the wishlist on your site."
+msgstr "Näitab su lehel mitu toodet on soovinimekirja lisatud."
+
+#: admin/settings/general.class.php:812
+msgid "Wishlist - "
+msgstr "Soovinimekiri - "
+
+#: public/widget/wishlistcounter.class.php:41
+msgid "Counter Text"
+msgstr "Loenduri tekst"
+
+#: public/widget/wishlistcounter.class.php:36
+msgid "Show counter text"
+msgstr "Näita loenduri teksti"
+
+#: admin/settings/general.class.php:753
+msgid "Add this shortcode <code>[ti_wishlist_products_counter]</code> anywhere into a page content to show Wishlist Counter.<br/><br/>It can be also added as a widget <code>Wishlist Products Counter</code> under the <a href=\"%s\">Appearance -> Widgets</a> section."
+msgstr "Lisa kood <code>[ti_wishlist_products_counter]</code> suvalisse kohta lehe sisus, et näidata soovinimekirja loendurit.<br/><br/>Seda on võimalik lisada ka moodulina <code>Soovinimekirja tooteloendur</code> sektsioonis <a href=\"%s\">Välimus -> Moodulid</a>."
+
+#: admin/settings/general.class.php:471
+msgid "Note: if \"Custom position with code\" option is applied, the \"Add to Wishlist\" button should be added into template using <code>do_shortcode()</code> function like this:<br /><code>do_shortcode(\"[ti_wishlists_addtowishlist loop=yes]\")</code>"
+msgstr "Märkus: kui \"Kohaldatud positsioon koodiga\" säte on valitud, siis tuleb \"Lisa soovinimekirja\" nupp malli lisada <code>do_shortcode()</code> meetodil, nt nii:<br /><code>do_shortcode(\"[ti_wishlists_addtowishlist loop=yes]\")</code>"
+
+#: admin/settings/general.class.php:448
+msgid "Show in Product Listing"
+msgstr "Näita toote lehel"
+
+#: admin/settings/general.class.php:441
+msgid "Product listing Button Settings"
+msgstr "Toote lehe nupu sätted"
+
+#: admin/settings/general.class.php:235
+msgid "This notification will be shown once the product is removed from Wishlist on a single or a catalog page."
+msgstr "Seda teadet näidatakse siis, kui toode eemaldatakse soovinimekirjast üksikul või kataloogi lehel."
+
+#: admin/settings/general.class.php:234
+msgid "\"Product removed from Wishlist\" Text"
+msgstr "\"Toode soovinimekirjast eemaldatud\" tekst"
+
+#: admin/settings/general.class.php:193
+msgid "This option allows to show/hide a popup with successful or error notices after addition or removing products from a Wishlist."
+msgstr "See säte võimaldab näidata/peita õnnestumis- või veateated, mida kuvatakse toodete lisamisel või eemaldamisel soovinimekirjast."
+
+#: admin/settings/general.class.php:192
+msgid "Show successful notice in popup"
+msgstr "Näita õnnestumisteadet hüpikaknas"
+
+#: admin/settings/general.class.php:433 admin/settings/general.class.php:573
+msgid "\"Remove from Wishlist\" Button Text"
+msgstr "\"Eemalda soovinimekirjast\" nupu tekst"
+
+#: admin/settings/general.class.php:442
+msgid "These are separate settings for the \"Add to Wishlist\" button on a product listing (Shop page, categories, etc.). You can also adjust button and text colors, size, etc. in a <code>TI Wishlist > Style Options.</code>"
+msgstr "Need on eraldiseisvad sätted \"Lisa soovinimekirja\" nupule toodete loetelude lehel (poe leht, kategooriad jne). Nuppude ja tekstide värve, suurusi jne saab muuta ka sektsioonis <code>TI Soovinimekirjad > Stiilivalikud.</code>"
+
+#: admin/settings/general.class.php:171 admin/settings/general.class.php:306
+msgid "Remove by anyone"
+msgstr "Eemaldada saavad kõik"
+
+#: admin/tinvwl.class.php:317
+msgid "<code>%1$s</code> version <strong style=\"color:red\">%2$s</strong> is out of date. The core version is <strong style=\"color:red\">%3$s</strong>"
+msgstr "<code>%1$s</code> versioon <strong style=\"color:red\">%2$s</strong> on aegunud. Värskem versioon on <strong style=\"color:red\">%3$s</strong>"
+
+#: views/admin/templates-status.php:27 views/admin/templates-status.php:34
+msgid "Overrides"
+msgstr "Ülekirjutamised"
+
+#: admin/tinvwl.class.php:343
+msgid "<strong>Your theme (%1$s) contains outdated copies of some WooCommerce Wishlist Plugin template files.</strong><br> These files may need updating to ensure they are compatible with the current version of WooCommerce Wishlist Plugin.<br> You can see which files are affected from the <a href=\"%2$s\">system status page</a>.<br> If in doubt, check with the author of the theme."
+msgstr "<strong>Teie teema (%1$s) sisaldab aegunud WooCommerce Wishlist plugina mallide faile.</strong><br> Need failid vajavad uuendamist, et sobituda värskeima WooCommerce Wishlist plugina versiooniga.<br> Mõjutatud faile saab näha <a href=\"%2$s\">süsteemi oleku lehel</a>.<br>Kui kahtlete, võtke ühendust teema autoriga."
+
+#: views/admin/templates-status.php:18
+msgid "This section shows the files that are overriding the default TI WooCommerce Wishlist templates."
+msgstr "See jaotis näitab faile, mis kirjutavad üle vaikimisi olevaid TI WooCommerce Wishlist mallilehti."
+
+#: views/wizard/finish.php:18
+msgid "WooCommerce Wishlist Plugin Settings"
+msgstr "WooCommerce Soovinimekirjade plugina sätted"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/ti-woocommerce-wishlist/"
+msgstr "https://wordpress.org/plugins/ti-woocommerce-wishlist/"
+
+#: views/admin/templates-status.php:17 views/admin/templates-status.php:18
+msgid "TI WooCommerce Wishlist Templates"
+msgstr "TI WooCoomerce Soovinimekirjade mallid"
+
+#: admin/tinvwl.class.php:100
+msgid "Skip Setup"
+msgstr "Jäta seadistamine vahele"
+
+#: admin/tinvwl.class.php:116
+msgid " or "
+msgstr " või "
+
+#: admin/tinvwl.class.php:115
+msgid "Please apply the Wishlist page"
+msgstr "Palun määra soovinimekirja leht"
+
+#: admin/tinvwl.class.php:108 includes/notice.helper.php:115
+msgid "Dismiss"
+msgstr "Sulge"
+
+#: admin/tinvwl.class.php:98 admin/tinvwl.class.php:118
+msgid "Run the Setup Wizard"
+msgstr "Käivita seadistusabiline"
+
+#: public/tinvwl.class.php:508
+msgid "Please select some product options before adding this product to your wishlist."
+msgstr "Palun vali mõned toote valikud enne selle toote ostukorvi lisamist."
+
+#: includes/tinvwl.class.php:168
+msgid "Settings"
+msgstr "Sätted"
+
+#: includes/tinvwl.class.php:170
+msgid "Live Demo"
+msgstr "Live demo"
+
+#: includes/tinvwl.class.php:169
+msgid "Premium Version"
+msgstr "Tasuline versioon"
+
+#: integrations/woocommerce-gravityforms-product-addons.php:43
+msgid "Select options"
+msgstr "Vali sätted"
+
+#: admin/settings/general.class.php:152
+msgid "Show Link to Wishlist in my account"
+msgstr "Näita linki soovinimekirja minu konto lehel"
+
+#. Author URI of the plugin
+msgid "https://templateinvaders.com/"
+msgstr "https://templateinvaders.com/"
+
+#: views/wizard/step-social.php:86 views/wizard/step-page.php:62
+#: views/wizard/step-button.php:79 views/wizard/step-processing.php:40
+msgid "continue"
+msgstr "jätka"
+
+#: views/wizard/step-social.php:85 views/wizard/step-page.php:61
+#: views/wizard/step-button.php:78 views/wizard/step-processing.php:39
+msgid "Skip this step"
+msgstr "Jäta see samm vahele"
+
+#: views/wizard/step-button.php:16
+msgid "Button options"
+msgstr "Nupu valikud"
+
+#: views/wizard/intro.php:27
+msgid "Not Right Now"
+msgstr "Mitte praegu"
+
+#: views/wizard/intro.php:24
+msgid "let’s go"
+msgstr "lähme"
+
+#: views/wizard/footer.php:18
+msgid "Return to the WordPress Dashboard"
+msgstr "Mine tagasi WordPressi töölauale"
+
+#: views/wizard/finish.php:15
+msgid "Congratulations"
+msgstr "Õnnitlused"
+
+#: templates/ti-wishlist-user.php:145 templates/ti-wishlist.php:153
+#: integrations/woocommerce-composite-products.php:116
+#: integrations/woocommerce-mix-and-match-products.php:86
+#: integrations/woo-product-bundle.php:89
+#: integrations/yith-woocommerce-product-bundles.php:138
+#: integrations/woocommerce-product-bundles.php:110
+msgid "In stock"
+msgstr "Laos"
+
+#: templates/ti-wishlist-user.php:47 templates/ti-wishlist.php:48
+msgid "Stock Status"
+msgstr "Lao seis"
+
+#: templates/ti-addedtowishlist-dialogbox.php:36
+msgid "Close"
+msgstr "Sulge"
+
+#: public/wishlist/view.class.php:808
+msgid "Next Page"
+msgstr "Järgmine leht"
+
+#. Author of the plugin
+msgid "TemplateInvaders"
+msgstr "TemplateInvaders"
+
+#: templates/ti-wishlist-user.php:38 templates/ti-wishlist.php:39
+msgid "Product"
+msgstr "Toode"
+
+#: templates/ti-wishlist-user.php:41 templates/ti-wishlist.php:42
+msgid "Unit Price"
+msgstr "Ühikuhind"
+
+#: templates/ti-wishlist-user.php:44 templates/ti-wishlist.php:45
+msgid "Date Added"
+msgstr "Lisamise kuupäev"
+
+#: templates/ti-wishlist-user.php:37 templates/ti-wishlist.php:38
+msgid "Product Name"
+msgstr "Toote nimi"
+
+#: templates/ti-wishlist-null.php:24 templates/ti-wishlist-empty.php:33
+msgid "Return To Shop"
+msgstr "Tagasi poodi"
+
+#: views/wizard/intro.php:16
+msgid "Welcome!"
+msgstr "Tere tulemast!"
+
+#: views/wizard/intro.php:22
+msgid "This quick setup wizard will help you configure the basic settings."
+msgstr "See kiire seadistuse abiline aitab konfigureerida põhiliseid sätteid."
+
+#: views/null.php:15
+msgid "Error 404"
+msgstr "Veateade 404"
+
+#. Description of the plugin
+msgid "Wishlist functionality for your WooCommerce store."
+msgstr "Soovinimekirja funktsionaalsus Teie WooCommerce poele."
+
+#: views/wizard/step-social.php:22
+msgid "Allow people to share wishlists by adding social share buttons to Wishlist page."
+msgstr "Luba inimestel jagada soovinimekirju, lisades soovinimekirja lehele sotsiaalmeedia nupud."
+
+#: views/wizard/step-processing.php:24
+msgid "How products should be removed from Wishlist?"
+msgstr "Kuidas eemaldada tooteid soovinimekirjast?"
+
+#: views/wizard/step-processing.php:20
+msgid "Following option allows you to set products to be automatically removed from a wishlist when added to cart."
+msgstr "Järgnev säte võimaldab tooteid automaatselt soovinimekirjast eemaldada nende lisamisel ostukorvi."
+
+#: views/wizard/step-processing.php:16
+msgid "Processing Options"
+msgstr "Töötlemise sätted"
+
+#: views/wizard/step-page-field.php:36
+msgid "Page with name “%s” aready exist! Please choose another page or create a new one"
+msgstr "Leht nimega \"%s\" on juba olemas! Palun vali mõni teine leht või loo uus"
+
+#: admin/settings/general.class.php:550 views/wizard/step-button.php:42
+msgid "\"Add to Wishlist\" Text"
+msgstr "\"Lisa soovinimekirja\" tekst"
+
+#: views/wizard/step-button.php:27
+msgid " and "
+msgstr " ja "
+
+#: views/wizard/step-button.php:27
+msgid "And set button text. You can add an icon, change button appearance and other settings in %s."
+msgstr "Ja määrata nupu tekst. Saad lisada ikooni, muuta nupu välimust ja muid sätteid siin: %s."
+
+#: views/wizard/step-button.php:25
+msgid "TI  Wishlists > Style Options"
+msgstr "TI Soovinimekirjad > Stiilivalikud"
+
+#: views/wizard/step-button.php:21
+msgid "Choose where to place “Add to Wishlist” button on the product page: before or after “Add to Cart” button."
+msgstr "Vali kuhu paigutatakse \"Lisa soovinimekirja\" nupp toote lehel: enne või pärast \"Lisa ostukorvi\" nuppu."
+
+#: views/wizard/finish.php:28
+msgid "Wishlist Settings"
+msgstr "Soovinimekirja sätted"
+
+#: views/wizard/finish.php:25
+msgid "Documentation"
+msgstr "Dokumentatsioon"
+
+#: views/wizard/finish.php:20
+msgid "Online Documentation"
+msgstr "Online dokumentatsioon"
+
+#: views/wizard/finish.php:20
+msgid "Details about WooCommerce Wishlist Plugin options can be found in our %s."
+msgstr "WooCommerce Soovinimekirja plugina sätete detailinfo leiab meie %s."
+
+#: views/wizard/finish.php:18
+msgid "You have set basic Wishlist settings. If you want to make more in-depth plugin setup you can make it in plugin settings page %s."
+msgstr "Oled määranud soovinimekirja põhisätted. Kui soovid määrata täpsemaid sätteid, saad teha seda plugina sätete lehel %s."
+
+#: views/wizard/finish.php:16
+msgid "Your Wishlist is ready!"
+msgstr "Sinu soovinimekiri on valmis!"
+
+#: templates/ti-wishlist-null.php:17
+msgid "Wishlist is not found!"
+msgstr "Soovinimekirja ei leitud!"
+
+#: templates/ti-wishlist-empty.php:25
+msgid "Wishlist is currently empty."
+msgstr "Soovinimekiri on hetkel tühi."
+
+#: templates/ti-wishlist-empty.php:23
+msgid "Your Wishlist is currently empty."
+msgstr "Sinu soovinimekiri on hetkel tühi."
+
+#: views/wizard/intro.php:15
+msgid "Setup Wizard"
+msgstr "Seadistusabiline"
+
+#: views/null.php:19
+msgid "Template \"%s\" not found!"
+msgstr "Malli \"%s\" ei leitud!"
+
+#: views/wizard/step-page.php:54
+msgid "Once created, this page can be managed from WordPress dashboard."
+msgstr "Kui leht on loodud, saad seda hallata administraatori töölaualt."
+
+#: views/wizard/step-page.php:18
+msgid "The following page needs to be applied so the “Wishlist” knows where it is. "
+msgstr "Järgnev leht peab olema valitud, et soovinimekiri teaks, kus see on."
+
+#: views/wizard/header.php:19
+msgid "TI Wishlist &rsaquo; %s"
+msgstr "TI Soovinimekirjad &rsaquo; %s"
+
+#: public/wishlist/view.class.php:780
+msgid "Previous Page"
+msgstr "Eelmine leht"
+
+#: public/wishlist/buttons.class.php:372 templates/ti-wishlist.php:95
+msgid "Remove"
+msgstr "Eemalda"
+
+#: public/wishlist/buttons.class.php:363
+msgid "Actions"
+msgstr "Tegevused"
+
+#: public/wishlist/buttons.class.php:63
+msgid "Action"
+msgstr "Tegevus"
+
+#: public/wishlist/buttons.class.php:63
+msgid "Apply %s"
+msgstr "Kohalda %s"
+
+#: public/tinvwl.class.php:504
+msgid "Create New"
+msgstr "Loo uus"
+
+#: public/wishlist/view.class.php:502 public/wishlist/buttons.class.php:523
+msgid "&ldquo;%s&rdquo;"
+msgstr "&ldquo;%s&rdquo;"
+
+#: includes/wizard.class.php:271
+msgid "Introduction"
+msgstr "Tutvustus"
+
+#: includes/view.helper.php:356
+msgid "read documentation"
+msgstr "loe dokumentatsiooni"
+
+#: includes/view.helper.php:199
+msgid "Errors(%s)"
+msgstr "Vead(%s)"
+
+#: includes/view.helper.php:183
+msgid "Attention!"
+msgstr "Tähelepanu!"
+
+#: includes/form.helper.php:512
+msgid "Preview"
+msgstr "Eelvaade"
+
+#: admin/settings/style.class.php:569
+msgid "popups"
+msgstr "hüpikaknad"
+
+#: admin/settings/style.class.php:438
+msgid "table"
+msgstr "tabel"
+
+#: admin/settings/style.class.php:219 admin/settings/style.class.php:288
+msgid "Button Text Color"
+msgstr "Nupu teksti värv"
+
+#: admin/settings/style.class.php:252 admin/settings/style.class.php:321
+#: admin/settings/style.class.php:377 admin/settings/style.class.php:427
+msgid "Font Size"
+msgstr "Fondi suurus"
+
+#: admin/settings/style.class.php:181 admin/settings/style.class.php:231
+#: admin/settings/style.class.php:300 admin/settings/style.class.php:357
+#: admin/settings/style.class.php:407
+msgid "Text Color"
+msgstr "Teksti värv"
+
+#: admin/settings/style.class.php:163 admin/settings/style.class.php:207
+#: admin/settings/style.class.php:276 admin/settings/style.class.php:345
+#: admin/settings/style.class.php:395 admin/settings/style.class.php:445
+#: admin/settings/style.class.php:540 admin/settings/style.class.php:576
+msgid "Background Color"
+msgstr "Taustavärv"
+
+#: admin/settings/style.class.php:142
+msgid "No"
+msgstr "Ei"
+
+#: admin/settings/style.class.php:113 admin/settings/style.class.php:149
+#: admin/settings/style.class.php:187 admin/settings/style.class.php:244
+#: admin/settings/style.class.php:313 admin/settings/style.class.php:369
+#: admin/settings/style.class.php:419
+msgid "Font"
+msgstr "Font"
+
+#: admin/settings/style.class.php:107 admin/settings/style.class.php:483
+#: admin/settings/style.class.php:582
+msgid "Content Text Color"
+msgstr "Sisu teksti värv"
+
+#: admin/settings/style.class.php:101
+msgid "Title Font Size"
+msgstr "Tiitli fondi suurus"
+
+#: admin/settings/style.class.php:95
+msgid "Title Color"
+msgstr "Tiitli värv"
+
+#: admin/settings/style.class.php:88
+msgid "text"
+msgstr "tekst"
+
+#: admin/settings/general.class.php:608
+msgid "Show Stock status"
+msgstr "Näita lao seisu"
+
+#: admin/settings/general.class.php:602
+msgid "Show Unit price"
+msgstr "Näita ühiku hinda"
+
+#: admin/settings/general.class.php:381 admin/settings/general.class.php:521
+#: admin/settings/general.class.php:744 admin/settings/general.class.php:795
+msgid "White"
+msgstr "Valge"
+
+#: admin/settings/general.class.php:380 admin/settings/general.class.php:520
+#: admin/settings/general.class.php:794
+msgid "Black"
+msgstr "Must"
+
+#: admin/settings/general.class.php:350 admin/settings/general.class.php:491
+#: admin/settings/general.class.php:764
+msgid "Heart+"
+msgstr "Süda+"
+
+#: admin/settings/general.class.php:349 admin/settings/general.class.php:490
+#: admin/settings/general.class.php:763
+msgid "Heart"
+msgstr "Süda"
+
+#: admin/settings/general.class.php:87 admin/settings/general.class.php:348
+#: admin/settings/general.class.php:489 admin/settings/general.class.php:762
+msgid "None"
+msgstr "Pole ühtegi"
+
+#: includes/wizard.class.php:404
+msgid "Button"
+msgstr "Nupp"
+
+#: admin/settings/general.class.php:595
+msgid "\"Add to Cart\" Text"
+msgstr "\"Lisa ostukorvi\" tekst"
+
+#: admin/settings/general.class.php:588
+msgid "Show \"Add to Cart\" button"
+msgstr "Näita \"Lisa ostukorvi\" nuppu"
+
+#: admin/settings/general.class.php:628
+msgid "Show Checkboxes"
+msgstr "Näita märkeruute"
+
+#: admin/settings/general.class.php:640
+msgid "Show Actions button"
+msgstr "Näita Tegevused nuppu"
+
+#: admin/settings/general.class.php:733
+msgid "\"Share on\" Text"
+msgstr "\"Jaga\" tekst"
+
+#: admin/basestyle.helper.php:58
+msgid "Templates"
+msgstr "Mallid"
+
+#: admin/basestyle.helper.php:74
+msgid "Template Options"
+msgstr "Malli valikud"
+
+#: admin/basestyle.helper.php:82 admin/basestyle.helper.php:89
+msgid "Template Custom CSS"
+msgstr "Malli kohaldatud CSS"
+
+#: includes/wizard.class.php:527
+msgid "Ready!"
+msgstr "Valmis!"
+
+#: includes/wizard.class.php:483 views/wizard/step-social.php:18
+msgid "Share"
+msgstr "Jaga"
+
+#: includes/wizard.class.php:459
+msgid "Manual"
+msgstr "Manuaalne"
+
+#: includes/wizard.class.php:458
+msgid "Automatically"
+msgstr "Automaatne"
+
+#: includes/wizard.class.php:448
+msgid "Processing"
+msgstr "Töötlemine"
+
+#: includes/wizard.class.php:300
+msgid "Create new Page"
+msgstr "Loo uus lehekülg"
+
+#: includes/wizard.class.php:299
+msgid "Create Automatically"
+msgstr "Loo automaatselt"
+
+#: includes/wizard.class.php:287 views/wizard/step-page.php:16
+msgid "Page Setup"
+msgstr "Lehekülje seadistus"
+
+#: admin/settings/general.class.php:743
+msgid "Dark"
+msgstr "Tume"
+
+#: admin/settings/general.class.php:739
+msgid "Social Icons Color"
+msgstr "Sotsiaalmeedia ikoonide värv"
+
+#: admin/settings/style.class.php:529
+msgid "Special Price Background Color"
+msgstr "Erilise hinna taustavärv"
+
+#: admin/settings/style.class.php:523
+msgid "Special Price Color"
+msgstr "Erilise hinna värv"
+
+#: admin/settings/style.class.php:517
+msgid "Price Font Size"
+msgstr "Hinna fondi suurus"
+
+#: admin/settings/style.class.php:509
+msgid "Price Font"
+msgstr "Hinna font"
+
+#: admin/settings/style.class.php:503
+msgid "Price Color"
+msgstr "Hinna värv"
+
+#: admin/settings/style.class.php:497 admin/settings/style.class.php:596
+msgid "Content Text Font Size"
+msgstr "Sisu teksti fondi suurus"
+
+#: admin/settings/style.class.php:489 admin/settings/style.class.php:588
+msgid "Content Text Font"
+msgstr "Sisu teksti font"
+
+#: admin/settings/style.class.php:477
+msgid "Table Head Font Size"
+msgstr "Tabeli päise fondi suurus"
+
+#: admin/settings/style.class.php:469
+msgid "Table Head Font"
+msgstr "Tabeli päise font"
+
+#: admin/settings/style.class.php:463
+msgid "Table Head Text Color"
+msgstr "Tabeli päise teksti värv"
+
+#: admin/settings/style.class.php:620
+msgid "Normal Buttons Text Hover Color"
+msgstr "Normaalsete nuppude teksti hover värv"
+
+#: admin/settings/style.class.php:614
+msgid "Normal Buttons Text Color"
+msgstr "Normaalsete nuppude teksti värv"
+
+#: admin/settings/style.class.php:608
+msgid "Normal Buttons Background Hover Color"
+msgstr "Normaalsete nuppude hover taustavärv"
+
+#: admin/settings/style.class.php:602
+msgid "Normal Buttons Background Color"
+msgstr "Normaalsete nuppude taustavärv"
+
+#: admin/settings/style.class.php:133
+msgid "Hover Color"
+msgstr "Hoveri värv"
+
+#: admin/settings/style.class.php:127
+msgid "Color"
+msgstr "Värv"
+
+#: admin/settings/style.class.php:71
+msgid "Use Default Font"
+msgstr "Kasuta vaikimisi fonti"
+
+#: admin/settings/style.class.php:56
+msgid "Style Options"
+msgstr "Stiili valikud"
+
+#: admin/settings/style.class.php:457
+msgid "Table Head Background Color"
+msgstr "Tabeli päise taustavärv"
+
+#: admin/settings/style.class.php:388
+msgid "add to cart button"
+msgstr "lisa ostukorvi nupp"
+
+#: admin/settings/style.class.php:225 admin/settings/style.class.php:294
+msgid "Button Text Hover Color"
+msgstr "Nupu teksti hover värv"
+
+#: admin/settings/style.class.php:237 admin/settings/style.class.php:306
+#: admin/settings/style.class.php:363 admin/settings/style.class.php:413
+msgid "Text Hover Color"
+msgstr "Teksti hover värv"
+
+#: admin/settings/style.class.php:213 admin/settings/style.class.php:282
+#: admin/settings/style.class.php:351 admin/settings/style.class.php:401
+#: admin/settings/style.class.php:546
+msgid "Background Hover Color"
+msgstr "Hover taustavärv"
+
+#: admin/settings/style.class.php:195
+msgid "Select Font Size"
+msgstr "Vali fondi suurus"
+
+#: admin/settings/style.class.php:175 admin/settings/style.class.php:264
+#: admin/settings/style.class.php:333 admin/settings/style.class.php:383
+#: admin/settings/style.class.php:433
+msgid "Border Radius"
+msgstr "Nurkade raadius"
+
+#: admin/settings/style.class.php:169 admin/settings/style.class.php:451
+msgid "Border Color"
+msgstr "Piiride värv"
+
+#: admin/settings/style.class.php:156
+msgid "fields"
+msgstr "väljad"
+
+#: admin/settings/style.class.php:141
+msgid "Yes"
+msgstr "Jah"
+
+#: admin/settings/general.class.php:73 admin/settings/general.class.php:113
+msgid "General Settings"
+msgstr "Üldised sätted"
+
+#: admin/settings/general.class.php:897 admin/basestyle.helper.php:127
+msgid "Save"
+msgstr "Salvesta"
+
+#: admin/settings/general.class.php:885 admin/basestyle.helper.php:115
+msgid "Save Settings"
+msgstr "Salvesta sätted"
+
+#: admin/basestyle.helper.php:65
+msgid "Use Theme style"
+msgstr "Kasuta teema stiili"
+
+#: admin/settings/general.class.php:328 admin/settings/general.class.php:469
+#: includes/wizard.class.php:417
+msgid "Custom position with code"
+msgstr "Kohaldatud positsioon koodiga"
+
+#: admin/settings/general.class.php:325 admin/settings/general.class.php:467
+#: includes/wizard.class.php:416
+msgid "Before \"Add to Cart\" button"
+msgstr "Enne \"Lisa ostukorvi\" nuppu"
+
+#: admin/settings/general.class.php:324 admin/settings/general.class.php:466
+#: includes/wizard.class.php:415
+msgid "After \"Add to Cart\" button"
+msgstr "Pärast \"Lisa ostukorvi\" nuppu"
+
+#: admin/settings/general.class.php:320 admin/settings/general.class.php:463
+#: views/wizard/step-button.php:33
+msgid "Button position"
+msgstr "Nupu positsioon"
+
+#: admin/settings/general.class.php:289
+msgid "Remove condition"
+msgstr "Eemalda tingimus"
+
+#: admin/settings/general.class.php:282
+msgid "Automatic removal"
+msgstr "Automaatne eemaldamine"
+
+#: admin/settings/general.class.php:258 admin/settings/general.class.php:275
+msgid "Coming soon"
+msgstr "Peagi tulekul"
+
+#: admin/settings/general.class.php:368 admin/settings/general.class.php:508
+#: admin/settings/general.class.php:782
+msgid "Upload"
+msgstr "Lae"
+
+#: admin/settings/general.class.php:351 admin/settings/general.class.php:492
+#: admin/settings/general.class.php:765
+msgid "Custom"
+msgstr "Kohandatud"
+
+#: admin/settings/general.class.php:345 admin/settings/general.class.php:767
+msgid "You can choose from our predefined icons or upload your custom icon. Custom icon size is limited to 16x16 px."
+msgstr "Võimalik valida meie ikoonide hulgast või laadida üles enda ikoon. Enda ikooni suurus on maksimaalselt 16x16 px."
+
+#: admin/settings/general.class.php:691
+msgid "Social Networks Sharing Options"
+msgstr "Sotsiaalmeedia jagamisvalikud"
+
+#: admin/settings/general.class.php:672
+msgid "\"Add All to Cart\" Button Text"
+msgstr "\"Lisa kõik ostukorvi\" nupu tekst"
+
+#: admin/settings/general.class.php:665
+msgid "Show \"Add All to Cart\" button"
+msgstr "Näita \"Lisa kõik ostukorvi\" nuppu"
+
+#: admin/settings/general.class.php:654
+msgid "\"Add Selected to Cart\" Button Text"
+msgstr "\"Lisa valitud ostukorvi\" nupu tekst"
+
+#: admin/settings/style.class.php:139
+msgid "Underline"
+msgstr "Allajoonitud"
+
+#: admin/settings/general.class.php:647
+msgid "Show \"Add Selected to Cart\" button"
+msgstr "Näita \"Lisa valitud ostukorvi\" nuppu"
+
+#: admin/settings/general.class.php:614
+msgid "Show Date of addition"
+msgstr "Näita toote lisamise aega"
+
+#: public/wishlist/view.class.php:660
+msgid "Return to Wishlist"
+msgstr "Tagasi soovinimekirja"
+
+#: public/wishlist/view.class.php:517
+msgid "%s has not been removed from wishlist."
+msgstr "%s ei eemaldatud soovinimekirjast."
+
+#: public/wishlist/buttons.class.php:539
+msgid "%s has been successfully removed from wishlist."
+msgid_plural "%s have been successfully removed from wishlist."
+msgstr[0] "%s eemaldati edukalt soovinimekirjast."
+msgstr[1] "%s eemaldati edukalt soovinimekirjast."
+
+#: public/tinvwl.class.php:626 integrations/theme-flatsome.php:94
+#: integrations/theme-flatsome.php:136 integrations/theme-flatsome.php:213
+#: integrations/theme-flatsome.php:250 includes/wizard.class.php:295
+#: includes/wizard.class.php:326
+msgid "Wishlist"
+msgstr "Soovinimekiri"
+
+#: includes/pluginextend.helper.php:547
+msgid "%1$s %3$s is required. Please activate it before activating this plugin."
+msgstr "%1$s %3$s on nõutud. Palun aktiveeri see enne selle plugina aktiveerimist."
+
+#: includes/pluginextend.helper.php:543
+msgid "%1$s is conflicted with %2$s %3$s. Please disable it before activating this plugin."
+msgstr "%1$s läheb konflikti %2$s %3$s-ga. Palun lülita see enne selle plugina aktiveerimist välja."
+
+#: includes/pluginextend.helper.php:539
+msgid "%2$s %3$s is required. Please activate it before activating this plugin."
+msgstr "%2$s %3$s on nõutud. Palun aktiveeri see enne selle plugina aktiveerimist."
+
+#: includes/pluginextend.helper.php:535
+msgid "%2$s %3$s is required. Please downgrade it before activating this plugin."
+msgstr "%2$s %3$s on nõutud. Palun paigalda vanem versioon enne selle plugina aktiveerimist."
+
+#: includes/pluginextend.helper.php:530
+msgid "%2$s %3$s is required. Please update it before activating this plugin."
+msgstr "%2$s %3$s on nõutud. Palun paigalda uuem versioon enne selle plugina aktiveerimist."
+
+#: includes/pluginextend.helper.php:521
+msgid "%1$s is confilcted with %2$s %3$s. Deactivating %1$s."
+msgstr "%1$s on konfliktis %2$s %3$s-ga. %1$s lülitatakse välja."
+
+#: includes/pluginextend.helper.php:512
+msgid "%2$s %3$s is required for %1$s. Deactivating %1$s."
+msgstr "%2$s %3$s on %1$s jaoks nõutud. %1$s lülitatakse välja."
+
+#: admin/settings/upgrade.class.php:57
+msgid "Premium Features"
+msgstr "Tasulised võimalused"
+
+#: admin/settings/general.class.php:685
+msgid "Following options enable/disable Social share icons below wishlist table on wishlist page. Wishlist owner can easily share their wishlists using this button on social networks. Wishlist privacy should be set to public or shared status, private wishlists can't be shared."
+msgstr "Järgnevad sätted lülitavad sotsiaalmeedia jagamisnuppude näitamise soovinimekirja tabeli all soovinimekirja lehel sisse/välja. Soovinimekirja omanik saab oma soovinimekirja nende nuppude abil lihtsasti sotsiaalmeedias jagada. Soovinimekirja privaatsussätted peavad olema määratud avalikuks või jagatuks, privaatseid soovinimekirju ei saa jagada."
+
+#: admin/settings/general.class.php:641
+msgid "Bulk actions drop down at the bottom of wishlist table"
+msgstr "Masstegevuste hüpikmenüü soovinimekirja tabeli lõpus"
+
+#: admin/settings/general.class.php:622
+msgid "Following options will help user to manage and add products to cart from wishlist table in bulk."
+msgstr "Järgnevad sätted aitavad kasutajal soovinimekirjas olevaid tooteid hulgi hallata ning ostukorvi lisada."
+
+#: admin/settings/general.class.php:621
+msgid "Wishlist Table Settings"
+msgstr "Soovinimekirja tabeli sätted"
+
+#: admin/settings/general.class.php:582
+msgid "Following options allows you to choose what information/functionality to show/enable in wishlist table on wishlist page."
+msgstr "Järgnevad sätted võimaldavad sul valida, millist infot/funktsionaalsust soovinimekirja tabelis soovinimekirja lehel näidata/kasutada."
+
+#: admin/settings/general.class.php:581
+msgid "Wishlist Product Settings"
+msgstr "Soovinimekirja toote sätted"
+
+#: admin/settings/general.class.php:218
+msgid "\"Product added to Wishlist\" Text"
+msgstr "\"Toode lisati soovinimekirja\" tekst"
+
+#: admin/settings/general.class.php:226
+msgid "\"Product already in Wishlist\" Text"
+msgstr "\"Toode on juba soovinimekirjas\" tekst"
+
+#: admin/settings/general.class.php:211
+msgid "If enabled, user will be redirected to wishlist page after 5 sec from adding product to wishlist."
+msgstr "Kui see säte on sisse lülitatud, suunatakse kasutaja soovinimekirja lehele 5 sekundit pärast toote soovinimekirja lisamist."
+
+#: admin/settings/general.class.php:210
+msgid "Redirect to Wishlist"
+msgstr "Suuna soovinimekirja"
+
+#: admin/settings/general.class.php:203
+msgid "\"View Wishlist\" button Text"
+msgstr "\"Vaata soovinimekirja\" nupu tekst"
+
+#: admin/settings/general.class.php:410
+msgid "\"Add to Wishlist\" button Text"
+msgstr "\"Lisa soovinimekirja\" nupu tekst"
+
+#: admin/settings/general.class.php:377 admin/settings/general.class.php:517
+msgid "\"Add to Wishlist\" Icon Color"
+msgstr "\"Lisa soovinimekirja\" ikooni värv"
+
+#: admin/settings/general.class.php:344 admin/settings/general.class.php:486
+msgid "\"Add to Wishlist\" Icon"
+msgstr "\"Lisa soovinimekirja\" ikoon"
+
+#: admin/settings/general.class.php:321
+msgid "Add this shortcode <code>[ti_wishlists_addtowishlist]</code> anywhere on product page, if you have chosen custom position for product button. You will have to do this for each product."
+msgstr "Lisa lühikood <code>[ti_wishlists_addtowishlist]</code> suvalisse kohta toote lehel, kui oled valinud kohaldatud asukoha toote nupule. Pead seda iga toote puhul eraldi tegema."
+
+#: admin/settings/general.class.php:314
+msgid "Product page \"Add to Wishlist\" Button Settings"
+msgstr "Toote lehekülje \"Lisa soovinimekirja\" nupu sätted"
+
+#: admin/settings/general.class.php:274
+msgid "Wishlist Processing Options"
+msgstr "Soovinimekirja töötlemise valikud"
+
+#: admin/settings/general.class.php:265 views/wizard/step-page.php:41
+msgid "My Wishlist"
+msgstr "Minu soovinimekiri"
+
+#: admin/settings/general.class.php:257
+msgid "Wishlist Page Options"
+msgstr "Soovinimekirja lehekülje valikud"
+
+#: admin/settings/general.class.php:158
+msgid "Remove Product from Wishlist if added to cart"
+msgstr "Eemalda toode soovinimekirjast, kui see on lisatud ostukorvi"
+
+#: admin/settings/general.class.php:126 admin/tinvwl.class.php:403
+msgid "Wishlist Page"
+msgstr "Soovinimekirja lehekülg"
+
+#: admin/settings/general.class.php:120 views/wizard/step-page.php:28
+msgid "Default Wishlist Name"
+msgstr "Vaikimisi soovinimekirja nimi"
+
+#: admin/settings/style.class.php:57
+msgid "Wishlist Style Options"
+msgstr "Soovinimekirja stiili valikud"
+
+#: public/wishlist/view.class.php:440
+msgid "%1$s by %2$s"
+msgstr "%1$s / %2$s"
+
+#: admin/settings/general.class.php:292
+msgid "Add to Cart"
+msgstr "Lisa ostukorvi"
+
+#: admin/settings/general.class.php:727 views/wizard/step-social.php:71
+msgid "Show \"Share by Email\" Button"
+msgstr "Näita \"Jaga e-postiga\" nuppu"
+
+#: includes/view.helper.php:215
+msgid "Useful Tip"
+msgstr "Kasulik nõuanne"
+
+#: admin/settings/style.class.php:200
+msgid "\"Add to Wishlist\" product page button"
+msgstr "\"lisa soovinimekirja\" nupp toote lehel"

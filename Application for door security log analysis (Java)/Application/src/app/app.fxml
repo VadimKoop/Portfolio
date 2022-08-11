@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import app.view.DateTimePicker?>
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="app.controller.AppController">
+
+    <columnConstraints>
+        <ColumnConstraints prefWidth="800"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints prefHeight="600"/>
+    </rowConstraints>
+
+    <GridPane xmlns:fx="http://javafx.com/fxml"
+              GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+        <rowConstraints>
+            <RowConstraints prefHeight="30"/>
+            <RowConstraints prefHeight="30"/>
+            <RowConstraints prefHeight="20"/>
+            <RowConstraints prefHeight="500"/>
+            <RowConstraints prefHeight="20"/>
+        </rowConstraints>
+
+        <GridPane xmlns:fx="http://javafx.com/fxml"
+                  GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+            <columnConstraints>
+                <ColumnConstraints prefWidth="100"/>
+                <ColumnConstraints prefWidth="300"/>
+                <ColumnConstraints prefWidth="50"/>
+                <ColumnConstraints prefWidth="300"/>
+                <ColumnConstraints prefWidth="50"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints prefHeight="30"/>
+            </rowConstraints>
+
+            <Button text="Select log file.." onAction="#browseLogFile" prefWidth="100"
+                    GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="lblLoadLogFile" text="..."
+                       GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Button text="Parse" onAction="#parseLog"
+                    GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <Label fx:id="lblParseResult"
+                   GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+            <Button text="Clear" onAction="#clearLogView" prefWidth="50"
+                    GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+        </GridPane>
+
+        <GridPane xmlns:fx="http://javafx.com/fxml"
+                  GridPane.columnIndex="0" GridPane.rowIndex="1">
+
+            <columnConstraints>
+                <ColumnConstraints prefWidth="200"/>
+                <ColumnConstraints prefWidth="200"/>
+                <ColumnConstraints prefWidth="200"/>
+                <ColumnConstraints prefWidth="200"/>
+            </columnConstraints>
+
+            <DateTimePicker fx:id="ddLogViewFilterDateStart" promptText="From date.."
+                            GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <DateTimePicker fx:id="ddLogViewFilterDateStop" promptText="To date.."
+                            GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <ComboBox fx:id="ddLogViewFilterDoor" promptText="Door.." prefWidth="200"
+                      GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+            <ComboBox fx:id="ddLogViewFilterCard" promptText="Card.." prefWidth="200"
+                      GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+        </GridPane>
+
+        <Label fx:id="lblLogViewSummary"
+               GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+        <GridPane xmlns:fx="http://javafx.com/fxml"
+                  GridPane.columnIndex="0" GridPane.rowIndex="3">
+
+            <columnConstraints>
+                <ColumnConstraints prefWidth="400"/>
+                <ColumnConstraints prefWidth="400"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints prefHeight="520"/>
+            </rowConstraints>
+
+            <TableView fx:id="tblLog"
+                       GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                <columns>
+                    <TableColumn text="Timestamp">
+                        <cellValueFactory><PropertyValueFactory property="timestampString" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Event">
+                        <cellValueFactory><PropertyValueFactory property="type" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Door ID">
+                        <cellValueFactory><PropertyValueFactory property="door" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Door name">
+                        <cellValueFactory><PropertyValueFactory property="doorInfo" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Card ID">
+                        <cellValueFactory><PropertyValueFactory property="card" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn text="Card name">
+                        <cellValueFactory><PropertyValueFactory property="cardInfo" />
+                        </cellValueFactory>
+                    </TableColumn>
+                </columns>
+            </TableView>
+
+        </GridPane>
+
+        <GridPane xmlns:fx="http://javafx.com/fxml"
+                  GridPane.columnIndex="0" GridPane.rowIndex="4">
+            <columnConstraints>
+                <ColumnConstraints prefWidth="200"/>
+                <ColumnConstraints prefWidth="200"/>
+                <ColumnConstraints prefWidth="200"/>
+                <ColumnConstraints prefWidth="200"/>
+            </columnConstraints>
+
+            <Button text="Save displayed events as CSV.." onAction="#saveCurrentlyVisibleLogEntries" prefWidth="200"
+                    GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+            <Button text="Save daily Door stats as CSV.." onAction="#saveDailyDoorStats" prefWidth="200"
+                    GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+
+            <Button text="Save daily Card stats as CSV.." onAction="#saveDailyCardStats" prefWidth="200"
+                    GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+        </GridPane>
+
+    </GridPane>
+
+</GridPane>

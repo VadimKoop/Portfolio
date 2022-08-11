@@ -1,0 +1,71 @@
+.elementor-control-type-autocomplete .eicon-spinner {
+  margin-left: 5px;
+}
+
+.wty-autocomplete .wty-autocomplete-selection {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #64666a;
+  background-color: #34383C;
+  padding: 3px 6px;
+}
+
+.wty-autocomplete .wty-autocomplete-id {
+  margin-top: 3px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  background-color: #4C4F56;
+  color: #E0E1E3;
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  cursor: default;
+}
+
+.wty-autocomplete .wty-autocomplete-remove-id {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.wty-autocomplete .wty-autocomplete-remove-id:hover {
+  color: #f00;
+}
+
+.wty-autocomplete .wty-autocomplete-search {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: auto;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.wty-autocomplete .wty-autocomplete-dropdown {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #64666a;
+  background-color: #34383C;
+  border-top: 0;
+}
+
+.wty-autocomplete .wty-autocomplete-dropdown:empty {
+  display: none;
+}
+
+.wty-autocomplete .wty-autocomplete-dropdown .wty-autocomplete-id {
+  width: 100%;
+  background-color: transparent;
+  padding: 6px;
+  color: #fff;
+  margin: 0;
+}
+
+.wty-autocomplete .wty-autocomplete-dropdown .wty-autocomplete-id.disabled, .wty-autocomplete .wty-autocomplete-dropdown .wty-autocomplete-id:hover {
+  background-color: #4C4F56;
+}
+
+.wty-autocomplete .no-posts-found,
+.wty-autocomplete .wty-autocomplete-searching {
+  padding: 1em 0.5em;
+}

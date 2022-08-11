@@ -1,0 +1,3 @@
+C:/Users/Vadim/CLionProjects/HW02/Wonderland/Wonderland/cmake-build-debug/CMakeFiles/Wonderland.dir
+C:/Users/Vadim/CLionProjects/HW02/Wonderland/Wonderland/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Vadim/CLionProjects/HW02/Wonderland/Wonderland/cmake-build-debug/CMakeFiles/rebuild_cache.dir

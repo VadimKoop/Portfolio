@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Helpie FAQ\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-21 07:12+0000\n"
+"PO-Revision-Date: 2020-07-21 07:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: Français\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#. Dashboard FAQ Menu and CPT FAQs Section
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "FAQs"
+msgstr "FAQs"
+
+msgid "All FAQs"
+msgstr "Toutes les FAQ"
+
+msgid "Add New FAQ"
+msgstr "Ajouter une nouvelle FAQ"
+
+msgid "Add New"
+msgstr "Ajouter un nouveau"
+
+msgid "New FAQ"
+msgstr "Nouvelle FAQ"
+
+msgid "Edit FAQ"
+msgstr "Modifier la FAQ"
+
+msgid "Add FAQ"
+msgstr "Ajouter une FAQ"
+
+msgid "Hide"
+msgstr "cacher"
+
+msgid "View FAQ"
+msgstr "Voir la FAQ"
+
+msgid "FAQ Category"
+msgstr "Catégorie FAQ"
+
+msgid "Categories"
+msgstr "Catégories"
+
+msgid "KB Categories"
+msgstr "Catégories KB"
+
+msgid "Woo Products"
+msgstr "Woo Products"
+
+msgid "All FAQ Categories"
+msgstr "Toutes les catégories de FAQ"
+
+msgid "FAQ Categories"
+msgstr "Catégories FAQ"
+
+msgid "FAQ Tag"
+msgstr "Tag FAQ"
+
+msgid "Tags"
+msgstr "Mots clés"
+
+msgid "All FAQ Tags"
+msgstr "Tous les tags FAQ"
+
+msgid "FAQ Tags"
+msgstr "Étiquettes de FAQ"
+
+msgid "FAQ Settings"
+msgstr "Paramètres de la FAQ"
+
+#. General Tab
+msgid "General"
+msgstr "Général"
+
+msgid "Title"
+msgstr "Titre"
+
+msgid "FAQ Title"
+msgstr "Titre de la FAQ"
+
+msgid "Show Search"
+msgstr "Afficher la recherche"
+
+msgid "Show Search in FAQ"
+msgstr "Afficher la recherche dans la FAQ"
+
+msgid "You can search through all FAQ items"
+msgstr "Vous pouvez rechercher parmi tous les articles de la FAQ"
+
+msgid "Search Placeholder"
+msgstr "Recherche d'espace réservé"
+
+msgid "Search Placeholder text"
+msgstr "Rechercher un texte d'espace réservé"
+
+msgid "FAQ Search Placeholder text"
+msgstr "FAQ Rechercher un texte d'espace réservé"
+
+msgid "Toggle"
+msgstr "Basculer"
+
+msgid "Toggle Open / closed Previous Item"
+msgstr "Activer / désactiver l'élément précédent"
+
+msgid "Open First FAQ Item"
+msgstr "Ouvrir le premier article de la FAQ"
+
+msgid "First item open by default"
+msgstr "Premier élément ouvert par défaut"
+
+msgid "Sort By"
+msgstr "Trier par"
+
+msgid "Publish Date"
+msgstr "Date de publication"
+
+msgid "Updated Date"
+msgstr "Date de mise à jour"
+
+msgid "Alphabetical"
+msgstr "Alphabétique"
+
+msgid "Order"
+msgstr "Commande"
+
+msgid "Ascending"
+msgstr "Ascendant"
+
+msgid "Descending"
+msgstr "Descendant"
+
+msgid "Limit"
+msgstr "Limite"
+
+msgid "Limit ( number of items )"
+msgstr "Limite (nombre d'éléments)"
+
+msgid "Limit of the FAQ items"
+msgstr "Limite des éléments de la FAQ"
+
+#. Style Tab
+msgid "Style"
+msgstr "Style"
+
+msgid "Theme"
+msgstr "Thème"
+
+msgid "Light"
+msgstr "Lumière"
+
+msgid "Dark"
+msgstr "Foncé"
+
+msgid "Select Theme of FAQ Layout Section"
+msgstr "Sélectionnez le thème de la section Disposition de la FAQ"
+
+#. Integrations Tab
+msgid "Integrations"
+msgstr "Intégrations"
+
+#. KB Tab
+msgid "Enable FAQ in Helpie KB"
+msgstr "Activer la FAQ dans Helpie KB"
+
+msgid "Show FAQ In Helpie KB Category Page"
+msgstr "Afficher la FAQ dans Helpie KB Page des catégories"
+
+msgid "Where to Show FAQ in Helpie KB Category Page"
+msgstr "Où afficher la FAQ dans Helpie KB Page des catégories"
+
+msgid "Content"
+msgstr "Contenu"
+
+msgid "Before Content"
+msgstr "Avant le contenu"
+
+msgid "After Content"
+msgstr "Après le contenu"
+
+msgid "Select show faq before or after content in kb category page"
+msgstr ""
+"Sélectionnez Afficher faq avant ou après le contenu de la page de catégorie "
+"kb"
+
+#. WooCommerce Tab
+msgid "Show FAQ in WooCommerce"
+msgstr "Afficher la FAQ dans WooCommerce"
+
+msgid "Show FAQ In WooCommerce product tab"
+msgstr "Afficher la FAQ dans l'onglet Produit WooCommerce"
+
+msgid "Tab Title"
+msgstr "Titre de l'onglet"
+
+#. Elementor Widget
+msgid "Single Item"
+msgstr "Un seul article"
+
+msgid "Single Item - Header"
+msgstr "Pièce unique - En-tête"
+
+msgid "Single Item - Body"
+msgstr "Pièce unique - Corps"
+
+#. Roadmap
+msgid "Roadmap"
+msgstr "Feuille de route"
+
+msgid "here"
+msgstr "ici"
+
+msgid "You can vote on Helpie FAQ's next feature %s"
+msgstr "Vous pouvez voter sur la prochaine fonctionnalité de la Helpie FAQ %s"

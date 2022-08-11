@@ -1,0 +1,17 @@
+2021-04-10T14:43:37+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 3666
+2021-04-10T14:45:24+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 3667
+2021-04-10T14:45:24+00:00 NOTICE debug :: Order ID 3667 was pending and is now on-hold :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2021-04-10T14:45:25+00:00 NOTICE order_sumbit :: #3666 has a financial status of pending and was skipped.
+2021-04-10T14:46:58+00:00 NOTICE debug :: Order ID 3667 was on-hold and is now completed :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2021-04-10T14:48:56+00:00 NOTICE order.member.updated :: Updated tallinn121@gmail.com subscriber status to subscribed and language to et
+2021-04-10T14:48:56+00:00 NOTICE order_submit.success :: addStoreOrder :: #3667 :: email: tallinn121@gmail.com :: landing site https://mr-ant.ee/?wc-ajax=update_order_review

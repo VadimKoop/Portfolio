@@ -1,0 +1,18 @@
+.form__section {
+    overflow: hidden;
+    padding: 5%;
+    border: solid 1px #F2F2F2;
+    background: #FCFCFC;
+    display: none;
+}
+
+.form__text,
+.form__email,
+.form__textarea {
+    background: #F2F2F2;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}

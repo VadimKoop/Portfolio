@@ -1,0 +1,215 @@
+# Copyright (C) 2018 WooCommerce Payment Gateway - Paysera
+# This file is distributed under the same license as the WooCommerce Payment Gateway - Paysera package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Payment Gateway - Paysera 2.4.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-payment-"
+"gateway-paysera\n"
+"POT-Creation-Date: 2018-03-09 08:20:24+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/class-wc-paysera-settings.php:64
+msgid "Enable Paysera"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:65
+msgid "Enable Paysera payment"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:71
+msgid "Project ID"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:73
+msgid "Project id"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:77
+msgid "Sign"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:79
+msgid "Paysera sign password"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:83
+msgid "Test"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:85
+msgid "Enable test mode"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:87
+msgid "Enable this to accept test payments"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:90
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:92
+msgid "Payment method title that the customer will see on your website."
+msgstr ""
+
+#. #-#-#-#-#  woo-payment-gateway-paysera.pot (WooCommerce Payment Gateway - Paysera 2.4.5)  #-#-#-#-#
+#. Author of the plugin/theme
+#: includes/class-wc-paysera-settings.php:96 paysera.php:136
+msgid "All popular payment methods"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:99
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:101
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:105
+msgid "Choose a payment method on the Paysera page"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:108
+msgid "List of payments"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:110
+msgid "Display payment methods list"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:112
+msgid "Enable this to display payment methods list at checkout page"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:118
+msgid "Specific countries"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:123
+msgid "Select which country payment methods to display (empty means all)"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:126
+msgid "All countries"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:130
+msgid "Grid view"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:132
+msgid "Enable grid view"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:134
+msgid "Enable this to use payment methods grid view"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:137
+msgid "New Order Status"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:141
+msgid "New order creation status"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:145
+msgid "Paid Order Status"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:149
+msgid "Order status after completing payment"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:153
+msgid "Pending checkout"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:157
+msgid "Order status with not finished checkout"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:138
+msgid "Buyer consent"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:139
+msgid "Enable buyer consent"
+msgstr ""
+
+#: includes/class-wc-paysera-settings.php:140
+msgid "Enable this to skip additional step when using Pis payment methods"
+msgstr ""
+
+#: includes/class-wc-paysera-payment-methods.php:173
+msgid "Please be informed that the account information and payment initiation services will be provided to you by Paysera in accordance with these %s. By proceeding with this payment, you agree to receive this service and the service terms and conditions."
+msgstr ""
+
+#: includes/class-wc-paysera-payment-methods.php:174
+msgid "https://www.paysera.lt/v2/en-LT/legal/pis-rules-2020"
+msgstr ""
+
+#: includes/class-wc-paysera-payment-methods.php:175
+msgid "rules"
+msgstr ""
+
+#: paysera.php:185
+msgid "Main Settings"
+msgstr ""
+
+#: paysera.php:189
+msgid "Extra Settings"
+msgstr ""
+
+#: paysera.php:193
+msgid "Order Status"
+msgstr ""
+
+#: paysera.php:209
+msgid "Project ID must be Not Empty"
+msgstr ""
+
+#: paysera.php:220
+msgid "Password (sign) must be Not Empty"
+msgstr ""
+
+#: paysera.php:281
+msgid "Paysera: Order checkout process is started"
+msgstr ""
+
+#: paysera.php:325
+msgid "Paysera: Customer came back to page"
+msgstr ""
+
+#: paysera.php:358
+msgid "Paysera: Callback order payment completed"
+msgstr ""
+
+#: paysera.php:417
+msgid "Paysera: Status changed to "
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Payment Gateway - Paysera"
+msgstr ""
+
+#. #-#-#-#-#  woo-payment-gateway-paysera.pot (WooCommerce Payment Gateway - Paysera 2.4.5)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  woo-payment-gateway-paysera.pot (WooCommerce Payment Gateway - Paysera 2.4.5)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://www.paysera.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Accepts Paysera"
+msgstr ""
+
+#. Descriptionsdhsd
+msgid "WooCommerce is not active"
+msgstr ""

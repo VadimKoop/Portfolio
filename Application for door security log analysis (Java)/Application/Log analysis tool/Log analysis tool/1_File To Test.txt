@@ -1,0 +1,4 @@
+Pärnu mnt 160	9/2/2019 4:01:05 PM	13227933	Hello Goodbye2 24707 (U00545) Card Access in 3K Production Floor1 door 1 coridor (D010)
+Pärnu mnt 160	9/2/2019 4:01:23 PM	13227955	Hello Goodbye 24871 (U00985) Card Access in 3K Production Floor1 door 1 coridor (D010)
+Pärnu mnt 160	9/2/2019 4:01:23 PM	13227957	D010 Uks 3K F1 koridorist DOTL timer (C01:X17) Off by Aux Timer
+Pärnu mnt 160	9/2/2019 4:29:54 PM	13229111	Lets See 39788 (U00731) Card Denied in 3K Labor (D006) - Not in List
