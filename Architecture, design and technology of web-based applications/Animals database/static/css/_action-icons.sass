@@ -1,0 +1,26 @@
+// Action Icons
+
+$action-icon-size: 30px
+=action-icon($name)
+  display: block
+  float:   left
+  width:   24px
+  height:  24px
+  margin:  3px
+  background: url('../img/' + $name + '-icon-24x24.png') center center
+  cursor: pointer
+
+.action-add
+  +action-icon('add')
+
+.action-modify
+  +action-icon('modify')
+
+.action-accept
+  +action-icon('accept')
+
+.action-cancel
+  +action-icon('cancel')
+
+.action-remove
+  +action-icon('remove')

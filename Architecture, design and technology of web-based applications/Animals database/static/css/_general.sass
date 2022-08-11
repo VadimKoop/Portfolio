@@ -1,0 +1,22 @@
+// General
+
+$width: 920px
+$wrapper-padding: 20px
+
+=reset()
+  margin: 0
+  padding: 0
+
+=n-per-container($n)
+  width: $width / $n
+
+.wrapper
+  width: $width + $wrapper-padding * 2
+  padding: $wrapper-padding
+  margin: 0 auto
+
+.clear
+  clear: both
+
+hr
+  margin: 25px 0

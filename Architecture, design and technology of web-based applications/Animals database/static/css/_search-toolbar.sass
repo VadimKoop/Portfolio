@@ -1,0 +1,31 @@
+// Search Toolbar
+
+@import colors
+
+.search-bar
+  margin: 0 auto
+  width: 350px
+  min-height: 64px
+  padding-left: 48px
+  padding-top: 5px
+  background: url('../img/search-icon-64x64.png') no-repeat 0 center
+
+=search-bar-contents()
+  display: inline-block
+  margin-left: 10px
+
+.search-box
+  +search-bar-contents()
+  width: 200px
+
+.search-button
+  +search-bar-contents()
+  width: 80px
+  position: relative
+  top: -1px
+  background-color: $color-blue
+  border-color: $color-blue
+
+.search-button:hover
+  background-color: $color-blue-darker
+  border-color: $color-blue-darker

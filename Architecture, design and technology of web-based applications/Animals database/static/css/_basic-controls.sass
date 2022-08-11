@@ -1,0 +1,83 @@
+// Basic Controls
+
+@import colors
+@import action-icons
+
+.new-animal-button-container
+  text-align: center
+  margin: 25px 0 20px
+
+.new-animal-button
+  background-color: $color-green
+  border-color: $color-green
+
+.new-animal-button:hover
+  background-color: $color-green-darker
+  border-color: $color-green-darker
+
+=basic-control-component()
+  display: inline-block
+  padding-top: 10px
+
+=basic-control()
+  margin: 0 auto
+  display: block
+
+  .left-controls
+    +basic-control-component()
+    width:  $action-icon-size
+    height: $action-icon-size
+
+  .data-controls
+    +basic-control-component()
+    margin: 0 5px
+
+  .form-control
+    display: inline-block
+    margin: 0 4px
+    height: 30px
+
+  .right-controls
+    +basic-control-component()
+    width:  $action-icon-size * 2
+    height: $action-icon-size
+
+// Animal Information Control
+
+.animal-info-control
+  +basic-control()
+  width: 520px
+
+  .form-control
+    width: 200px
+
+// Animal Sighting Control
+// CAREFUL: VERY HACKY NESTING
+
+.animal-sighting-control
+  +basic-control()
+  width: 520px
+
+  .form-control:first-child
+    width: 200px
+
+  .datetime-control
+    width: 200px
+    display: inline-block
+    margin: 0 4px
+    height: 30px
+
+    .form-control
+      width: 160px
+
+  .form-group
+    margin: 0
+
+  .input-group
+    display: block
+    margin-top: 10px
+    margin-left: 0
+
+    .form-control
+      margin: 0
+

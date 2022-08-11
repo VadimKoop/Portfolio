@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard info -->
+    <meta charset="UTF-8"/>
+    <title>Forest App</title>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- MomentJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+
+    <!-- Bootstrap 3 Datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"/>
+
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <!-- AngularJS directive for Bootstrap 3 Datepicker -->
+    <script src="js/angular-bootstrap-datetimerpicker-directive.js"></script>
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper"
+         ng-app="AnimalRegisterApp"
+         ng-controller="AnimalRegisterController">
+
+        <!-- Headmast -->
+        <div class="headmast">
+
+            <!-- View switcher -->
+            <ul class="view-switcher">
+
+                <!-- View switcher pills -->
+                <li class="view-pill"
+                    ng-class="{'active': activeTab == 'animal'}"
+                    ng-click="activeTab = 'animal'">
+                    <span>Animals</span>
+                </li><!--
+             --><li class="view-pill"
+                    ng-class="{'active': activeTab == 'species'}"
+                    ng-click="activeTab = 'species'">
+                    <span>Species</span>
+                </li><!--
+             --><li class="view-pill"
+                    ng-class="{'active': activeTab == 'location'}"
+                    ng-click="activeTab = 'location'">
+                    <span>Location</span>
+                </li>
+                <!-- /View switcher pills -->
+
+            </ul><!-- /View switcher -->
+
+        </div><!-- /Headmast -->
+
+        <!-- Animal view -->
+        <div class="tab"
+             ng-class="{'hidden' : (activeTab != 'animal')}">
+
+            <!-- Search bar -->
+            <form class="search-bar" name="animalSearchBar">
+                <input class="search-box form-control" name="animalNameToSearchBy" type="text" placeholder="Search by name" required
+                       ng-model="animalNameToSearchBy"
+                       ng-pattern="regexAnimalName"
+                       ng-trim="true"/><!--
+
+             --><button class="search-button btn btn-primary"
+                        ng-disabled="animalSearchBar.animalNameToSearchBy.$invalid"
+                        ng-click="loadAnimalInformation(animalNameToSearchBy)">Search</button>
+            </form><!-- /Search bar -->
+
+            <hr/>
+
+            <!-- New animal button -->
+            <div class="new-animal-button-container">
+                <button class="new-animal-button btn btn-primary"
+                        ng-class="{'hidden': (animalInfoControlStatus == 'new')}"
+                        ng-click="resetAnimalInfoControl()">Add new animal</button>
+            </div><!-- New animal button -->
+
+            <!-- Animal information control -->
+            <form class="animal-info-control" name="animalInfoControl">
+                <div class="left-controls">
+                    <a class="action-remove"
+                       ng-class="{'hidden': (animalInfoControlStatus != 'review')}"
+                       ng-click="removeAnimal()">
+                    </a>
+                </div><!--
+             --><div class="data-controls">
+                    <input class="form-control name-control" name="name" type="text" placeholder="Name" required
+                           ng-model="animalInfoName"
+                           ng-pattern="regexName"
+                           ng-disabled="(animalInfoControlStatus == 'review')"
+                           ng-trim="true"/><!--
+                 --><input class="form-control species-control" name="species" type="text" placeholder="Species" required
+                           ng-model="animalInfoSpecies"
+                           ng-pattern="regexSpecies"
+                           ng-disabled="(animalInfoControlStatus == 'review')"
+                           ng-trim="true"/>
+                    <div class="clear"></div><!-- Hack -->
+                </div><!--
+             --><div class="right-controls">
+                    <a class="action-add"
+                       ng-class="{'hidden': (animalInfoControlStatus != 'new')}"
+                       ng-click="addAnimal()">
+                    </a>
+                    <a class="action-modify"
+                       ng-class="{'hidden': (animalInfoControlStatus != 'review')}"
+                       ng-click="beginModifyAnimal()">
+                    </a>
+                    <a class="action-accept"
+                       ng-class="{'hidden': (animalInfoControlStatus != 'modify')}"
+                       ng-click="acceptModifyAnimal()">
+                    </a>
+                    <a class="action-cancel"
+                       ng-class="{'hidden': (animalInfoControlStatus != 'modify')}"
+                       ng-click="cancelModifyAnimal()">
+                    </a>
+                </div><!--
+             --><div class="clear"></div><!-- Hack -->
+            </form><!-- /Animal information control -->
+
+            <hr/>
+
+            <!-- Animal sightings -->
+            <div class="sightings">
+                <!-- Animal sighting control(s) -->
+                <form class="animal-sighting-control" name="animalSightingControl"
+                      ng-repeat="sighting in animalSightings">
+                    <div class="left-controls">
+                        <a class="action-remove"
+                           ng-class="{'hidden': (sighting.status != 'review')}"
+                           ng-click="removeSighting($index)">
+                        </a>
+                    </div><!--
+                 --><div class="data-controls">
+                        <input class="form-control" name="location" type="text" placeholder="Location" required
+                           ng-pattern="regexLocation"
+                           ng-disabled="(sighting.status == 'review')"
+                           ng-model="sighting.location"
+                           ng-trim="true"/><!--
+                     --><div class="datetime-control">
+                            <div class="form-group">
+                                <div class='input-group date datetimepicker'>
+                                    <input class="form-control" name="datetime" type='text' placeholder="Date and time" required
+                                           ng-pattern="regexDatetime"
+                                           ng-disabled="(sighting.status == 'review')"
+                                           ng-model="sighting.datetime"
+                                           datetimepicker datetimepicker-options="{{ datetimepickerOptions }}"/><!--
+                                 --><span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div><!-- Hack -->
+                    </div><!--
+                 --><div class="right-controls">
+                        <a class="action-add"
+                           ng-class="{'hidden': (sighting.status != 'new')}"
+                           ng-click="addSighting(animalSightingControl, $index)">
+                        </a>
+                        <a class="action-modify"
+                           ng-class="{'hidden': (sighting.status != 'review')}"
+                           ng-click="beginModifySighting($index)">
+                        </a>
+                        <a class="action-accept"
+                           ng-class="{'hidden': (sighting.status != 'modify')}"
+                           ng-click="acceptModifySighting(animalSightingControl, $index)">
+                        </a>
+                        <a class="action-cancel"
+                           ng-class="{'hidden': (sighting.status != 'modify')}"
+                           ng-click="cancelModifySighting($index)">
+                        </a>
+                    </div><!--
+                 --><div class="clear"></div><!-- Hack -->
+                </form><!-- /Animal sighting control(s) -->
+            </div><!-- /Animal sightings -->
+
+        </div><!-- /Animal view -->
+
+        <!-- Species view -->
+        <div class="tab"
+             ng-class="{'hidden' : (activeTab != 'species')}">
+
+            <!-- Search bar -->
+            <form class="search-bar" name="speciesSearchBar">
+                <input class="search-box form-control" name="speciesToSearchBy" type="text" placeholder="Search by species" required
+                       ng-model="speciesToSearchBy"
+                       ng-pattern="regexSpecies"
+                       ng-trim="true"/><!--
+
+             --><button class="search-button btn btn-primary"
+                        ng-disabled="speciesSearchBar.speciesToSearchBy.$invalid"
+                        ng-click="loadSpeciesInformation(speciesToSearchBy)">Search</button>
+            </form><!-- /Search bar -->
+
+            <hr/>
+
+            <!-- Animal list -->
+            <div class="animal-list">
+                <div class="animal-list-item"
+                     ng-repeat="animal in animalsOfSpecies">
+                    <p class="animal-details clickable"
+                       ng-click="loadAnimalInformation(animal.name)">{{animal.name}}</p><!--
+                 --><p class="animal-details clickable"
+                       ng-click="loadLocationInformation(animal.location)">{{animal.location}}</p><!--
+                 --><p class="animal-details">{{animal.datetime}}</p>
+                </div>
+            </div>
+            <!-- /Animal list -->
+
+        </div><!-- /Species view -->
+
+        <!-- Location view -->
+        <div class="tab"
+             ng-class="{'hidden' : (activeTab != 'location')}">
+
+            <!-- Search bar -->
+            <form class="search-bar" name="locationSearchBar">
+                <input class="search-box form-control" name="locationToSearchBy" type="text" placeholder="Search by location" required
+                       ng-model="locationToSearchBy"
+                       ng-pattern="regexLocation"
+                       ng-trim="true"/><!--
+
+             --><button class="search-button btn btn-primary"
+                        ng-disabled="locationSearchBar.locationToSearchBy.$invalid"
+                        ng-click="loadLocationInformation(locationToSearchBy)">Search</button>
+            </form><!-- /Search bar -->
+
+            <hr/>
+
+            <!-- Animal list (Click)-->
+            <div class="animal-list">
+                <div class="animal-list-item"
+                     ng-repeat="animal in animalsAtLocation">
+                    <p class="animal-details clickable"
+                       ng-click="loadAnimalInformation(animal.name)">{{animal.name}}</p><!--
+                 --><p class="animal-details clickable"
+                       ng-click="loadSpeciesInformation(animal.species)">{{animal.species}}</p><!--
+                 --><p class="animal-details">{{animal.datetime}}</p>
+                </div>
+            </div>
+            <!-- /Animal list -->
+
+        </div><!-- /Location view -->
+
+    </div><!-- /Wrapper -->
+
+</body>
+
+</html>

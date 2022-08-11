@@ -1,0 +1,309 @@
+.wrapper {
+  width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+hr {
+  margin: 25px 0;
+}
+
+.view-switcher {
+  margin: 0;
+  padding: 0;
+}
+
+.view-pill {
+  width: 306.66667px;
+  color: #19acc2;
+  display: inline-block;
+  padding: 25px 0 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.view-pill span {
+  display: inline-block;
+}
+
+.view-pill:hover {
+  background: #f3f9fc;
+  cursor: pointer;
+}
+.view-pill:hover span {
+  cursor: pointer;
+}
+
+.view-pill.active {
+  font-weight: 800;
+  color: white;
+  background: #9edb92;
+}
+
+.search-bar {
+  margin: 0 auto;
+  width: 350px;
+  min-height: 64px;
+  padding-left: 48px;
+  padding-top: 5px;
+  background: url("../img/search-icon-64x64.png") no-repeat 0 center;
+}
+
+.search-box {
+  display: inline-block;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.search-button {
+  display: inline-block;
+  margin-left: 10px;
+  width: 80px;
+  position: relative;
+  top: -1px;
+  background-color: #4fb8ee;
+  border-color: #4fb8ee;
+}
+
+.search-button:hover {
+  background-color: #38a3d9;
+  border-color: #38a3d9;
+}
+
+.action-add {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/add-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-modify {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/modify-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-accept {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/accept-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-cancel {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/cancel-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-remove {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/remove-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-add {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/add-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-modify {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/modify-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-accept {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/accept-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-cancel {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/cancel-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.action-remove {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  background: url("../img/remove-icon-24x24.png") center center;
+  cursor: pointer;
+}
+
+.new-animal-button-container {
+  text-align: center;
+  margin: 25px 0 20px;
+}
+
+.new-animal-button {
+  background-color: #59c245;
+  border-color: #59c245;
+}
+
+.new-animal-button:hover {
+  background-color: #29b326;
+  border-color: #29b326;
+}
+
+.animal-info-control {
+  margin: 0 auto;
+  display: block;
+  width: 520px;
+}
+.animal-info-control .left-controls {
+  display: inline-block;
+  padding-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+.animal-info-control .data-controls {
+  display: inline-block;
+  padding-top: 10px;
+  margin: 0 5px;
+}
+.animal-info-control .form-control {
+  display: inline-block;
+  margin: 0 4px;
+  height: 30px;
+}
+.animal-info-control .right-controls {
+  display: inline-block;
+  padding-top: 10px;
+  width: 60px;
+  height: 30px;
+}
+.animal-info-control .form-control {
+  width: 200px;
+}
+
+.animal-sighting-control {
+  margin: 0 auto;
+  display: block;
+  width: 520px;
+}
+.animal-sighting-control .left-controls {
+  display: inline-block;
+  padding-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+.animal-sighting-control .data-controls {
+  display: inline-block;
+  padding-top: 10px;
+  margin: 0 5px;
+}
+.animal-sighting-control .form-control {
+  display: inline-block;
+  margin: 0 4px;
+  height: 30px;
+}
+.animal-sighting-control .right-controls {
+  display: inline-block;
+  padding-top: 10px;
+  width: 60px;
+  height: 30px;
+}
+.animal-sighting-control .form-control:first-child {
+  width: 200px;
+}
+.animal-sighting-control .datetime-control {
+  width: 200px;
+  display: inline-block;
+  margin: 0 4px;
+  height: 30px;
+}
+.animal-sighting-control .datetime-control .form-control {
+  width: 160px;
+}
+.animal-sighting-control .form-group {
+  margin: 0;
+}
+.animal-sighting-control .input-group {
+  display: block;
+  margin-top: 10px;
+  margin-left: 0;
+}
+.animal-sighting-control .input-group .form-control {
+  margin: 0;
+}
+
+.animal-list {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.animal-list-item {
+  margin: 10px 0;
+}
+
+.animal-details {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+}
+
+.animal-details.clickable {
+  color: #19acc2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.animal-details.clickable:hover {
+  color: #08343a;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.headmast {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

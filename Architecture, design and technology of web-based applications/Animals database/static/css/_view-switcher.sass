@@ -1,0 +1,27 @@
+// View Switcher
+
+.view-switcher
+  +reset()
+
+.view-pill
+  +n-per-container(3)
+  color: $color-link
+  display: inline-block
+  padding: 25px 0 25px
+  text-align: center
+  text-transform: uppercase
+
+  span
+    display: inline-block
+
+.view-pill:hover
+  background: #f3f9fc
+  cursor: pointer
+
+  span
+    cursor: pointer
+
+.view-pill.active
+  font-weight: 800
+  color: white
+  background: lighten(#59c245, 20)

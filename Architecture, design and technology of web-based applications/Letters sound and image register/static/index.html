@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'/>
+  <title>K5</title>
+  <script
+			  src='https://code.jquery.com/jquery-3.2.1.min.js'
+			  integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+			  crossorigin='anonymous'></script>
+
+<!--
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css'/>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' crossorigin='anonymous'>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' crossorigin='anonymous'></script>
+-->
+
+  <link rel='stylesheet' href='style.css'/>
+  <script src='script.js'></script>
+</head>
+<body>
+  <!--
+  <div id='wrapper' class='container-fluid'>
+    <div class='row'>
+      <input id='request-text' type='text' placeholder='Search for..'/>
+      <input id='request' class='btn btn-secondary' value='Search'/>
+    </div>
+    <div id='suggest-list'></div>
+    <div id='section-upload'>
+      <input id='upload-text' type='text' placeholder='Word'/>
+      <input id='upload-file' type='file'/>
+      <small>Audio files must be less than 11MB in size</small>
+      <input id='upload' class='btn btn-primary' value='Upload new audio'/>
+    </div>
+    <div id='details'>
+      <p id='details-text'></p>
+      <pre id='details-file'></pre>
+    </div>
+  </div>
+  -->
+  <div id='wrapper'>
+    <div id='search-bar' class='search-element'>
+      <input id='search-text' type='text' placeholder='Search for word..'/>
+      <div id='suggestion-list' class='search-element'></div>
+      <button id='search-button'>Load</button>
+    </div>
+    <hr/>
+  </div>
+  <div id='details'>
+    <button id='new'>Register new audio</button>
+    <h1 id='word'></h1>
+    <div id='audio'></div>
+    <p id='text-new'>Register new audio:</p>
+    <input id='upload-word' class='details-element' type='text' placeholder='New word'/>
+    <p id='text-replace'>Replace audio:</p>
+    <input id='upload-file' class='details-element' type='file'/>
+    <small id='upload-note' class='details-element'>Audio files must be less than 11MB in size</small>
+    <button id='upload-button' class='details-element'>Upload</button>
+  </div>
+</body>
+</html>
