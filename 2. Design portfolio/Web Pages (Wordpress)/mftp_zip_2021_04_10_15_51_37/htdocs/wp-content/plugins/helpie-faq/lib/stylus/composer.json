@@ -1,0 +1,9 @@
+{
+    "name": "pauple/stylus",
+    "description": "Styled Module of Pauple Pugins",
+    "type": "pauple-library",
+    "version": "0.1",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

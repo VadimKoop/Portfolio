@@ -1,0 +1,114 @@
+#woostify-license-keys .woostify-license-key-field {
+  height: 36px;
+  padding: 0 10px;
+}
+
+#woostify-license-keys .hndle .license-key-info {
+  float: right;
+  font-size: 0.8em;
+  font-weight: normal;
+  color: limegreen;
+}
+
+#woostify-license-keys .hndle .not-receiving-updates {
+  color: firebrick;
+}
+
+@media (min-width: 1140px) {
+  .woostify-settings-box {
+    margin: 4em auto;
+  }
+}
+
+.woostify-settings-box .woostify-settings-content {
+  background-color: #fff;
+  border: 1px solid #d8e2e9;
+}
+
+.woostify-settings-box .woostify-settings-section-title {
+  margin: 0;
+  padding: 1em 1.5em;
+  border-bottom: 1px solid #d8e2e9;
+}
+
+.woostify-settings-box .woostify-settings-section-content {
+  padding: 1em 1.5em;
+}
+
+#woostify_side_guide_metabox .hndle {
+  padding: 20px;
+}
+
+#woostify_side_guide_metabox .hndle + .inside {
+  margin-top: 0;
+}
+
+#woostify_side_guide_metabox .inside {
+  padding: 20px;
+}
+
+.woostify-pro-module .active-all-item {
+  background-color: #f8f8f8;
+  padding: 10px 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 4px solid transparent;
+}
+
+.woostify-pro-module .module-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 4px solid transparent;
+}
+
+.woostify-pro-module .module-item:last-of-type {
+  border-bottom: 0;
+}
+
+.woostify-pro-module .module-item.activated {
+  background-color: #f7fcfe;
+}
+
+.woostify-pro-module .module-item:not(.activated) .module-setting-url {
+  display: none;
+}
+
+.woostify-pro-module .module-item.disabled {
+  pointer-events: none;
+  filter: grayscale(100%);
+  cursor: default;
+  border-left-color: transparent;
+  opacity: 0.5;
+}
+
+.woostify-pro-module .module-item.disabled .module-setting-url {
+  display: none;
+}
+
+.woostify-pro-module .module-item.disabled .module-action-button {
+  text-transform: none;
+}
+
+.woostify-pro-module .module-name label {
+  font-weight: 600;
+  font-size: 1em;
+  vertical-align: baseline;
+  margin-left: 5px;
+}
+
+.woostify-pro-module .module-setting-url {
+  margin-right: 5px;
+}
+
+.woostify-pro-module .module-action-button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.woostify-metabox-option.hide {
+  display: none;
+}

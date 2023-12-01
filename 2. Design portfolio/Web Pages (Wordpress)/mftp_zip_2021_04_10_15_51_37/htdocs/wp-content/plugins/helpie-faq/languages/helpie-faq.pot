@@ -1,0 +1,214 @@
+#. Dashboard FAQ Menu and CPT FAQs Section
+
+msgid "FAQ"
+msgstr "FAQ" 
+
+msgid "FAQs"
+msgstr "FAQs" 
+
+msgid "All FAQs"
+msgstr "All FAQs" 
+
+msgid "Add New FAQ"
+msgstr "Add New FAQ" 
+
+msgid "Add New"
+msgstr "Add New" 
+
+msgid "New FAQ"
+msgstr "New FAQ" 
+
+msgid "Edit FAQ"
+msgstr "Edit FAQ" 
+
+msgid "Add FAQ"
+msgstr "Add FAQ" 
+
+msgid "Hide"
+msgstr "Hide" 
+
+msgid "View FAQ"
+msgstr "View FAQ" 
+
+msgid "FAQ Category"
+msgstr "FAQ Category" 
+
+msgid "Categories"
+msgstr "Categories" 
+
+msgid "KB Categories"
+msgstr "KB Categories" 
+
+msgid "Woo Products"
+msgstr "Woo Products" 
+
+msgid "All FAQ Categories"
+msgstr "All FAQ Categories" 
+
+msgid "FAQ Categories"
+msgstr "FAQ Categories" 
+
+msgid "FAQ Tag"
+msgstr "FAQ Tag" 
+
+msgid "Tags"
+msgstr "Tags" 
+
+msgid "All FAQ Tags"
+msgstr "All FAQ Tags" 
+
+msgid "FAQ Tags"
+msgstr "FAQ Tags" 
+
+msgid "FAQ Settings"
+msgstr "FAQ Settings" 
+
+#. General Tab
+
+msgid "General"
+msgstr "General" 
+
+msgid "Title"
+msgstr "Title" 
+
+msgid "FAQ Title"
+msgstr "FAQ Title" 
+
+msgid "Show Search"
+msgstr "Show Search" 
+
+msgid "Show Search in FAQ"
+msgstr "Show Search in FAQ" 
+
+msgid "You can search through all FAQ items"
+msgstr "You can search through all FAQ items" 
+
+msgid "Search Placeholder"
+msgstr "Search Placeholder" 
+
+msgid "Search Placeholder text"
+msgstr "Search Placeholder text" 
+
+msgid "FAQ Search Placeholder text"
+msgstr "FAQ Search Placeholder text" 
+
+msgid "Toggle"
+msgstr "Toggle" 
+
+msgid "Toggle Open / closed Previous Item"
+msgstr "Toggle Open / closed Previous Item" 
+
+msgid "Open First FAQ Item"
+msgstr "Open First FAQ Item" 
+
+msgid "First item open by default"
+msgstr "First item open by default" 
+
+msgid "Sort By"
+msgstr "Sort By" 
+
+msgid "Publish Date"
+msgstr "Publish Date" 
+
+msgid "Updated Date"
+msgstr "Updated Date" 
+
+msgid "Alphabetical"
+msgstr "Alphabetical" 
+
+msgid "Order"
+msgstr "Order" 
+
+msgid "Ascending"
+msgstr "Ascending" 
+
+msgid "Descending"
+msgstr "Descending" 
+
+msgid "Limit"
+msgstr "Limit" 
+
+msgid "Limit ( number of items )"
+msgstr "Limit ( number of items )" 
+
+msgid "Limit of the FAQ items"
+msgstr "Limit of the FAQ items" 
+
+
+#. Style Tab
+
+msgid "Style"
+msgstr "Style" 
+
+msgid "Theme"
+msgstr "Theme" 
+
+msgid "Light"
+msgstr "Light" 
+
+msgid "Dark"
+msgstr "Dark" 
+
+msgid "Select Theme of FAQ Layout Section"
+msgstr "Select Theme of FAQ Layout Section" 
+
+#. Integrations Tab
+
+msgid "Integrations"
+msgstr "Integrations" 
+
+#. KB Tab
+
+msgid "Enable FAQ in Helpie KB"
+msgstr "Enable FAQ in Helpie KB" 
+
+msgid "Show FAQ In Helpie KB Category Page"
+msgstr "Show FAQ In Helpie KB Category Page" 
+
+msgid "Where to Show FAQ in Helpie KB Category Page"
+msgstr "Where to Show FAQ in Helpie KB Category Page" 
+
+msgid "Content"
+msgstr "Content" 
+
+msgid "Before Content"
+msgstr "Before Content" 
+
+msgid "After Content"
+msgstr "After Content" 
+
+msgid "Select show faq before or after content in kb category page"
+msgstr "Select show faq before or after content in kb category page" 
+
+#. WooCommerce Tab
+
+msgid "Show FAQ in WooCommerce"
+msgstr "Show FAQ in WooCommerce" 
+
+msgid "Show FAQ In WooCommerce product tab"
+msgstr "Show FAQ In WooCommerce product tab" 
+
+msgid "Tab Title"
+msgstr "Tab Title" 
+
+#.Elementor Widget
+
+msgid "Single Item"
+msgstr "Single Item" 
+
+msgid "Single Item - Header"
+msgstr "Single Item - Header" 
+
+msgid "Single Item - Body"
+msgstr "Single Item - Body" 
+
+#. Roadmap
+
+msgid "Roadmap"
+msgstr "Roadmap"
+
+msgid "here"
+msgstr "here"
+
+msgid "You can vote on Helpie FAQ's next feature %s"
+msgstr "You can vote on Helpie FAQ's next feature %s"

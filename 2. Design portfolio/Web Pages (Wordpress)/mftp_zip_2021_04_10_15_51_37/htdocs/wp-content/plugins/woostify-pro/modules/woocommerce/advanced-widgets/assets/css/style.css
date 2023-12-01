@@ -1,0 +1,217 @@
+/* Featured products */
+.advanced-featured-product .widget-title {
+  padding-right: 40px;
+}
+
+.adv-featured-product-arrow {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+
+.adv-featured-product-arrow span {
+  cursor: pointer;
+  width: 18px;
+  height: 25px;
+  font-size: 1.1em;
+  float: left;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.adv-featured-product:not(.slick-initialized) .adv-featured-product-item {
+  float: left;
+  width: 100%;
+}
+
+.adv-featured-product .slick-slide > div .adv-featured-product-item {
+  width: 100% !important;
+}
+
+.adv-featured-product .slick-slide > div .adv-featured-product-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.adv-featured-product .adv-featured-product-item {
+  margin-bottom: 5px;
+}
+
+.adv-featured-product .adv-featured-product-item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.fcp-image {
+  float: left;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.fcp-content {
+  float: left;
+  width: calc(100% - 100px);
+}
+
+.fcp-title {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.fcp-rate {
+  display: block;
+}
+
+/* Product filter */
+.adv-products-filter:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.adv-products-filter.variation-squares .pf-link {
+  border-radius: 3px;
+}
+
+.adv-products-filter.variation-squares .pf-link:before {
+  border-radius: 3px;
+}
+
+.adv-products-filter.variation-circle .pf-link {
+  border-radius: 50px;
+}
+
+.adv-products-filter.variation-circle .pf-link:before {
+  border-radius: 50px;
+}
+
+.adv-products-filter.variation-circle.filter-by-image img {
+  border-radius: 50%;
+}
+
+.adv-products-filter .pf-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+.adv-products-filter .pf-link {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-color: #ddd;
+}
+
+.adv-products-filter.filter-by-color .pf-item.selected .pf-link:before, .adv-products-filter.filter-by-image .pf-item.selected .pf-link:before, .adv-products-filter.filter-by-label .pf-item.selected .pf-link:before {
+  border-color: #555;
+}
+
+.adv-products-filter.filter-by-color .pf-link:before, .adv-products-filter.filter-by-image .pf-link:before, .adv-products-filter.filter-by-label .pf-link:before {
+  content: '';
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  top: -4px;
+  position: absolute;
+  border: 1px solid transparent;
+  transition-duration: 0.3s;
+}
+
+.adv-products-filter.filter-by-image .pf-link {
+  width: 28px;
+  height: 28px;
+}
+
+.adv-products-filter.filter-by-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.adv-products-filter.filter-by-label .pf-link {
+  min-width: 26px;
+  min-height: 26px;
+  width: auto;
+  height: auto;
+  background-color: #f1f1f1;
+  padding: 4px 8px;
+}
+
+.adv-products-filter.filter-by-label .pf-label {
+  line-height: 1;
+}
+
+.adv-products-filter.filter-by-label .pf-item.selected .pf-link:before {
+  border-color: #555;
+}
+
+.adv-products-filter.filter-by-label .pf-item.selected .pf-label {
+  color: #555;
+}
+
+.adv-products-filter.filter-by-select .pf-link {
+  height: auto;
+  width: auto;
+  border: 1px solid #555;
+}
+
+.adv-products-filter.filter-by-select .pf-label {
+  line-height: 1;
+  padding: 5px 10px;
+}
+
+.adv-products-filter .product-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.adv-products-filter .product-filter-list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Product categories */
+.advanced-product-categories .count {
+  margin-left: 5px;
+}
+
+.advanced-product-categories .type-accordion .count {
+  float: none;
+}
+
+.advanced-product-categories .type-accordion .cat-item {
+  position: relative;
+}
+
+.advanced-product-categories .type-accordion .cat-item:not(.active) .children {
+  display: none;
+}
+
+.advanced-product-categories .accordion-cat-toggle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  color: #888;
+  font-size: 0.8em;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.advanced-product-categories .accordion-cat-toggle.active {
+  transform: rotate(90deg);
+}

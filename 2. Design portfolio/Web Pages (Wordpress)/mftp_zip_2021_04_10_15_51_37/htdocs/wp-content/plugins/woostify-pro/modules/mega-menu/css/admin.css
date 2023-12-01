@@ -1,0 +1,185 @@
+@keyframes circle-loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.woostify-mega-menu-options-button.button {
+  margin: 6px 0;
+}
+
+.has-mega-menu-open {
+  overflow: hidden;
+}
+
+.has-mega-menu-open #adminmenumain {
+  position: relative;
+  z-index: 1;
+}
+
+.woostify-mega-menu-options-popup {
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition-duration: 0.3s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.woostify-mega-menu-options-popup .form-table th {
+  font-weight: normal;
+}
+
+.woostify-mega-menu-options-popup select {
+  min-width: 200px;
+}
+
+.woostify-mega-menu-options-popup input[type="text"] {
+  min-width: 200px;
+  border-radius: 4px;
+  min-height: 28px;
+  padding: 0 10px;
+}
+
+.has-mega-menu-open .woostify-mega-menu-options-popup {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-inner {
+  width: 800px;
+  height: 600px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  border: 1px solid #d8e2e9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-inner .woostify-spinner {
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+}
+
+.has-mega-menu-open .woostify-mega-menu-options-popup .woostify-mega-menu-popup-inner.loading:before {
+  content: '';
+}
+
+.has-mega-menu-open .woostify-mega-menu-options-popup .woostify-mega-menu-popup-inner.loading .woostify-spinner {
+  visibility: visible;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-inner:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 5;
+  background-color: #fff;
+  transition-duration: 0.3s;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d8e2e9;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-title {
+  margin: 0 0 0 20px;
+  white-space: nowrap;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-editing-label {
+  flex-grow: 1;
+  margin: 0 15px;
+  font-style: italic;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-button-close {
+  cursor: pointer;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-content {
+  padding: 20px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-footer {
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #d8e2e9;
+}
+
+.woostify-mega-menu-options-popup .woostify-mega-menu-popup-footer .spinner {
+  margin-top: 0;
+}
+
+.woostify-mega-menu-options-popup .save-options {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.woostify-mega-menu-options-popup .save-options.loading + .spinner {
+  visibility: visible;
+}
+
+/* Icon picker */
+.woostify-icon-picker .woostify-icon-picker-inner {
+  height: 175px;
+  overflow-y: scroll;
+}
+
+.woostify-icon-picker .woostify-icon-picker-inner > span {
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.woostify-icon-picker .woostify-icon-picker-inner > span:not(.selected):hover {
+  border-color: #000;
+}
+
+.woostify-icon-picker .woostify-icon-picker-inner > span.selected {
+  border-color: #f00;
+}

@@ -1,0 +1,167 @@
+.woostify-add-new-template-builder {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition-duration: 0.3s;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #556068;
+}
+
+.woostify-add-new-template-builder.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-inner {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 600px;
+  background-color: #f1f3f5;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 3px;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-header {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: #fff;
+  height: 50px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px 3px 0 0;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-logo {
+  margin-right: 10px;
+  width: 30px;
+  min-width: 30px;
+  transform: rotate(-20deg);
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-title {
+  flex-grow: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-close-btn {
+  cursor: pointer;
+  color: #a4afb7;
+  border-left: 1px solid #e6e9ec;
+  padding-left: 10px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-close-btn:hover {
+  color: #777;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 60px;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-form input,
+.woostify-add-new-template-builder .woostify-add-new-template-form select {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 3px;
+  height: 50px;
+  border-color: #d5dadf;
+  box-shadow: none !important;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-form input:focus,
+.woostify-add-new-template-builder .woostify-add-new-template-form select:focus {
+  border-color: #a4afb7;
+}
+
+@media (max-width: 720px) {
+  .woostify-add-new-template-builder .woostify-add-new-template-form {
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 40px;
+  }
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-form-title {
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-label {
+  display: block;
+  margin: 25px 0 7px;
+  font-size: 14px;
+  line-height: 1;
+  color: #6d7882;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-form-submit {
+  margin-top: 25px;
+  height: 50px;
+  background-color: #1346af;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-weight: 500;
+  border-radius: 3px;
+  border: 0;
+}
+
+.woostify-add-new-template-builder .woostify-add-new-template-form-submit:hover {
+  opacity: 0.85;
+}
+
+.woo_builder_include.column-woo_builder_include span,
+.woo_builder_exclude.column-woo_builder_exclude span {
+  margin-right: 1px;
+}
+
+.woo_builder_include.column-woo_builder_include span:after,
+.woo_builder_exclude.column-woo_builder_exclude span:after {
+  content: ',';
+}
+
+.woo_builder_include.column-woo_builder_include span:last-of-type,
+.woo_builder_exclude.column-woo_builder_exclude span:last-of-type {
+  margin-right: 0;
+}
+
+.woo_builder_include.column-woo_builder_include span:last-of-type:after,
+.woo_builder_exclude.column-woo_builder_exclude span:last-of-type:after {
+  content: none;
+}

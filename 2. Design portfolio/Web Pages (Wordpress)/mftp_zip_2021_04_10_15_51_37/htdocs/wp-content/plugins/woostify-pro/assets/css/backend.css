@@ -1,0 +1,257 @@
+/* General Addon Settings */
+.woostify-featured-setting.loading .woostify-settings-section-footer .spinner {
+  visibility: visible;
+}
+
+.woostify-featured-setting .woostify-settings-box {
+  margin-top: 50px;
+}
+
+.woostify-featured-setting .woostify-settings-content {
+  background-color: #fff;
+  border: 1px solid #d8e2e9;
+}
+
+.woostify-featured-setting .woostify-settings-section-title {
+  padding: 20px 25px;
+  border-bottom: 1px solid #d8e2e9;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+@media (max-width: 767px) {
+  .woostify-featured-setting .woostify-settings-section-title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.woostify-featured-setting .woostify-settings-section-content {
+  padding: 0 25px 5px 25px;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .woostify-featured-setting .woostify-settings-section-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.woostify-featured-setting .woostify-setting-description {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.woostify-featured-setting .woostify-settings-section-footer {
+  padding: 20px 25px;
+  border-top: 1px solid #d8e2e9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  .woostify-featured-setting .woostify-settings-section-footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.woostify-featured-setting .spinner {
+  margin-top: 0;
+}
+
+.woostify-featured-setting .save-options {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.woostify-featured-setting select {
+  height: 37px;
+  min-width: 150px;
+  max-width: 100% !important;
+}
+
+.woostify-featured-setting input {
+  max-width: 100% !important;
+}
+
+.woostify-featured-setting input[type="text"], .woostify-featured-setting input[type="number"] {
+  border-radius: 4px;
+  min-height: 37px;
+  padding: 0 10px;
+}
+
+.woostify-featured-setting input[type="checkbox"] {
+  position: relative;
+  border-radius: 2px;
+}
+
+.woostify-featured-setting input[type="checkbox"]:checked {
+  border-color: #1e8cbe;
+}
+
+.woostify-featured-setting input[type="checkbox"]:checked:before {
+  content: '';
+  background-color: #1e8cbe;
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  border-radius: 2px;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.woostify-featured-setting textarea {
+  width: 100%;
+  min-height: 65px;
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 100% !important;
+}
+
+@media (max-width: 782px) {
+  .woostify-featured-setting th {
+    margin-bottom: 10px;
+  }
+}
+
+.woostify-settings-section-tab .tab-head-button {
+  padding: 10px 20px;
+  color: initial;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  bottom: -1px;
+  background-color: #f1f1f1;
+}
+
+.woostify-settings-section-tab .tab-head-button.active {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.woostify-settings-section-tab .woostify-setting-tab-content-wrapper {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.woostify-settings-section-tab .woostify-setting-tab-content:not(.active) {
+  display: none;
+}
+
+/* Multi dependency */
+.woostify-multi-dependency .woostify-multi-dependency-item:not(.active) {
+  display: none;
+}
+
+/* Countdown urgency */
+.woostify-countdown-urgency-setting [name=woostify_countdown_urgency_apply_for],
+.woostify-countdown-urgency-setting [name=woostify_countdown_urgency_style] {
+  min-width: 300px;
+}
+
+.woostify-countdown-urgency-setting .countdown-urgency-time-duration {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .woostify-countdown-urgency-setting .countdown-urgency-time-duration {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .woostify-countdown-urgency-setting .countdown-urgency-time-duration {
+    flex-direction: column;
+  }
+  .woostify-countdown-urgency-setting .countdown-urgency-time-duration input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.woostify-countdown-urgency-setting .countdown-urgency-time-duration input {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+.woostify-countdown-urgency-setting .countdown-urgency-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .woostify-countdown-urgency-setting .countdown-urgency-label {
+    flex-direction: column;
+  }
+}
+
+.woostify-countdown-urgency-setting .countdown-urgency-label label {
+  flex-basis: 24%;
+}
+
+@media (max-width: 600px) {
+  .woostify-countdown-urgency-setting .countdown-urgency-label label {
+    flex-basis: 100%;
+  }
+  .woostify-countdown-urgency-setting .countdown-urgency-label label + label {
+    margin-top: 10px;
+  }
+}
+
+.woostify-countdown-urgency-setting .countdown-urgency-label input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Variation swatches */
+.woostify-variation-swatches-setting [name=woostify_variation_swatches_size] {
+  max-width: 75px;
+}
+
+/* Sale notification */
+.woostify-sale-notification-setting select {
+  min-width: 170px;
+}
+
+.woostify-sale-notification-setting input[type="text"], .woostify-sale-notification-setting input[type="number"] {
+  min-width: 170px;
+}
+
+.woostify-sale-notification-box-message .woostify-sale-notification-message-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.woostify-sale-notification-box-message .woostify-sale-notification-remove-message {
+  margin-left: 20px;
+}
+
+/* Size guide */
+/* For metabox size-guide */
+.woostify-metabox-option-content .woostify-multi-select-selection .woostify-multi-select-id {
+  padding: 3px 6px;
+}
+
+.woostify-metabox-option-content .woostify-multi-select-selection .woostify-multi-select-search {
+  border: 0;
+  box-shadow: none;
+}
+
+.woostify-metabox-option-content .woostify-multi-select-selection .woostify-multi-select-search:focus {
+  box-shadow: none;
+}
+
+.woostify-metabox-option-content .woostify-multi-select-dropdown .woostify-multi-select-id {
+  padding: 5px 8px;
+}

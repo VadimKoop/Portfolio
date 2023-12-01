@@ -1,0 +1,125 @@
+.admin-product-filter .hidden {
+  display: none;
+}
+
+.admin-product-filter .w-filter-container {
+  max-width: 600px;
+}
+
+.admin-product-filter .w-filter-container input[type="text"], .admin-product-filter .w-filter-container input[type="number"],
+.admin-product-filter .w-filter-container select[type="text"],
+.admin-product-filter .w-filter-container select[type="number"] {
+  width: 100%;
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 2px solid #eee;
+}
+
+.admin-product-filter .w-filter-container input[type="text"]:focus, .admin-product-filter .w-filter-container input[type="number"]:focus,
+.admin-product-filter .w-filter-container select[type="text"]:focus,
+.admin-product-filter .w-filter-container select[type="number"]:focus {
+  border-color: #999;
+  box-shadow: none;
+}
+
+.admin-product-filter .w-filter-container select {
+  width: 100%;
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 2px solid #eee;
+}
+
+.admin-product-filter .w-filter-container select:focus {
+  border-color: #999;
+  box-shadow: none;
+}
+
+.admin-product-filter .w-filter-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.admin-product-filter .w-filter-container [readonly] {
+  border-color: #ddd;
+}
+
+.admin-product-filter .w-filter-item-50 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-product-filter .w-filter-item-col {
+  width: 48.5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.admin-product-filter .w-filter-item-col > span {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.admin-product-filter .w-filter-item-query {
+  display: block;
+  margin: 20px 0;
+}
+
+.admin-product-filter .w-filter-item-query > span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.admin-product-filter .w-filter-item-query-value {
+  border-color: #7e8993;
+  min-height: 30px;
+  border-radius: 4px;
+  padding: 0 10px;
+  min-width: 40%;
+}
+
+.admin-product-filter .w-filter-range-item-wrap .w-filter-range-item:first-of-type:last-of-type .w-filter-range-item-remove {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.admin-product-filter .w-filter-range-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #eee;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.admin-product-filter .w-filter-range-item label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.admin-product-filter .w-filter-range-item-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.admin-product-filter .w-filter-category-data {
+  margin-top: 20px;
+}
+
+.admin-product-filter .w-filter-category-data:not(.active) {
+  display: none;
+}
+
+.admin-product-filter .w-filter-category-data [type="text"] {
+  margin: 5px 0 15px 0;
+}
+
+.admin-product-filter .w-filter-category-data label {
+  margin-bottom: 5px;
+  display: block;
+}
