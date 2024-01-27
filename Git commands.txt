@@ -1,0 +1,8 @@
+git clone link 					- Clone repository
+git add .   	 				- Add updates to index
+git commit -m "comment"				- Commit changes
+git push origin master				- Push changes to a remote repository
+git push origin master -f			- Force push
+
+git status 					- Git check
+git branch					- View threads
