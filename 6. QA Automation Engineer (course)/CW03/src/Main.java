@@ -2,42 +2,30 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
 
-        // int
-        int weight = 200; //created a variable.
-        int areYoung = 10;  //created a variable.
-        int ageOld = 100;  //created a variable.
-        int sumOfAllAges = areYoung + ageOld;
+        // Create object of class Dog.
+        Dog myFirstDog = new Dog();  //Dog = class, myFirstDog = name, new Dog() = class object.
+        Dog mySecondDog = new Dog();
 
-        // int logic maximum value testing -> we get minus value in console.
-        int maxIntNumber = 2147483647;
-        int moreThenMaxInt = maxIntNumber+1;
+        //myFirstDog characteristics.
+        myFirstDog.name = "Vadim 1";
+        myFirstDog.breed = "Breed: Human dog 1";
+        myFirstDog.weight = 87.5;
 
-        // boolean
-        boolean isWeightOk = true; //True or False.
-        boolean isAgeOk = false; //True or False.
-        boolean isOldAgeBiggerThanYoung = ageOld > areYoung;
+        //mySecondDog characteristics.
+        mySecondDog.name = "Max 1";
+        mySecondDog.breed = "Breed: Human dog 1";
+        mySecondDog.weight = 105;
 
-        // rewrite
-        weight = 50;
-        isWeightOk = false;
+        double myVariable = 1;
+        String name = "abcbcbc";
 
-        // Constant
-        final int SCREEN_SIZE = 1024; //Can not be rewrited, because it is final.
+        BloodAnalysis bloodAnalysis = new BloodAnalysis();
+        new BloodAnalysis(); //We have created new class BloodAnalysis.
 
-        // Even and Odd number testing.
-        int evenNumber = 4 % 2; // even number
-        int oddNumber = 5 % 3;  //odd number
-
-        // Increment and decrement number.
-        int number = 7;
-        number++;
-
-        System.out.println("This is variable content: " + sumOfAllAges);
-        System.out.println("This is variable content: " + weight);
-
-
+        bloodAnalysis.personalCode = "39510357313";
+        bloodAnalysis.itemOne = 10.0;
+        bloodAnalysis.itemTwo = 5.0;
 
     }
 }
