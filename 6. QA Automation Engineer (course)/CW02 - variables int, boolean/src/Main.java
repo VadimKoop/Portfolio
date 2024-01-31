@@ -34,6 +34,7 @@ public class Main {
         int number = 7;
         number++;
 
+        System.out.println("Number: " + number);
         System.out.println("This is variable content: " + sumOfAllAges);
         System.out.println("This is variable content: " + weight);
 
