@@ -6,7 +6,7 @@ public class Calculator {
         int intNum2 = 5;
 
         System.out.println(intNum1 + intNum2);
-        return 0;  /** Почему нам нужно обязательно return? Для чего?*/
+        return 0;  /** Syntaxis сразу ругается если убрать, почему? */
     }
 
     // I have created method isGreather.
@@ -14,7 +14,18 @@ public class Calculator {
         double doubleNum1 = 2;
         double doubleNum2 = 3;
 
+        // doublemNum1 > doublemNum2 check -> true.
         boolean numberIsBiger = doubleNum2 > doubleNum1;
+
+        System.out.println(numberIsBiger);
+
+        // doublemNum1 < doublemNum2 check - false.
+        doubleNum1 = 5;
+        doubleNum2 = 4;
+        numberIsBiger = doubleNum2 > doubleNum1;
+
+        System.out.println(numberIsBiger);
+
         return numberIsBiger;
     }
 }
