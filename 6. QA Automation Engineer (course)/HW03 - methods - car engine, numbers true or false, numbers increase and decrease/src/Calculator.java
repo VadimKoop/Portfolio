@@ -6,7 +6,7 @@ public class Calculator {
         int intNum2 = 5;
 
         System.out.println(intNum1 + intNum2);
-        return 0;  /** Syntaxis сразу ругается если убрать, почему? */
+        return 0;
     }
 
     // I have created method isGreather.
