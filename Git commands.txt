@@ -3,6 +3,7 @@ git add .   	 				- Add updates to index
 git commit -m "comment"				- Commit changes
 git push origin master				- Push changes to a remote repository
 git push origin master -f			- Force push
+git pull origin master				- Git synchronization
 
 git status 					- Git check
 git branch					- View threads
