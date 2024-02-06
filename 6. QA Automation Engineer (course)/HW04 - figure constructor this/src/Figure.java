@@ -4,12 +4,8 @@ public class Figure {
     int width;
     int length;
 
-
     // Empty constructor.
-    public Figure() {
-
-    }
-
+    public Figure() {}
 
     // Constructor.
     public Figure(int height, int width, int length) {
@@ -18,9 +14,9 @@ public class Figure {
         this.length = length;
     }
 
-
     // Creating method which calculates volume of the figure.
     public double calculateVolume() {
+        System.out.println("Class calculateVolume, the sum of figure sizes is: " + this.height + this.width + this.length); /** Спросить про момент с сложенем*/
         System.out.println(this.height + this.width + this.length);
         return this.length * this.width * this.height;
     }
