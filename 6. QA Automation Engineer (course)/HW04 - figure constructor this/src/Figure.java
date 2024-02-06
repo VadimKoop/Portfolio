@@ -16,7 +16,7 @@ public class Figure {
 
     // Creating method which calculates volume of the figure.
     public double calculateVolume() {
-        System.out.println("Class calculateVolume, the sum of figure sizes is: " + this.height + this.width + this.length); /** Спросить про момент с сложенем*/
+        System.out.println("Class calculateVolume, the sum of figure sizes is: " + this.height + this.width + this.length); /** Спросить про момент про сложение чисел*/
         System.out.println(this.height + this.width + this.length);
         return this.length * this.width * this.height;
     }
@@ -31,10 +31,11 @@ public class Figure {
     public static void main(String[] args) {
         // Create an object of the Figure class, giving height, height and length values.
         Figure figureSizes = new Figure (5, 3, 2);
-        System.out.println("Figure sizes are: " + figureSizes); /** Почему отобрается Figure@3feba861? Откуда доп 10?*/
+        System.out.println("Figure sizes are: " + figureSizes);
 
+        // Creating double volume variable and calling 2 methods.
         double volume = figureSizes.calculateVolume();
-        System.out.println("Vigure volume is: " + volume);
+        System.out.println("Figure volume is: " + volume);
 
         figureSizes.calculateSurfaceArea();
     }
