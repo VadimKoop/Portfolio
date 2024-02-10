@@ -1,0 +1,8 @@
+| № |             Test name              |                                                           Test description | Expected result | Status |
+|:--|:----------------------------------:|---------------------------------------------------------------------------:|:---------------:|-------:|
+| 1 |              testAdd               |                                              Test to check the add method. |    5 + 3 = 8    | Passed |
+| 2 |            testSubtract            |                                         Test to check the subtract method. |   10 - 4 = 6    | Passed |
+| 3 |     testSubtractNegativeResult     |                              Additional test to check the subtract method. |   4 - 10 = -4   | Passed |
+| 4 | testIsGreaterThan_FirstArgGreater  |  Test to test the isGreaterThan method when the first argument is greater. |   5 > 3 True    | Passed |
+| 5 | testIsGreaterThan_SecondArgGreater | Test to test the isGreaterThan method when the second argument is greater. |   3 < 5 True    | Passed |
+| 6 |    testIsGreaterThan_ArgsEqual     |           Test to test isGreaterThan method when both arguments are equal. |   5 >= 5 True   | Passed |
