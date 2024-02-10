@@ -6,4 +6,7 @@ git push origin master -f			- Force push
 git pull origin master				- Git synchronization
 
 git status 					- Git check
-git branch					- View threads
+git branch					- Vigew threads
+
+// Comment					- line comment
+//* Big comment */				- //* Comment until you close it" */

@@ -1,6 +1,6 @@
 package org.example;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,12 +9,32 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class AppTest {
 
+    // Declaration of making object of classs Calculator.
+    private Calculator calculator;
+
+    @BeforeAll
+    static void setUpForAllTest(){
+        System.out.println("Start. Setting up ALL!");
+    }
+
+    @AfterAll
+    static void tearDownForAllTest() {
+        System.out.println("End. Closing up after ALL tests!");
+    }
+
+    @BeforeEach
+    void setUp() {
+        calculator = new Calculator(); // We have already initialized private Calculator calculator. The new calculator will be generated automatically.
+        System.out.println("Setting up calculator object for new test!");
+    }
+
+    @AfterEach
+    void tearDown() {
+        System.out.println("This is execution of post condition after each test!");
+    }
+
     @Test
     public void checkTwoValuesEquals(){
-
-        //
-        //
-
         assertEquals( 3 , 3);
     }
 
@@ -34,6 +54,5 @@ public class AppTest {
     {
         assertFalse( 4 < 2 );
     }
-
 
 }
