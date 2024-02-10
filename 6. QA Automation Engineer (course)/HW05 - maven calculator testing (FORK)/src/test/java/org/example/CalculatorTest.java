@@ -29,7 +29,7 @@ public class CalculatorTest {
         assertEquals(-6, result);
     }
 
-    // * Boolean TRUE/FALSE logic tests */
+    // * Boolean TRUE/FALSE logic tests of method isGreaterThan */
     // Test to test the isGreaterThan method when the first argument is greater.
     @Test
     public void testIsGreaterThan_FirstArgGreater() {
