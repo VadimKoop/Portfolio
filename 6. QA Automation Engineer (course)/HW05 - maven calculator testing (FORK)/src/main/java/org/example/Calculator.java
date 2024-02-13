@@ -1,6 +1,8 @@
 package org.example;
 
 public class Calculator {
+
+    /** HW05 PART */
     // Method for adding two integers.
     public int add(int a, int b) {
         return a + b;
@@ -27,5 +29,20 @@ public class Calculator {
 
         int difference = calc.subtract(10, 4); // 10 - 4 = 6
         System.out.println("Difference: " + difference);
+    }
+
+    /** HW06 part */
+
+    // Floating point division method.
+    public double divide(double x, double y) {
+        if (y == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero!");
+        }
+        return x / y;
+    }
+
+    // Floating point multiplication method.
+    public double multiply(double x, double y) {
+        return x * y;
     }
 }

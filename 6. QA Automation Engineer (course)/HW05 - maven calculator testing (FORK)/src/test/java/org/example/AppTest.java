@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple App CW06.
  */
 public class AppTest {
 
