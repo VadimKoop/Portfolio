@@ -8,6 +8,10 @@ git pull origin master				- Git synchronization
 git status 					- Git check
 git branch					- Vigew threads
 
+mvn clean test 					- Используется в Maven для очистки проекта (удаления временных файлов и сборочных результатов) и запуска тестов.
+
 // Comment					- line comment
 //* Big comment */				- //* Comment until you close it" */
-//
+
+
+
