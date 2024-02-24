@@ -13,5 +13,8 @@ mvn clean test 					- Используется в Maven для очистки п
 // Comment					- line comment
 //* Big comment */				- //* Comment until you close it" */
 
-
+Terminal request
+mvn clean					- clean all data
+mvn test					- run all tests
+mvn clean test					- clean data and run tests
 
