@@ -2,6 +2,7 @@ package api;
 
 import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
@@ -99,6 +100,8 @@ public class RestApiMocked {
     @ParameterizedTest
     @ValueSource(ints = {1, 5, 9, 10, 11})
     public void getOrdersByIdAndCheckResponseCodeIsOk(int orderId) {
+
+        int responseOrderId = given().
         given().
                 log()
                 .all()
@@ -109,7 +112,12 @@ public class RestApiMocked {
                 .then()
                 .log()
                 .all()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_OK)
+                .and()
+                .extract()
+                .path("id");
+
+        Assertions.assertEquals(orderId, responseOrderId);
     }
 
     @ParameterizedTest
