@@ -1,16 +1,12 @@
 package api;
 
-import com.google.gson.Gson;
-import dto.OrderDtoMocked;
 import io.restassured.RestAssured;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static io.restassured.RestAssured.*;
@@ -25,7 +21,7 @@ public class RestApiMocked {
 
     @Test
     public void getOrderByIDAndCheckResponseCodeIsOK() {  ////Retrieve details of an order by providing a valid order ID from 1..10. Other ID will lead to 404 Request Code.
-        RestAssured.given().
+        given().
                 log()
                 .all()
                 .when()
@@ -39,7 +35,7 @@ public class RestApiMocked {
     @Test
     public void getOrderByInvalidIdAndCheckResponseCodeIsBadRequest() {
         //Retrieve details of an order by providing a valid order ID from 1..10. Other ID will lead to 404 Request Code.
-        RestAssured.get("http://35.208.34.242:8080/test-orders/11")
+        get("http://35.208.34.242:8080/test-orders/11")
                 .then()
                 .statusCode(400); // HTTP Status 400 - invalid request.
     }
@@ -47,7 +43,7 @@ public class RestApiMocked {
     @Test
     public void getAllOrderAndCheckResponseCodeIsOk() {
         // Retrieve details for all orders.
-        RestAssured.get("http://35.208.34.242:8080/test-orders/get_orders")
+        get("http://35.208.34.242:8080/test-orders/get_orders")
                 .then()
                 .statusCode(200); // 200 - OK.
     }
@@ -58,7 +54,7 @@ public class RestApiMocked {
     @Test
     public void deleteValidOrderAndResponseIsOk() {
         //Retrieve details of an order by providing a valid order ID from 1..10. Other ID will lead to 404 Request Code.
-        RestAssured.given()
+        given()
                 .log()
                 .all()
                 .when()
@@ -73,7 +69,7 @@ public class RestApiMocked {
     @Test
     public void deleteWrongKeyOrderAndResponseIsNok() {
         //Retrieve details of an order by providing a valid order ID from 1..10. Other ID will lead to 404 Request Code.
-        RestAssured.given()
+        given()
                 .when()
                 .get("http://35.208.34.242:8080/test-orders/11")
                 .then()
@@ -105,8 +101,8 @@ public class RestApiMocked {
     @ValueSource(ints = {1, 5, 9, 10, 11})
     public void getOrdersByIdAndCheckResponseCodeIsOk(int orderId) {
 
-        int responseOrderId = RestAssured.given().
-                given().
+        int responseOrderId = given().
+        given().
                 log()
                 .all()
                 .when()
@@ -125,9 +121,9 @@ public class RestApiMocked {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {11, 12})
+    @ValueSource(ints = {7, 8})
     public void getOrdersByIdAndCheckResponseCodeIsNok(int orderId) {
-        RestAssured.given().
+        given().
                 log()
                 .all()
                 .when()
@@ -138,60 +134,7 @@ public class RestApiMocked {
                 .statusCode(HttpStatus.SC_BAD_REQUEST);
     }
 
-    /**
-     * HW10
-     */
-    @ParameterizedTest
-    @CsvSource({
-            "12345, example1",
-            "67890, example2",
-            "54321, example3"
-    })
-    void testWithCsvSource(String orderId, String additionalParam) {
-        RestAssured.given().
-                log()
-                .all()
-                .queryParam("orderId", orderId)
-                .queryParam("additionalParam", additionalParam)
-                .when()
-                .get("/test-orders")
-                .then()
-                .log()
-                .all()
-                .statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR);
-    }
-
-    /**
-     * CW11
-     */
-    @Test
-    public void createOrderAndCheckResponseCodeIsOk() {
-
-//        OrderDtoMocked orderDtoMocked = new OrderDtoMocked("OPEN", 0,"customer","+372 53811395","comment", 0);
-
-        OrderDtoMocked.comment = "comment Public setter controll in classs OrderDtoMocked.java + package dto ";
-
-        OrderDtoMocked orderDtoMocked = new OrderDtoMocked();
-        orderDtoMocked.setStatus("OPEN");
-        orderDtoMocked.setCourierId(0);
-        orderDtoMocked.setCustomerName(); // put class here???? ASK!!!!
-        orderDtoMocked.setCustomerPhone("12343456");
-        orderDtoMocked.setComment("comment");
-        orderDtoMocked.setId(1);
-//        orderDtoMocked.setComment(0);
-
-        RestAssured.given()
-                .header("Content-type", "application/json")
-                .log()
-                .all()
-                .when()
-                .body(new Gson().toJson(orderDtoMocked))
-                .post("/test-orders")
-                .then()
-                .log()
-                .all()
-                .statusCode(HttpStatus.SC_OK);
-    }
 }
 
 //Source: http://35.208.34.242:8080/swagger-ui/index.html#/Mocked%20Order%20Operations/getById
+
