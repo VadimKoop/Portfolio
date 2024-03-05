@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static io.restassured.RestAssured.*;
@@ -102,7 +103,7 @@ public class RestApiMocked {
     public void getOrdersByIdAndCheckResponseCodeIsOk(int orderId) {
 
         int responseOrderId = given().
-        given().
+                given().
                 log()
                 .all()
                 .when()
@@ -121,7 +122,7 @@ public class RestApiMocked {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {7, 8})
+    @ValueSource(ints = {11, 12})
     public void getOrdersByIdAndCheckResponseCodeIsNok(int orderId) {
         given().
                 log()
@@ -134,7 +135,26 @@ public class RestApiMocked {
                 .statusCode(HttpStatus.SC_BAD_REQUEST);
     }
 
+    /** HW10*/
+    @ParameterizedTest
+    @CsvSource({
+            "12345, example1",
+            "67890, example2",
+            "54321, example3"
+    })
+    void testWithCsvSource(String orderId, String additionalParam) {
+        given().
+                log()
+                .all()
+                .queryParam("orderId", orderId)
+                .queryParam("additionalParam", additionalParam)
+                .when()
+                .get("/test-orders")
+                .then()
+                .log()
+                .all()
+                .statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR);
+    }
 }
 
 //Source: http://35.208.34.242:8080/swagger-ui/index.html#/Mocked%20Order%20Operations/getById
-
