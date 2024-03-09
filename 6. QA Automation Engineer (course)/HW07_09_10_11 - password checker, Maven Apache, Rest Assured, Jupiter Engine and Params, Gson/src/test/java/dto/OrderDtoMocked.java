@@ -1,12 +1,14 @@
-/** CW11 */
+/** CW11 Constructors and data.*/
 package dto;
 
 public class OrderDtoMocked {
+
+      // Private can be change only inside the class or trough Setters.
       private String status;
       private int courierId;
       private String customerName;
       private  String customerPhone;
-      public static String comment;
+      public String comment;
       int id;
 
       public OrderDtoMocked(String status, int courierId, String customerName, String customerPhone, String comment, int id) {
@@ -18,6 +20,7 @@ public class OrderDtoMocked {
             this.id = id;
       }
 
+      // Empty constructor. In Java classes we can have unlimited number of constructors.
       public OrderDtoMocked() {
 
       }

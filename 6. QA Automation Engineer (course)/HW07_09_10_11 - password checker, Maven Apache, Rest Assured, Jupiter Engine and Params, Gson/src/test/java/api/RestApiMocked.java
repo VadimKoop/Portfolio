@@ -1,6 +1,9 @@
 package api;
 
+import com.google.gson.Gson;
+import dto.OrderDtoMocked;
 import io.restassured.RestAssured;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,6 +12,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
+import utils.RandomDataGenerator;
 
 import static io.restassured.RestAssured.*;
 
@@ -38,6 +42,8 @@ public class RestApiMocked {
         //Retrieve details of an order by providing a valid order ID from 1..10. Other ID will lead to 404 Request Code.
         get("http://35.208.34.242:8080/test-orders/11")
                 .then()
+                .log()
+                .all()
                 .statusCode(400); // HTTP Status 400 - invalid request.
     }
 
@@ -135,7 +141,9 @@ public class RestApiMocked {
                 .statusCode(HttpStatus.SC_BAD_REQUEST);
     }
 
-    /** HW10*/
+    /**
+     * HW10 CsvSource data.
+     */
     @ParameterizedTest
     @CsvSource({
             "12345, example1",
@@ -154,6 +162,47 @@ public class RestApiMocked {
                 .log()
                 .all()
                 .statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR);
+    }
+
+    /**
+     * CW11 Gson object data package + Setters.
+     */
+
+    @Test
+    public void createOrderAndCheckResponseCodeIsOK() {
+
+//        OrderDtoMocked orderDtoMocked = new OrderDtoMocked("OPEN", 0, "customer", "+372 53811395", "hello", 0);
+
+        OrderDtoMocked orderDtoMocked = new OrderDtoMocked();
+
+        orderDtoMocked.comment = "PUBLIC COMMENT FROM CLASS OrderDtoMocked.java";
+
+//        int length = 10;
+//        boolean useLetters = true;
+//        boolean useNumbers = false;
+//        String generatedCustomerName = RandomStringUtils.random(length, useLetters, useNumbers);
+        // source: https://www.baeldung.com/java-random-string#apachecommons-bounded
+
+        orderDtoMocked.setComment("comment");
+        orderDtoMocked.setCourierId(0);
+        orderDtoMocked.setCustomerName(RandomDataGenerator.generateName()); // I put generatedCustomerName function here.
+        orderDtoMocked.setCustomerPhone("new phone");
+        orderDtoMocked.setComment("ONE OF THE WAYS TO SET NEW PARAMETERS");
+        orderDtoMocked.setId(1);
+
+        given().
+                header("Content-Type","application/json")
+                .log()
+                .all()
+                .when()
+                .body(new Gson().toJson(orderDtoMocked))
+                .post("/test-orders/")
+                .then()
+                .log()
+                .all()
+                .statusCode(HttpStatus.SC_OK);
+
+
     }
 }
 
