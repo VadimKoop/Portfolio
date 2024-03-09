@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.groovy:groovy:4.0.16" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.apache.groovy" artifactId="groovy" version="4.0.16" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/groovy/groovy/4.0.16/groovy-4.0.16-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/groovy/groovy/4.0.16/groovy-4.0.16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
