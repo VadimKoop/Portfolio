@@ -2,8 +2,10 @@ package api;
 
 import com.google.gson.Gson;
 import dto.OrderDtoMocked;
+import dto.OrderDtoMockedBuilderAndFactory;
 import io.restassured.RestAssured;
-import org.apache.commons.lang3.RandomStringUtils;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -16,7 +18,7 @@ import utils.RandomDataGenerator;
 
 import static io.restassured.RestAssured.*;
 
-public class RestApiMocked {
+public class RestApiMockedTest {
 
     @BeforeAll
     public static void setup() {
@@ -191,7 +193,7 @@ public class RestApiMocked {
         orderDtoMocked.setId(1);
 
         given().
-                header("Content-Type","application/json")
+                header("Content-Type", "application/json")
                 .log()
                 .all()
                 .when()
@@ -201,9 +203,68 @@ public class RestApiMocked {
                 .log()
                 .all()
                 .statusCode(HttpStatus.SC_OK);
+    }
 
+    /**
+     * CW 12 Lombok
+     */
+    //More beautiful variant than upstairs.
+    @Test
+    public void updateOrderStatusWithInvalidIdCheckThatResponseCodeIsBadRequest() {
+
+        OrderDtoMockedBuilderAndFactory lombok = OrderDtoMockedBuilderAndFactory.builder()
+                .status("OPEN")
+                .courierId(5)
+                .customerName("Vadim")
+                .comment("Lombok plugin is on the way!")
+                .id(6)
+                .build();
+
+        given().
+                header("Content-Type", "application/json")
+                .log()
+                .all()
+                .when()
+                .body(new Gson().toJson(lombok))
+                .post("/test-orders/")
+                .then()
+                .log()
+                .all()
+                .statusCode(HttpStatus.SC_OK);
+    }
+
+    @Test
+    public void createOrderWithBuilderAndCheckResponseCodeIsOk() {
+
+        OrderDtoMockedBuilderAndFactory orderDtoMockedRequestLombok = OrderDtoMockedBuilderAndFactory.builder()
+                .status("OPEN")
+                .courierId(5)
+                .customerName("Vadim")
+                .comment("Lombok plugin is on the way!")
+                .id(6)
+                .build();
+
+        Gson gson = new Gson();
+
+        Response response = given()
+                .contentType(ContentType.JSON)
+                .log()
+                .all()
+                .when()
+                .body(new Gson().toJson(orderDtoMockedRequestLombok))
+                .post("/test-orders/")
+                .then()
+                .extract()
+                .response();
+
+        OrderDtoMockedBuilderAndFactory orderReceived = gson.fromJson(response.asString(), OrderDtoMockedBuilderAndFactory.class);
+        // response.asString() - what to deserialize.
+        // OrderDtoMocked.class - how to deserialize. Go to this class watch lines and try to Json with those lines.
+        Assertions.assertEquals("OPEN", orderReceived.getStatus());
+        Assertions.assertEquals(orderDtoMockedRequestLombok.getCustomerName(), orderReceived.getCustomerName());
 
     }
+
 }
 
 //Source: http://35.208.34.242:8080/swagger-ui/index.html#/Mocked%20Order%20Operations/getById
