@@ -56,6 +56,3 @@ public class OrderTest extends BaseSetupApi {
                 .statusCode(200); // 200 - OK.
     }
 }
-
-
-}
