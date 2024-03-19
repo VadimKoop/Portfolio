@@ -17,7 +17,7 @@ public class OrderDto {
 
     public int id;
 
-    public OrderDto(String status, int curierId, String customerName, String customerPhone, String comment, int id) {
+    public createRandomOrderwithRandomStatus(String status, int curierId, String customerName, String customerPhone, String comment, int id) {
         this.status = status;
         this.curierId = curierId;
         this.customerName = customerName;
@@ -26,4 +26,7 @@ public class OrderDto {
         this.id = id;
     }
 
+    /** CW15*/
+    public static OrderDto createRandomOrderwithRandomStatus() {
+    }
 }

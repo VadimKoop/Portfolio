@@ -25,11 +25,18 @@ public class BaseSetupApi {
 
         // get data from config.
         RestAssured.baseURI = configuration.getString("base-url");
-        String u = configuration.getString("username");
-        String p = configuration.getString("password");
+
+        // String username = configuration.getString("username");
+        // String password = configuration.getString("password");
+
+        /** CW15*/
+        String username = System.getProperty("username");
+        String password = System.getProperty("password");
 
         // auth
-        bearerToken = ApiClient.authorizeAndGetToken(u, p);
+//        bearerToken = ApiClient.authorizeAndGetToken(u, p);
+        /** CW15*/
+        bearerToken = ApiClient.authorizeAndGetToken(username, password);
     }
 
     public RequestSpecification getAuthenticatedRequestSpecification(){
