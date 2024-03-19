@@ -18,3 +18,9 @@ mvn clean					- clean all data
 mvn test					- run all tests
 mvn clean test					- clean data and run tests
 
+
+
+general:
+  base-url: http://35.208.34.242:8080/
+  username: vadimkp
+  password: p32V7aYbfT2n
