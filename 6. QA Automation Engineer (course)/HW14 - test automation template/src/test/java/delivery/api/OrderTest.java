@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import delivery.utils.ApiClient;
 
+import static io.restassured.RestAssured.given;
+
 public class OrderTest extends BaseSetupApi {
 
     @Test
@@ -29,4 +31,6 @@ public class OrderTest extends BaseSetupApi {
         );
 
     }
+
+
 }
