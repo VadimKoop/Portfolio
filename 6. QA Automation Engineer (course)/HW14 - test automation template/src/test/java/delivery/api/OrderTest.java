@@ -37,13 +37,13 @@ public class OrderTest extends BaseSetupApi {
     @Test
     public void createOrder() {
 
-        OrderDto OrderDtoObject = OrderDto.builder()
-                .status("OPEN")
-                .courierId(5)
-                .customerName("Vadim")
-                .comment("Lombok plugin is on the way!")
-                .id(6)
-                .build();
+//        OrderDto OrderDtoObject = OrderDto.builder()
+//                .status("OPEN")
+//                .courierId(5)
+//                .customerName("Vadim")
+//                .comment("Lombok plugin is on the way!")
+//                .id(6)
+//                .build();
 
         given().
                 log()
