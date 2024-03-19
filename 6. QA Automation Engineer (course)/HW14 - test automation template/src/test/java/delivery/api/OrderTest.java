@@ -1,5 +1,6 @@
 package delivery.api;
 
+import delivery.dto.OrderDto;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Assertions;
@@ -32,5 +33,26 @@ public class OrderTest extends BaseSetupApi {
 
     }
 
+    /** HW14*/
+    @Test
+    public void createOrder() {
 
+        OrderDto OrderDtoObject = OrderDto.builder()
+                .status("OPEN")
+                .courierId(5)
+                .customerName("Vadim")
+                .comment("Lombok plugin is on the way!")
+                .id(6)
+                .build();
+
+        given().
+                log()
+                .all()
+                .when()
+                .post("http://35.208.34.242:8080/order")
+                .then()
+                .log()
+                .all()
+                .statusCode(200); // 200 - OK.
+    }
 }
