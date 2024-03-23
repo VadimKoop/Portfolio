@@ -1,32 +1,40 @@
 /**HW14 */
 package delivery.dto;
 
-import groovy.transform.builder.Builder;
-import io.restassured.response.ValidatableResponseLogSpec;
+import delivery.utils.RandomDataGenerator;
+import lombok.Builder;
+
 
 @Builder
+
 public class OrderDto {
-    public String status;
 
-    public int curierId;
-    public String customerName;
+    String status;
+    int courierId;
+    String customerName;
+    String customerPhone;
+    String comment;
+    long id;
 
-    public String customerPhone;
 
-    public String comment;
-
-    public int id;
-
-    public createRandomOrderwithRandomStatus(String status, int curierId, String customerName, String customerPhone, String comment, int id) {
-        this.status = status;
-        this.curierId = curierId;
-        this.customerName = customerName;
-        this.customerPhone = customerPhone;
-        this.comment = comment;
-        this.id = id;
+    public static OrderDto createRandomOrderAndFixedOrderStatus() {
+        return OrderDto.builder()
+                .customerName(RandomDataGenerator.generateName())
+                .customerPhone(RandomDataGenerator.generatePhoneNumber())
+                .comment(RandomDataGenerator.generateComment())
+                .courierId(RandomDataGenerator.generateCourierId())
+                .id(RandomDataGenerator.generateOrderId())
+                .status("OPEN")
+                .build();
     }
-
-    /** CW15*/
-    public static OrderDto createRandomOrderwithRandomStatus() {
+    public static OrderDto createRandomOrderWithRandomStatus() {
+        return OrderDto.builder()
+                .customerName(RandomDataGenerator.generateName())
+                .customerPhone(RandomDataGenerator.generatePhoneNumber())
+                .comment(RandomDataGenerator.generateComment())
+                .courierId(RandomDataGenerator.generateCourierId())
+                .id(RandomDataGenerator.generateOrderId())
+                .status(RandomDataGenerator.generateRandomOrderStatus())
+                .build();
     }
 }

@@ -1,5 +1,4 @@
 package delivery.utils;
-
 import com.google.gson.Gson;
 import delivery.api.BaseSetupApi;
 import delivery.dto.LoginDto;
@@ -11,13 +10,13 @@ import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.given;
 
 public class ApiClient extends BaseSetupApi {
-    public static Response getOrders(RequestSpecification spec){
+    public static Response getOrders(RequestSpecification spec) {
 
         return given()
                 .spec(spec)
                 .log()
                 .all()
-                .get( "orders")
+                .get("orders")
                 .then()
                 .log()
                 .all()
@@ -25,26 +24,24 @@ public class ApiClient extends BaseSetupApi {
                 .response();
     }
 
-    public static String authorizeAndGetToken(String username, String password){
-
+    public static String authorizeAndGetToken(String username, String password) {
         return given()
                 .log()
                 .all()
                 .contentType(ContentType.JSON)
-                .body( new Gson().toJson( new LoginDto(username,password) ) ) // Gson libary, Json libary.
-                .post("login/student" )
+                .body(new Gson().toJson(new LoginDto(username, password)))
+                .post("login/student")
                 .then()
                 .log()
                 .all()
                 .extract()
                 .response()
                 .asString();
-
     }
 
-    public static Response createRandomOrderStatus(RequestSpecification spec) {
+    public static Response createRandomOrder(RequestSpecification spec) {
 
-        OrderDto orderDto = OrderDto.createRandomOrderwithRandomStatus();
+        OrderDto orderDto = OrderDto.createRandomOrderAndFixedOrderStatus();
 
         return given()
                 .spec(spec)
@@ -52,31 +49,45 @@ public class ApiClient extends BaseSetupApi {
                 .all()
                 .contentType(ContentType.JSON)
                 .body(new Gson().toJson(orderDto))
-                .post()
+                .post("orders")
                 .then()
                 .log()
                 .all()
                 .extract()
-                .response()
+                .response();
     }
+    public static Response createRandomOrderStatus(RequestSpecification spec) {
 
-    /** CW15*/
-    public static Response deleteOrderById(RequestSpecification spec, int orderId) {
-
-        OrderDto orderDto = OrderDto.createRandomOrderwithRandomStatus();
-
+        OrderDto orderDto = OrderDto.createRandomOrderWithRandomStatus();
         return given()
                 .spec(spec)
                 .log()
                 .all()
                 .contentType(ContentType.JSON)
-                .delete()
+                .body(new Gson().toJson(orderDto))
+                .post("orders")
                 .then()
                 .log()
                 .all()
                 .extract()
-                .response()
+                .response();
     }
-
-
 }
+
+//    /** CW15*/
+//    public static Response deleteOrderById(RequestSpecification spec, int orderId) {
+//
+//        OrderDto orderDto = OrderDto.createRandomOrderwithRandomStatus();
+//
+//        return given()
+//                .spec(spec)
+//                .log()
+//                .all()
+//                .contentType(ContentType.JSON)
+//                .delete()
+//                .then()
+//                .log()
+//                .all()
+//                .extract()
+//                .response();
+//    }
