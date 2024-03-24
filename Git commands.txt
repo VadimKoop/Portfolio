@@ -4,6 +4,7 @@ git commit -m "comment"				- Commit changes
 git push origin master				- Push changes to a remote repository
 git push origin master -f			- Force push
 git pull origin master				- Git synchronization
+git pull					- Git update from the website.
 
 git status 					- Git check
 git branch					- Vigew threads
