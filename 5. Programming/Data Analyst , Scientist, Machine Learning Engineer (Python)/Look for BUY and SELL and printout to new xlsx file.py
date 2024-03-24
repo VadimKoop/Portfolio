@@ -14,7 +14,7 @@ df['Date'] = pd.to_datetime(df['Date']).dt.strftime('%Y-%m-%d')
 df.drop(columns=['Quantity', 'Price per share'], inplace=True)
 
 # Filtering rows named "DIVIDEND".
-dividend_transactions = df[df['Type'].str.contains("DIVIDEND", case=False)]
+dividend_transactions = df[df['Type'].str.contains("BUY|SELL", case=False)]
 
 # Saving filtered data to a new Excel file.
 output_file_path = r"PUT PATH HERE + FORMAT" #Put correct path to file.

@@ -29,8 +29,8 @@ def move_videos(source_folder, destination_folder):
         print(f"test2")
 
 # Specify the path to the source and destination folder.
-source_folder = r"D:\test"
-destination_folder = r"D:\test2"
+source_folder = r"PUT PATH FOLDER HERE"
+destination_folder = r"PUT PATH FOLDER HERE"
 
 
 move_videos(source_folder, destination_folder)
