@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc1b2efd-f31c-4a12-9562-a19a043cb037" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/MainPageTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="cc1b2efd-f31c-4a12-9562-a19a043cb037" name="Changes" comment="HW19" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
@@ -40,11 +42,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.businessGettComTest.clickNextButton.executor": "Run",
     "JUnit.businessGettComTest.executor": "Run",
     "JUnit.businessGettComTest.loginTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "HW19",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Portfolio/6. QA Automation Engineer (course)/CW19 - demo-ui-test",
     "node.js.detected.package.eslint": "true",
@@ -102,11 +105,24 @@
       <option name="presentableId" value="Default" />
       <updated>1712511478448</updated>
       <workItem from="1712511479449" duration="18000" />
-      <workItem from="1712602787994" duration="2528000" />
+      <workItem from="1712602787994" duration="2854000" />
     </task>
+    <task id="LOCAL-00001" summary="HW19">
+      <option name="closed" value="true" />
+      <created>1712605617206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712605617206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HW19" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW19" />
   </component>
 </project>
