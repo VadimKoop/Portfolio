@@ -16,17 +16,11 @@ import static com.codeborne.selenide.Selenide.*;
 public class MainPageTest {
     MainPage mainPage = new MainPage();
 
-    @BeforeAll
-    public static void setUpAll() {
-        Configuration.browserSize = "1280x800";
-        SelenideLogger.addListener("allure", new AllureSelenide());
-    }
 
     @BeforeEach
     public void setUp() {
-        // Fix the issue https://github.com/SeleniumHQ/selenium/issues/11750
         Configuration.browserCapabilities = new ChromeOptions().addArguments("--remote-allow-origins=*");
-        open("https://www.jetbrains.com/");
+        open("https://business.gett.com/auth/");
     }
 
     @Test
@@ -35,6 +29,8 @@ public class MainPageTest {
 
         $("[data-test='search-input']").sendKeys("Selenium");
         $("button[data-test='full-search-button']").click();
+
+
 
         $("input[data-test='search-input']").shouldHave(attribute("value", "Selenium"));
     }
