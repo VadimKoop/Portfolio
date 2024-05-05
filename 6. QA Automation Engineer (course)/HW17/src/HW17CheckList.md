@@ -1,12 +1,12 @@
 ## 1. Make a checklist of functional checks of the UI of the tallinn delivery application in terms of login.
 
-| № |                 Test name                  |                                                                                 Test description |                                                                                  Expected result                                                                                   | Status |
-|:--|:------------------------------------------:|-------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|-------:|
-| 1 |             Login landing page             | Verify that users are directed to the login landing page when accessing the login functionality. |                                           Access the application login page. Verify that the user is directed to the login landing page.                                           | Passed |
-| 2 |            Login data entering             |                               Confirm that users can enter their login credentials successfully. |                         Enter valid login credentials (username and password). Submit the login form. Verify that the login data is entered successfully.                          | Passed |
-| 3 | Login wrong username and password entering |                                            Validate the handling of incorrect login credentials. |                         Enter an invalid username and password combination. Submit the login form. Verify that the appropriate error message is displayed.                         | Passed |
-| 4 |           Incorrect credentials            |                                      Ensure that users cannot log in with incorrect credentials. |      Enter a combination of incorrect username and password. Submit the login form. Verify that login is not successful and users are prompted to enter correct credentials.       | Passed |
-| 5 |   Succesfull login and password entering   |                               Confirm that users can successfully log in with valid credentials. | Enter valid login credentials (username and password). Submit the login form. Verify that users are successfully logged in and directed to the intended page after authentication. | Passed |
+| № | Test name                                  | Test description                                                                                 | Expected result                                                                                                                                                                    | Status |
+|---|--------------------------------------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| 1 | Login landing page                         | Verify that users are directed to the login landing page when accessing the login functionality. | Access the application login page. Verify that the user is directed to the login landing page.                                                                                     | Passed |
+| 2 | Login data entering                        | Confirm that users can enter their login credentials successfully.                               | Enter valid login credentials (username and password). Submit the login form. Verify that the login data is entered successfully.                                                  | Passed |
+| 3 | Login wrong username and password entering | Validate the handling of incorrect login credentials.                                            | Enter an invalid username and password combination. Submit the login form. Verify that the appropriate error message is displayed.                                                 | Passed |
+| 4 | Incorrect credentials                      | Ensure that users cannot log in with incorrect credentials.                                      | Enter a combination of incorrect username and password. Submit the login form. Verify that login is not successful and users are prompted to enter correct credentials.            | Passed |
+| 5 | Succesfull login and password entering     | Confirm that users can successfully log in with valid credentials.                               | Enter valid login credentials (username and password). Submit the login form. Verify that users are successfully logged in and directed to the intended page after authentication. | Passed |
 
 ## 2. Make a list of web elements and their locators (xpath) required for implementation checks from point 1 in table form.
 
@@ -18,8 +18,8 @@
 | 4  | RU language switch button  | //button[text()='RU']            |
 | 5  | Sign in button   	         | //*[@data-name="signIn-button"]  |
 
-
 ## 3. Supplement the readme of the current project (with API autotests) with the results of points 1 and 2.
+
 **Configuration**
 
 1. Open the `src/test/resources/application.yaml` file.
@@ -31,6 +31,7 @@
     ```
 
 **Usage**
+
 ```
 mvn clean test  
 mvn allure:serve 
