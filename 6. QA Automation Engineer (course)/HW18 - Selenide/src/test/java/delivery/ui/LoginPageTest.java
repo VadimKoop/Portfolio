@@ -21,7 +21,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class LoginPageTest {
     @Test
-    public void insertIncorrectLoginAndPasswordAndCheckErrorMessage(){
+    public void insertIncorrectLoginAndPasswordAndCheckErrorMessage() {
 
         // Step 0
         Selenide.open("http://35.208.34.242:3000/signin");
@@ -70,3 +70,6 @@ public class LoginPageTest {
     }
 
 
+
+
+}
