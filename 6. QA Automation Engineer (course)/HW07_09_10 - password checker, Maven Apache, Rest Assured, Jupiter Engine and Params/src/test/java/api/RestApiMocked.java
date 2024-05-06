@@ -142,7 +142,7 @@ public class RestApiMocked {
             "67890, example2",
             "54321, example3"
     })
-    void testWithCsvSource(String orderId, String additionalParam) {
+    void testWithOrderIdAndAdditionalParaminTestOrders(String orderId, String additionalParam) {
         given().
                 log()
                 .all()
