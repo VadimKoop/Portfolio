@@ -92,7 +92,7 @@ public class LoginPageTest {
     }
 
 
-    // Error checking using a minimum number of characters (2 scenario username + password) - try to find tricky selector
+    // Error checking using a minimum number of characters (2 scenario username + password) - try to find tricky selector.
     @Test
     public void TwoScenarioUsernameAndPassword() {
 
