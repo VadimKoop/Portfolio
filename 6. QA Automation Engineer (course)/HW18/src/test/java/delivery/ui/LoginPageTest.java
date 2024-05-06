@@ -11,8 +11,10 @@ package delivery.ui;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import delivery.utils.RandomDataGenerator;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
@@ -64,6 +66,7 @@ public class LoginPageTest {
         //*[data-name="username-input"]
         //*[data-name="password-input*]
 
+
     }
 
-}
+
