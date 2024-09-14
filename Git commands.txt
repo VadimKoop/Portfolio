@@ -10,7 +10,7 @@ git status 					- Git check
 git branch					- Vigew threads
 git checkout "brench name"			- Go to the brench
 
-mvn clean test 					- Используется в Maven для очистки проекта (удаления временных файлов и сборочных результатов) и запуска тестов.
+mvn clean test 					- Used in Maven to clean up the project (removing temporary files and build results) and run tests.
 
 // Comment					- line comment
 //* Big comment */				- //* Comment until you close it" */
