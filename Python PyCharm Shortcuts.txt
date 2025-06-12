@@ -1,0 +1,33 @@
+🚀 General								 🧠 Code Navigation					    🧹 Code Refactoring
+Ctrl + Shift + A	Search for any command, action, or setting       Ctrl + N 			Go to Class		    Ctrl + Alt + L	Reformat Code
+Double Shift		Search files, classes, symbols, actions          Ctrl + Shift + N		Go to File		    Ctrl + Alt + O	Optimize Imports
+Ctrl + Alt + S		Open Settings                                    Ctrl + Alt + Shift + N		Go to Symbol                Shift + F6		Rename Symbol
+Alt + Enter    		Show Intention Actions and Quick-Fixes           Ctrl + B or Ctrl + Click	Go to Declaration           Ctrl + Alt + M	Extract Method
+Shift + Shift		Search Everywhere                                Alt + F7			Find Usages                 Ctrl + Alt + V	Extract Variable
+                                                                         Ctrl + E			Recent Files                Ctrl + Alt + F	Extract Field
+                                                                         Ctrl + Shift + E		Recently Edited Files       Ctrl + Alt + C	Extract Constant
+                                                                         Ctrl + Alt + ← / → 		Navigate Back / Forward
+                                                                         Ctrl + Shift + Backspace 	Last Edit Location
+
+
+
+✍️ Editing								🧪 Running & Debugging					    🔍 Search & Replace
+Ctrl + Space		Basic Code Completion                           Shift + F10			Run                         Ctrl + F		Find in File
+Ctrl + Shift + Space	Smart Code Completion                           Shift + F9			Debug                       Ctrl + R		Replace in File
+Ctrl + P		Parameter Info (shows method arguments)         F8				Step Over                   Ctrl + Shift + F	Find in Path (project-wide)
+Ctrl + Q 		Quick Documentation                             F7 				Step Into                   Ctrl + Shift + R	Replace in Path
+Ctrl + /		Toggle Line Comment                             Shift + F8			Step Out
+Ctrl + Shift + /	Toggle Block Comment                            Alt + F9 			Run to Cursor
+Ctrl + D 		Duplicate Line or Selection                     Ctrl + F8			Toggle Breakpoint
+Ctrl + Y 		Delete Line                                     Ctrl + Shift + F8		View Breakpoints
+Ctrl + Shift + ↑ / ↓ 	Move Line Up / Down
+Ctrl + Enter		Split line or start new one below
+Shift + Enter		Start New Line Below
+
+
+
+📁 Project & Tool Windows
+Alt + 1			Toggle Project View
+Alt + 4			Toggle Run Window
+Alt + 5			Toggle Debug Window
+Ctrl + Tab 		Switch between open tabs and tools
