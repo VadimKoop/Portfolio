@@ -1,0 +1,40 @@
+git clone link 					- Clone repository
+git add .   	 				- Add updates to index
+git commit -m "comment"				- Commit changes
+git push origin master				- Push changes to a remote repository
+git push origin master -f			- Force push
+git pull origin master				- Git synchronization
+git pull					- Git update from the website.
+
+git status 					- Git check
+git branch					- Vigew threads
+git checkout "brench name"			- Go to the brench
+
+mvn clean test 					- Used in Maven to clean up the project (removing temporary files and build results) and run tests.
+
+// Comment					- line comment
+//* Big comment */				- //* Comment until you close it" */
+
+Terminal request
+mvn clean					- clean all data
+mvn test					- run all tests
+mvn clean test					- clean data and run tests
+
+
+
+### 🌐 Git global setup														### 📦 Push an existing Git repository
+git config --global user.name "Name.Secondname"				    cd existing_repo
+git config --global user.email "name.secondname@ttu.ee"			    git remote rename origin old-origin
+									    git remote add origin https://gitlab.cs.ttu.ee/Name.Secondname/bakalaureusetoo.git
+									    git push -u origin --all
+									    git push -u origin --tags
+
+
+### 🆕 Create a new repository												### 📁 Push an existing folder
+git clone https://gitlab.cs.ttu.ee/Name.Secondname/bakalaureusetoo.git	    cd existing_folder
+cd bakalaureusetoo							    git init
+touch README.md								    git remote add origin https://gitlab.cs.ttu.ee/Name.Secondname/bakalaureusetoo.git
+git add README.md							    git add .
+git commit -m "add README"						    git commit -m "Initial commit"
+git push -u origin master						    git push -u origin master
+
